@@ -35,6 +35,4 @@ var twoSum = function(nums, target) {
   return [];
 };
 
-const res = twoSum([2,7,11,15], 9)
-// 期待：[ 0, 1 ]
-console.log('res: ', res);
+module.exports=twoSum
