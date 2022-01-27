@@ -1,0 +1,25 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "A record of algorithm practice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueStoneQ/algorithm.git"
+  },
+  "keywords": [
+    "algorithm"
+  ],
+  "author": "lionQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueStoneQ/algorithm/issues"
+  },
+  "homepage": "https://github.com/BlueStoneQ/algorithm#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
