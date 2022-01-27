@@ -3,10 +3,8 @@ var twoSum = function(nums, target) {
   if (!Array.isArray(nums)) return [];
   if (typeof target !== "number") return [];
   if (nums.length < 2) return [];
-  console.log('start');
   // 原地排序
   nums.sort((a, b) => a - b);
-  console.log('nums sort: ', nums);
   // 前置变量定义
   let leftIndex = 0;
   let rightIndex = nums.length - 1;
