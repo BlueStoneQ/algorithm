@@ -35,4 +35,56 @@ var maxSubArray = function(nums) {
   return Math.max(...dp);
 };
 
-module.exports = maxSubArray;
+/**
+ * 东哥的题解：觉得写得更好 更推荐
+ * 以下为我理解后 自己动手写出来的
+ * https://labuladong.gitee.io/algo/3/24/81/
+ * @param {*} nums 
+ */
+const maxSubArray2 = function(nums) {
+  // 防御
+  if (!Array.isArray(nums)) return;
+  if (nums.length <= 0) return;
+  // 初始化值
+  const len = nums.length;
+  const dp = [];
+  dp[0] = nums[0];
+  // 核心算法 1. 定义 并 构造 dp数组：记录状态映射关系
+  for (let i = 1; i < len; i++) {
+    dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+  }
+  // 返回值
+  return Math.max(...dp);
+}
+
+/**
+ * 加入了状态压缩, 降低了空间复杂度: O(n) => O(1)
+ * 东哥的题解：觉得写得更好 更推荐
+ * 以下为我理解后 自己动手写出来的
+ * https://labuladong.gitee.io/algo/3/24/81/
+ * @param {*} nums 
+ */
+ const maxSubArray3 = function(nums) {
+  // 防御
+  if (!Array.isArray(nums)) return;
+  if (nums.length <= 0) return;
+  // 初始化值
+  const len = nums.length;
+  // 状态压缩：使用dp1 dp0 代替之前的dp[]
+  let dp0 = nums[0];
+  let dp1 = dp0;
+  let res = dp0;
+  // 核心算法 1. 定义 并 构造 dp数组：记录状态映射关系
+  for (let i = 1; i < len; i++) {
+    dp1 = Math.max(dp0 + nums[i], nums[i]);
+    // 更新dp0参与下一轮
+    dp0 = dp1;
+    // 更新返回值
+    res = Math.max(res, dp1);
+  }
+  // 返回值
+  return res;
+}
+
+
+module.exports = maxSubArray3;
