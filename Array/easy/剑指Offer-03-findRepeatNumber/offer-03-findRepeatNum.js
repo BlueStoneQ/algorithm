@@ -1,5 +1,5 @@
 /**
- * leetCode: https://leetcode-cn.com/problems/two-sum/submissions/
+ * leetCode: https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
  * Date: 2022-1-28
  * me:
  * 1. 暴力解法：双循环遍历
@@ -16,7 +16,7 @@
  */
 var findRepeatNumber = function(nums) {
   // 防御
-  if (!nums) return;
+  if (!Array.isArray(nums)) return;
   if (nums.length <= 1) return;
   // 变量初始化
   const num2CountSet = new Set();
