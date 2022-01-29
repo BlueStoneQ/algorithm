@@ -42,11 +42,39 @@ var maxProfit = function(prices) {
   return dp[len - 1][0];
 }
 
+/**
+ * [通过：官方解法]使用minPrice记录最低价格（动态），然后计算每天选择是否卖出
+ * @param {*} prices 
+ * @returns 
+ */
+const maxProfit2 = function(prices) {
+  // 防御
+  if (!Array.isArray(prices)) return;
+  if (prices.length === 0) return 0;
+  // 初始化值
+  const len = prices.length;
+  let minPrice = Number.MAX_VALUE; // 取一个达不到的最大值 要不然很容易一直停留在初始值这里
+  let maxProfitVal = 0; // 记录最大利润
+  // 核心算法
+  for (let i = 0; i < len; i++) {
+    // 如果当前价格小于最小价格 更新最小价格minPrice
+    if (prices[i] < minPrice) {
+      minPrice = prices[i];
+      continue;
+    }
+    // 如果当前价格卖出 获利大于历史最大获利 则更新maxProfitVal
+    if (prices[i] - minPrice > maxProfitVal) {
+      maxProfitVal = prices[i] - minPrice;
+    }
+  }
+  // 返回值
+  return maxProfitVal;
+}
+
 
 /**
- * [不合格]
+ * [不合格:复杂度过高，大数量的case没跑过]
  * me: 优先考虑下：dp() 自顶向下处理
- * :复杂度过高，大数量的case没跑过
  * @param {number[]} prices
  * @return {number}
  */
