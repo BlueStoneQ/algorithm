@@ -23,7 +23,7 @@ var rotate = function(matrix) {
   // 核心算法
   // 1. 沿对角线对折(沿对角线交换每个镜像元素)
   for (let i = 0; i < matrixWidth; i++) {
-    // 这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可
+    // 这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可 对折边界-起点：对折遇到对角线就不要对折了
     for (let j = i; j < matrixWidth; j++) {
       const temp = matrix[i][j];
       matrix[i][j] = matrix[j][i];
@@ -52,8 +52,8 @@ const anticlockwiseRotate = (matrix) => {
     // 核心算法
     // 1. 沿对角线对折(沿对角线交换每个镜像元素)
     for (let i = 0; i < matrixWidth; i++) {
-      // 这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可
-      for (let j = 0; j < matrixWidth - 1; j++) {
+      // 这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可 对折边界-终点：对折遇到对角线就不要对折了 对角线元素[i][n-i-1]
+      for (let j = 0; j < matrixWidth - i; j++) {
         const temp = matrix[i][j];
         matrix[i][j] = matrix[matrixWidth - j - 1][matrixWidth - i - 1];
         matrix[matrixWidth - j - 1][matrixWidth - i - 1] = temp;
