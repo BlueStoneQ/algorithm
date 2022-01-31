@@ -1,6 +1,11 @@
 # algorithm
 A record of algorithm practice.
 
+## 题型清单
+### 数组
+#### 滑动窗口
+  - [567-字符串的排列](Array/medium/567-字符串的排列/567-checkInclusion.js)
+
 ## 2022-1-28~2022-2-7 11pd
 ```
 1. js没有的 需要手动实现
