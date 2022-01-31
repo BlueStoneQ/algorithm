@@ -1,6 +1,7 @@
 /**
  * leet: https://leetcode-cn.com/problems/minimum-window-substring/
  * Date: 2022-1-30
+ * 类型： 滑动窗口
  * todo：
  * 1. 写一个更清晰的版本 将判断是否为子串的动作 封装为一个单独函数 同时 注意效率
  */
