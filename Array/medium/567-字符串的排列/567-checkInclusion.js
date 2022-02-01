@@ -71,7 +71,8 @@
    return false;
 };
 
-checkInclusion("ab", "eidboaoo");
+// test: debugger by vsCode
+// checkInclusion("ab", "eidboaoo");
 
 module.exports = checkInclusion;
 

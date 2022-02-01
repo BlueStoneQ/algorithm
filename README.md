@@ -15,6 +15,12 @@ A record of algorithm practice.
 - [3-无重复字符的最长子串](Array/medium/3-无重复字符的最长子串/3-lengthOfLongestSubstring.js)
 #### hard
 - [76-最小覆盖子串](Array/hard/76-最小覆盖子串/76-minWindow.js)
+### 二分法
+```
+1. 二分法一般适用于求某个区间的最值（左边界值 === min; 右边界值 === max;）
+```
+#### medium
+- [875-爱吃香蕉的珂珂](Array/medium/875-爱吃香蕉的珂珂/875-minEatingSpeed.js)
 
 ---
 
