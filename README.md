@@ -26,6 +26,11 @@ A record of algorithm practice.
 #### hard
 - [×][410-分割数组的最大值](Array/hard/[×]410-分割数组的最大值/410-splitArray.js)
 
+### 随机算法
+#### medium
+- [×][380-O(1) 时间插入、删除和获取随机元素](Array/medium/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
+  - 剩最后2个用例，输入量太大，暂时难以排查，后面再看，思路okay
+
 ---
 
 ## 2022-1-28~2022-2-7 11pd
