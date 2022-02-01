@@ -6,6 +6,7 @@ A record of algorithm practice.
 ### 双指针
 #### easy
 - [26-删除有序数组中的重复项](Array/easy/26-删除有序数组中的重复项/26-removeDuplicates.js)
+- [27-移除元素](Array/easy/27-移除元素/27-removeElement.js)
 ### 滑动窗口
 ```
 1. 滑动窗口的题的特征： 
@@ -74,6 +75,7 @@ A record of algorithm practice.
 
 
 ## 题集
+- [labuladong](https://mp.weixin.qq.com/s/ir1Hk06HcT8W_qz0MtyONA)
 - [codetop](https://codetop.cc/home)
   - MS
     - 苏州 - FE

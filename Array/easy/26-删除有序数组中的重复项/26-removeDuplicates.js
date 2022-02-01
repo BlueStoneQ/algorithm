@@ -1,6 +1,7 @@
 /**
  * leet: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  * Date: 2022-2-1 
+ * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487466&idx=1&sn=e0c21cf8c3a76cfc4844b1269b658344&scene=21#wechat_redirect
  * 类型：双指针，原地去重
  * 简单题：一般要求复杂度要尽可能的低，这也是考察的关注点
  * 数组要关注的点：是否有序 
