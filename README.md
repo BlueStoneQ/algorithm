@@ -3,6 +3,9 @@ A record of algorithm practice.
 
 # 题型清单
 ## 数组
+### 双指针
+#### easy
+- [26-删除有序数组中的重复项](Array/easy/26-删除有序数组中的重复项/26-removeDuplicates.js)
 ### 滑动窗口
 ```
 1. 滑动窗口的题的特征： 
