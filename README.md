@@ -12,6 +12,7 @@ A record of algorithm practice.
 #### medium
 - [567-字符串的排列](Array/medium/567-字符串的排列/567-checkInclusion.js)
 - [438-找到字符串中所有字母异位词](Array/medium/438-找到字符串中所有字母异位词/438-findAnagrams.js)
+- [3-无重复字符的最长子串](Array/medium/3-无重复字符的最长子串/3-lengthOfLongestSubstring.js)
 #### hard
 - [76-最小覆盖子串](Array/hard/76-最小覆盖子串/76-minWindow.js)
 
