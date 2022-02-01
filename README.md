@@ -23,6 +23,8 @@ A record of algorithm practice.
 #### medium
 - [875-爱吃香蕉的珂珂](Array/medium/875-爱吃香蕉的珂珂/875-minEatingSpeed.js)
 - [1011-在D天内送达包裹的能力](Array/medium/1011-在D天内送达包裹的能力/1011-shipWithinDays.js)
+#### hard
+- [×][410-分割数组的最大值](Array/hard/[×]410-分割数组的最大值/410-splitArray.js)
 
 ---
 
