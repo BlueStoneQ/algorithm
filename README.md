@@ -24,6 +24,10 @@ A record of algorithm practice.
 #### hard
 - [76-最小覆盖子串](Array/hard/76-最小覆盖子串/76-minWindow.js)
 
+### 去重
+#### medium 
+- [316-去除重复字母](Array/medium/316-去除重复字母/316-removeDuplicateLetters.js)
+
 ### 二分法
 ```
 1. 二分法一般适用于求某个区间的最值（左边界值 === min; 右边界值 === max;）
