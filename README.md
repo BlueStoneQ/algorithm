@@ -2,6 +2,10 @@
 A record of algorithm practice.
 
 # 题型清单
+## 链表
+### 双指针
+#### easy
+- [83-删除排序链表中的重复元素](Array/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
 ## 数组
 ### 双指针
 #### easy
