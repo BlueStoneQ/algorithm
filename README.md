@@ -1,6 +1,10 @@
 # sTone's algorithm-note
 A record of algorithm practice.
 
+# 目录
+- [数组](##数组)
+- [链表](##链表)
+
 # 题型清单
 ## 链表
 ### 双指针
