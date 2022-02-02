@@ -7,6 +7,12 @@ A record of algorithm practice.
 
 # 题型清单
 ## 链表
+```
+注意：链表中的虚拟头结点 是一个很重要的技巧
+```
+### 链表合并
+#### easy 
+- [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
 ### 双指针
 #### easy
 - [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
