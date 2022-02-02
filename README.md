@@ -5,6 +5,10 @@ A record of algorithm practice.
 - [数组](#数组)
 - [链表](#链表)
 
+# 数据结构
+## Heap
+- [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
+
 # 题型清单
 ## 链表
 ```
