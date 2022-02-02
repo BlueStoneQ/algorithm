@@ -12,14 +12,18 @@ A record of algorithm practice.
 # 题型清单
 ## 链表
 ```
-注意：链表中的虚拟头结点 是一个很重要的技巧
+注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
 ```
+
 ### 链表合并
 #### easy 
 - [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
 ### 双指针
 #### easy
 - [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
+### 其他
+#### medium
+- [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
 ## 数组
 ### 前缀和数组
 ```
