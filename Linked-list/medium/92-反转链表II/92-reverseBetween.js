@@ -1,0 +1,78 @@
+/**
+ * leet: https://leetcode-cn.com/problems/reverse-linked-list-ii/
+ * Date: 2022-2-3
+ * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484467&idx=1&sn=beb3ae89993b812eeaa6bbdeda63c494&scene=21#wechat_redirect
+ * leet-题解：https://leetcode-cn.com/problems/reverse-linked-list-ii/solution/fan-zhuan-lian-biao-ii-by-leetcode-solut-teyq/
+ * 链表问题：一定要注意边界：头结点 尾节点 空链表的情况，一般的最佳实践就是：
+ *  - 虚拟头结点
+ */
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+
+/**
+ * 找到链表head中的第index个节点，index从1开始
+ */
+ const findPByIndex = (head, index) => {
+  if (index < 1) return null;
+  let resP = head;
+  while (resP !== null && index > 0) {
+      resP = resP.next;
+      index--;
+  }
+  return resP;
+}
+
+/**
+* 反转一个链表
+* 1. 为了更清晰主思路 将这一部分封装出来
+*/
+const reverseLinkedList = function(head) {
+   // 准备3个辅助指针
+   let pre = null, curP = head, next = null;
+   while (curP !== null) {
+      // 反转
+      next = curP.next;
+      curP.next = pre;
+      // 步进
+      pre = curP;
+      curP = next;
+   }
+   // 返回结果
+   return pre;
+}
+
+/**
+* 迭代法1：切断left -> right的子链subLink 对subLink进行反转 然后 再反向接入原来的链表中
+* 注意保存好left 和 right的前后节点，可以把[left,right]看作一个单独的链表处理
+* @param {ListNode} head
+* @param {number} left
+* @param {number} right
+* @return {ListNode}
+*/
+var reverseBetween = function(head, left, right) {
+  // 防御
+  // 1. 初始化数据
+  // 初始化虚拟头结点 避免对于head多种情况的判断（或者一些边界情况）
+  const dummy = new ListNode(-1, null);
+  dummy.next = head;
+  // 先找到leftP 和 rightP, dummy相当于给链表增加了一个0下标 这样left就可以从0计数了 也就是left就可以理解为一个下标了 left处，就是从0（dummy）走了left步 （添加一个0节点 让下标和数组的一样 方便处理）
+  let leftP = findPByIndex(dummy, left), rightP = findPByIndex(dummy, right);
+  // 保存leftP和rightP的前驱和后继节点（方便后面重新接入原链表）
+  const leftPreP = findPByIndex(dummy, left - 1) || dummy, rightNextP = rightP.next || null;
+  // 2. 切割出子链表
+  leftPreP.next = null;
+  rightP.next = null;
+  // 3. 反转子链表
+  reverseLinkedList(leftP);
+  // 4. 反转后的子链表接入原来链表
+  leftPreP.next = rightP;
+  leftP.next = rightNextP;
+  // 5. 返回结果
+  return dummy.next;
+};
