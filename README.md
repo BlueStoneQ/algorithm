@@ -2,6 +2,8 @@
 A record of algorithm practice.
 
 # 目录
+- [题集](#题集)
+- [标签](#标签)
 - [数组](#数组)
 - [链表](#链表)
 
@@ -122,6 +124,101 @@ A record of algorithm practice.
 
 ---
 
+## 题集
+- [labuladong](https://mp.weixin.qq.com/s/ir1Hk06HcT8W_qz0MtyONA)
+- [codetop](https://codetop.cc/home)
+  - MS
+    - 苏州 - FE
+    - FE (17)
+  - BT
+    - 杭州 - FE
+    - FE（156）
+- [leetcode](https://leetcode-cn.com/problemset/all/)
+  - 剑指offer题库（80）
+  - top200
+  - 名企题库（会员）
+
+---
+## 标签
+### 基本
+- 数组
+- 字符串
+- 排序
+- 矩阵
+- 枚举
+- 字符串匹配
+- 桶排序
+- 计数排序
+- 基数排序
+### 算法
+- 动态规划
+- 深度优先搜索
+- 广度优先搜索
+- 贪心
+- 二分查找
+- 回溯
+- 递归
+- 分治
+- 记忆化搜索
+- 归并排序
+- 快速排序
+### 基础数据结构
+- 哈希表
+- 树
+- 栈
+- 堆（优先队列）
+- 图
+- 链表
+- 二叉搜索树
+- 单调栈
+- 单调队列
+- 队列
+- 有序集合
+- 拓扑排序
+- 最短路
+- 双向链表
+- 最小生成树
+- 欧拉回路
+- 强连通分量
+- 双联通分量
+### 高级数据结构
+- 并查集
+- 字典树
+- 线段树
+- 树状数组
+- 后缀数组
+### 技巧
+- 双指针
+- 位运算
+- 前缀和
+- 滑动窗口
+- 计数
+- 状态压缩
+- 哈希函数
+- 滚动哈希
+- 扫描线
+### 数学
+- 数学
+- 几何
+- 博弈
+- 组合数学
+- 随机化
+- 数论
+- 概率与统计
+- 水塘抽样
+- 拒绝采样
+### 其他
+- 数据库
+- 设计
+- 数据流
+- 交互
+- 脑筋急转弯
+- 迭代器
+- 多线程
+- shell
+
+---s
+
 ## 2022-1-28~2022-2-7 11pd
 ```
 1. js没有的 需要手动实现
@@ -157,18 +254,3 @@ A record of algorithm practice.
 - 回溯
 - 动规？
   - 贪心？
-
-
-## 题集
-- [labuladong](https://mp.weixin.qq.com/s/ir1Hk06HcT8W_qz0MtyONA)
-- [codetop](https://codetop.cc/home)
-  - MS
-    - 苏州 - FE
-    - FE (17)
-  - BT
-    - 杭州 - FE
-    - FE（156）
-- [leetcode](https://leetcode-cn.com/problemset/all/)
-  - 剑指offer题库（80）
-  - top200
-  - 名企题库（会员）
