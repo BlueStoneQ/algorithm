@@ -25,7 +25,9 @@ A record of algorithm practice.
 #### easy
 - [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
 - [876-链表的中间结点](Linked-list/easy/876-链表的中间结点/876-middleNode.js)
-- [141-环形链表](Linked-list/easy/141-环形链表/141-hasCycle.js)
+- [判断环形链][141-环形链表](Linked-list/easy/141-环形链表/141-hasCycle.js)
+#### medium
+- [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
 ### 其他
 #### medium
 - [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
