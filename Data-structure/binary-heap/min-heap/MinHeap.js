@@ -42,11 +42,15 @@ class MinHeap {
     // 防御
     if (this.isEmpty()) return;
     if (this.size() === 1) return this.heap.shift();
-    // 取出堆顶值
-    const removeElement =  this.heap.shift();
-    // 下沉(堆顶下沉)
+    // 取出（记录）堆顶值
+    const res = this.heap[0];
+    // 交换末尾元素和第一个元素
+    swapArr(this.heap, 0, this.heap.length - 1);
+    // 删除交换后的末尾元素 - 交换前的堆顶元素
+    this.heap.pop();
+    // 下沉(新的堆顶下沉到正确位置)
     this[siftDown](0);
-    return removeElement;
+    return res;
   }
 
   size() {
@@ -107,13 +111,13 @@ class MinHeap {
     while (index < this.heap.length - 1) {
       // 先假定左孩子比较小
       let littlerElementIndex = this[getLeftChildIndex](index);
-      // 如果有右孩子 先比较左右孩子 大的那个 和当前的index的值比较
+      // 如果有右孩子 先比较左右孩子 大的那个 和当前的index的值比较 （这里的比较不对）？？
       const rightChildIndex = this[getRightChildIndex](index);
       if (rightChildIndex < this.size() - 1 && this.compareFn(this.heap(rightChildIndex), this.heap(littlerElementIndex)) === COMPARE_RESULT.LITTLER) {
         littlerElementIndex = rightChildIndex;
       }
       // 不大于任何子节点 即找到了合littlerElementIndex适的位置 打断循环 停止下沉
-      if (this.compareFn(this.heap[littlerElementIndex], this.heap[index]) === COMPARE_RESULT.BIGGER) break;
+      if (this.compareFn(this.heap[index], this.heap[littlerElementIndex]) === COMPARE_RESULT.LITTLER) break;
       // index的值小于左右孩子的最小值 用决出的左右孩子中最小的和index进行值交换
       swapArr(this.heap, index, littlerElementIndex);
       index = littlerElementIndex;
