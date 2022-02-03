@@ -1,6 +1,7 @@
 /**
  * leetCode: https://leetcode-cn.com/problems/two-sum/submissions/
  * Date: 2022-1-28
+ * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484474&idx=1&sn=dfbadbe6e17d695a1907e2adcd9f0d3c&source=41#wechat_redirect
  */
 
 /**
