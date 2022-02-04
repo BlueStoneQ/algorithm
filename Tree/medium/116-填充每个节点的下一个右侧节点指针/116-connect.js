@@ -19,6 +19,7 @@
  */
 
 /**
+ * 方法1： BFS 
  * 使用BFS：进行层序遍历
  * @param {Node} root
  * @return {Node}
@@ -50,6 +51,51 @@
           }
       }
   }
+  return root;
+};
+
+
+
+/**
+ * *************************************************************************
+ */
+
+/**
+ * // Definition for a Node.
+ * function Node(val, left, right, next) {
+ *    this.val = val === undefined ? null : val;
+ *    this.left = left === undefined ? null : left;
+ *    this.right = right === undefined ? null : right;
+ *    this.next = next === undefined ? null : next;
+ * };
+ */
+
+/**
+ * 辅助递归函数: 连接2个node
+ */
+ const connectTwoNode = function(leftNode, rightNode) {
+  // base case
+  if (leftNode === null || rightNode === null) return null;
+  // 链接当前2个node
+  leftNode.next = rightNode;
+  // 递归调用：链接同一节点的左右子节点
+  connectTwoNode(leftNode.left, leftNode.right);
+  connectTwoNode(rightNode.left, rightNode.right);
+  // 连接跨越父节点的2个子节点
+  connectTwoNode(leftNode.right, rightNode.left);
+}
+
+/**
+* 方法2： 递归法
+* @param {Node} root
+* @return {Node}
+*/
+var connect = function(root) {
+  // 防御
+  if (root === null) return root;
+  // 连接
+  connectTwoNode(root.left, root.right);
+  // 返回值
   return root;
 };
 
