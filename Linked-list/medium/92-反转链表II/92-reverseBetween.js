@@ -76,3 +76,51 @@ var reverseBetween = function(head, left, right) {
   // 5. 返回结果
   return dummy.next;
 };
+
+
+
+/***
+ * ********************************************方法2：迭代法-头插法****************************************************************
+ */
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * 迭代法2：头插法 - 一次遍历
+ * 1. 注意：多个指针可以指向同一个节点 理解：指针 指针 指针！！
+ * @param {ListNode} head
+ * @param {number} left
+ * @param {number} right
+ * @return {ListNode}
+ */
+ var reverseBetween = function(head, left, right) {
+   // 防御
+   // 初始化变量
+   // - 初始化虚拟头节点 (防止head在算法中改变 都是头的情况，保证head可以和其他节点一致的操作)
+   const dummy = new ListNode(-1, null);
+   dummy.next = head;
+   // 定义反转需要的三个指针 pre指针的起点设置为dummy 这样left就和可以理解为数组下标了 和下标对齐了（从0起步了，节点0就是dummy这个虚拟的节点）
+   // cur 和  pre的指向始终不变： pre始终指向要反转的子链表的前一个节点 cur始终指向反转的子链表的第一个节点 
+   let pre = dummy, cur = dummy, next = null;
+   // 初始化pre到left的前一个位置
+   for (let i = 0; i < left - 1; i++) {
+       pre = pre.next;
+   }
+   cur = pre.next;
+   // 核心算法
+   for (let i = 0; i < right - left; i++) {
+       // 头插式反转 (核心其实是交换cur 和 next)
+       next = cur.next;
+       cur.next = next.next;
+       next.next = pre.next;
+       pre.next = next;
+       // 不用步进 pre 和 cur 始终指向一个各自的节点 节点不变
+   }
+   // 返回结果
+   return dummy.next;
+};
