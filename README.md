@@ -18,6 +18,7 @@ A record of algorithm practice.
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
+- [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
