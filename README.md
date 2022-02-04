@@ -19,6 +19,9 @@ A record of algorithm practice.
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
 - [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
+### 层序遍历BFS
+#### medium
+- [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
