@@ -19,7 +19,13 @@ A record of algorithm practice.
 ### TODO
 - 23. 合并K个升序链表 ([MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)已有)
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect)
+- [25-K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+  - 边界 基础反转的掌握不够
 
+### 链表反转
+#### easy
+- [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
+- [234-回文链表](Linked-list/easy/234-回文链表/234-isPalindrome.js)
 ### 链表合并
 #### easy 
 - [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
@@ -29,7 +35,6 @@ A record of algorithm practice.
 - [876-链表的中间结点](Linked-list/easy/876-链表的中间结点/876-middleNode.js)
 - [判断环形链][141-环形链表](Linked-list/easy/141-环形链表/141-hasCycle.js)
 - [160-相交链表](Linked-list/easy/160-相交链表/160-getIntersectionNode.js)
-- [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
 #### medium
 - [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
 - [92-反转链表II](Linked-list/medium/92-反转链表II/92-reverseBetween.js)
