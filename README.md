@@ -156,6 +156,8 @@ A record of algorithm practice.
   - top200
   - 名企题库（会员）
 - [结构化刷题清单](https://leetcode-cn.com/circle/article/48kq9d/)
+- [代码随想录-提醒体系也是很好的](https://github.com/youngyangyang04/leetcode-master)
+  - TODO: 最终整理出自己的一份体系化的算法清单
 
 ---
 ## 标签
