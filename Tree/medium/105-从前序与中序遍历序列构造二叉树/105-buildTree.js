@@ -37,7 +37,7 @@
   */
   function _buildTree(preorderStart, preorderEnd, inorderStart, inorderEnd) {
       // base case
-      if (preorderStart > preorderEnd || inorderStart > inorderStart) return null;
+      if (preorderStart > preorderEnd || inorderStart > inorderEnd) return null;
       // 生成当前根节点
       const curVal = preorder[preorderStart];
       const curNode = new TreeNode(curVal, null, null);
