@@ -29,6 +29,7 @@ A record of algorithm practice.
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
 - [105-从前序与中序遍历序列构造二叉树](Tree/medium/105-从前序与中序遍历序列构造二叉树/105-buildTree.js)
+- [106-从中序与后序遍历序列构造二叉树](Tree/medium/106-从中序与后序遍历序列构造二叉树/106-buildTree.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
