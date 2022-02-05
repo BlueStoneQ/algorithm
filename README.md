@@ -24,6 +24,10 @@ A record of algorithm practice.
 ### 层序遍历BFS
 #### medium
 - [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
+
+### 二叉树构建
+#### medium
+- [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
