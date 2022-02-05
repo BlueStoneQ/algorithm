@@ -39,6 +39,7 @@ A record of algorithm practice.
 #### medium 
 - [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js)
 - [1038-把二叉搜索树转换为累加树](Tree/medium/1038-把二叉搜索树转换为累加树/1038-bstToGst.js)
+- [98-验证二叉搜索树](Tree/medium/98-验证二叉搜索树/98-isValidBST.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
