@@ -34,6 +34,8 @@ A record of algorithm practice.
 ### 序列化
 - [652-寻找重复的子树](Tree/medium/652-寻找重复的子树/652-findDuplicateSubtrees.js)
 ### BST 与 中序遍历
+#### easy
+- [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
 #### medium 
 - [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js)
 - [1038-把二叉搜索树转换为累加树](Tree/medium/1038-把二叉搜索树转换为累加树/1038-bstToGst.js)
