@@ -33,6 +33,9 @@ A record of algorithm practice.
 
 ### 序列化
 - [652-寻找重复的子树](Tree/medium/652-寻找重复的子树/652-findDuplicateSubtrees.js)
+### BST 与 中序遍历
+#### medium 
+- [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
