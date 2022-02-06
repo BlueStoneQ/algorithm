@@ -13,6 +13,9 @@ A record of algorithm practice.
 
 # 题型清单
 ## 树
+### TODO
+- [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
+  - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247490891&idx=1&sn=677a7e887fa551e994ba73bcb2538cea&scene=21#wechat_redirect)
 ### 遍历
 #### easy 
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
