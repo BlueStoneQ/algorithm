@@ -41,6 +41,7 @@ A record of algorithm practice.
 #### hard
 - [297-二叉树的序列化与反序列化-后序遍历法](Tree/297-二叉树的序列化与反序列化/297-serialize-DFS-postorder.js)
 - [297-二叉树的序列化与反序列化-前序遍历法](Tree/297-二叉树的序列化与反序列化/297-serialize-DFS-preorder.js)
+- [297-二叉树的序列化与反序列化-层序遍历法](Tree/297-二叉树的序列化与反序列化/297-serialize-BFS.js)
 ### BST 与 中序遍历
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
