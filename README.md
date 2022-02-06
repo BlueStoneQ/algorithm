@@ -36,7 +36,10 @@ A record of algorithm practice.
 - [106-从中序与后序遍历序列构造二叉树](Tree/medium/106-从中序与后序遍历序列构造二叉树/106-buildTree.js)
 
 ### 序列化
+#### medium
 - [652-寻找重复的子树](Tree/medium/652-寻找重复的子树/652-findDuplicateSubtrees.js)
+#### hard
+- [297-二叉树的序列化与反序列化-后序遍历法](Tree/297-二叉树的序列化与反序列化/297-serialize-DFS-postorder.js)
 ### BST 与 中序遍历
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
