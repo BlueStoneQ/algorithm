@@ -165,6 +165,7 @@ A record of algorithm practice.
 ### 矩阵中的动态规划
 #### medium
 - [96-不同的二叉搜索树](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
+- [95-不同的二叉搜索树II](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 
 ---
 
