@@ -6,6 +6,7 @@ A record of algorithm practice.
 - [标签](#标签)
 - [数组](#数组)
 - [链表](#链表)
+- [树](#树)
 
 # 数据结构
 ## Heap
