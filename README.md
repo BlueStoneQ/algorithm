@@ -155,7 +155,7 @@ A record of algorithm practice.
 随机算法是Array中掌握得最不好的 需要找时间专项训练下
 ```
 #### TODO
-- 528. 按权重随机选择（中等）
+- 528-按权重随机选择（中等）
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492884&idx=1&sn=e9583238c67e417df41feaa4ed62871d&scene=21#wechat_redirect)
 - 382
 - 298
