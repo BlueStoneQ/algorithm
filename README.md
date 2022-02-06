@@ -160,6 +160,12 @@ A record of algorithm practice.
 - [×][380-O(1) 时间插入、删除和获取随机元素](Array/medium/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
   - 剩最后2个用例，输入量太大，暂时难以排查，后面再看，思路okay
 
+
+## 动态规划DP
+### 矩阵中的动态规划
+#### medium
+- [96-不同的二叉搜索树](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
+
 ---
 
 ## 题集
