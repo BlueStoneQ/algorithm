@@ -18,6 +18,7 @@ A record of algorithm practice.
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247490891&idx=1&sn=677a7e887fa551e994ba73bcb2538cea&scene=21#wechat_redirect)
 - [代码随想录：这里的习题都刷一下，知识结构较好](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%A7%8D%E7%B1%BB)
+- [leetCode上没有这道题-计算完全二叉树的节点数-高效方法](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485057&idx=1&sn=45a3b89a4efef236cb662d5505d7ce36&scene=21#wechat_redirect)
 ### 遍历
 #### easy 
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
@@ -200,6 +201,7 @@ A record of algorithm practice.
 - [结构化刷题清单](https://leetcode-cn.com/circle/article/48kq9d/)
 - [代码随想录-题型体系也是很好的](https://github.com/youngyangyang04/leetcode-master)
   - TODO: 最终整理出自己的一份体系化的算法清单
+- [要注意ACM模式-一定要提前练习并熟悉](https://programmercarl.com/%E5%89%8D%E5%BA%8F/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F%EF%BC%8C%E4%BB%80%E4%B9%88%E5%8F%88%E6%98%AFACM%E6%A8%A1%E5%BC%8F%EF%BC%9F.html)
 
 ---
 ## 标签
