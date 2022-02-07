@@ -53,6 +53,8 @@ A record of algorithm practice.
 - [701-二叉搜索树中的插入操作](Tree/medium/701-二叉搜索树中的插入操作/701-insertIntoBST.js)
 - [450-删除二叉搜索树中的节点](Tree/medium/450-删除二叉搜索树中的节点/450-deleteNode.js)
 ### 最近公共祖先
+#### easy
+- [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
 #### medium
 - [236-二叉树的最近公共祖先](Tree/medium/236-二叉树的最近公共祖先/236-lowestCommonAncestor.js)
 ## 链表
