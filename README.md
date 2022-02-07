@@ -21,9 +21,7 @@ A record of algorithm practice.
 - [leetCode上没有这道题-计算完全二叉树的节点数-高效方法](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485057&idx=1&sn=45a3b89a4efef236cb662d5505d7ce36&scene=21#wechat_redirect)
 ### 遍历
 #### easy 
-- [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
-- [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
 - [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
 #### medium
 - [114-二叉树展开为链表](Tree/medium/114-二叉树展开为链表/114-flatten.js)
@@ -34,8 +32,11 @@ A record of algorithm practice.
 - [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
 ### 二叉树的属性
 #### medium
+- [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
+- [111-二叉树的最小深度](Tree/easy/111-二叉树的最小深度/111-minDepth.js)
 - [101-对称二叉树](Tree/easy/101-对称二叉树/101-isSymmetric.js)
   - [101-对称二叉树-迭代法](Tree/easy/101-对称二叉树/101-isSymmetric-iteration.js)
+- [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
 ### 二叉树构建
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
