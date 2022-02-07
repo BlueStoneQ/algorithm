@@ -31,3 +31,38 @@
       // case 3.3 q.val === root.val 和 case3.2一样 调换下p q 位置
   return root;
 };
+
+/** *************************************************** */
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+
+/**
+ * 方法2：迭代法
+ * - 迭代法：就是通过root指针的转移 来进行遍历
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {TreeNode}
+ */
+ var lowestCommonAncestor = function(root, p, q) {
+  // while 开启迭代 break条件：1. 当root为null时（没找到，或者该树为空树）2. 找到了最近公共祖先，循环体内部break
+  while (root) {
+      if (p.val < root.val && q.val < root.val) {
+          // p q 在左子树 去遍历左子树
+          root = root.left;
+      } else if (p.val > root.val && q.val > root.val) {
+          // p q 在右子树 去遍历右子树
+          root = root.right;
+      } else {
+          // p q 分别在 左右子树 或者 其中一个在当前节点 则当前节点root就是最近公共祖先 break
+          break;
+      }
+  }
+  return root;
+};
