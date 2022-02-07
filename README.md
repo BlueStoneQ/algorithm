@@ -32,7 +32,9 @@ A record of algorithm practice.
 ### 层序遍历BFS
 #### medium
 - [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
-
+### 二叉树的属性
+#### medium
+- [101-对称二叉树](Tree/easy/101-对称二叉树/101-isSymmetric.js)
 ### 二叉树构建
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
