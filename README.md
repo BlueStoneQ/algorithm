@@ -38,6 +38,7 @@ A record of algorithm practice.
   - [101-对称二叉树-迭代法](Tree/easy/101-对称二叉树/101-isSymmetric-iteration.js)
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
 - [110-平衡二叉树](Tree/easy/110-平衡二叉树/110-isBalanced.js)
+- [257-二叉树的所有路径](Tree/easy/257-二叉树的所有路径/257-binaryTreePaths.js)
 #### medium
 - [222-完全二叉树的节点个数](Tree/medium/222-完全二叉树的节点个数/222-countNodes.js)
   - [222-利用满二叉树性质优化版](Tree/medium/222-完全二叉树的节点个数/222-countNodes-optimize.js)
