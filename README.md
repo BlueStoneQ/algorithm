@@ -31,12 +31,14 @@ A record of algorithm practice.
 #### medium
 - [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
 ### 二叉树的属性
-#### medium
+#### easy
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
 - [111-二叉树的最小深度](Tree/easy/111-二叉树的最小深度/111-minDepth.js)
 - [101-对称二叉树](Tree/easy/101-对称二叉树/101-isSymmetric.js)
   - [101-对称二叉树-迭代法](Tree/easy/101-对称二叉树/101-isSymmetric-iteration.js)
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
+#### medium
+- [222-完全二叉树的节点个数](Tree/medium/222-完全二叉树的节点个数/222-countNodes.js)
 ### 二叉树构建
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
