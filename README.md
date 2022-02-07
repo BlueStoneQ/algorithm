@@ -39,6 +39,7 @@ A record of algorithm practice.
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
 - [110-平衡二叉树](Tree/easy/110-平衡二叉树/110-isBalanced.js)
 - [257-二叉树的所有路径](Tree/easy/257-二叉树的所有路径/257-binaryTreePaths.js)
+  - [257-DFS方法](Tree/easy/257-二叉树的所有路径/257-binaryTreePaths-DFS.js)
 #### medium
 - [222-完全二叉树的节点个数](Tree/medium/222-完全二叉树的节点个数/222-countNodes.js)
   - [222-利用满二叉树性质优化版](Tree/medium/222-完全二叉树的节点个数/222-countNodes-optimize.js)
