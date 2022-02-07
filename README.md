@@ -17,6 +17,7 @@ A record of algorithm practice.
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247490891&idx=1&sn=677a7e887fa551e994ba73bcb2538cea&scene=21#wechat_redirect)
+- [代码随想录：这里的习题都刷一下，知识结构较好](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/236-er-cha-shu-de-zui-jin-gong-gong-zu-x-tl5b/)
 ### 遍历
 #### easy 
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
@@ -51,6 +52,9 @@ A record of algorithm practice.
 - [98-验证二叉搜索树](Tree/medium/98-验证二叉搜索树/98-isValidBST.js)
 - [701-二叉搜索树中的插入操作](Tree/medium/701-二叉搜索树中的插入操作/701-insertIntoBST.js)
 - [450-删除二叉搜索树中的节点](Tree/medium/450-删除二叉搜索树中的节点/450-deleteNode.js)
+### 最近公共祖先
+#### medium
+- [236-二叉树的最近公共祖先](Tree/medium/236-二叉树的最近公共祖先/236-lowestCommonAncestor.js)
 ## 链表
 ```
 注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
