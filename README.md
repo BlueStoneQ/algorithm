@@ -27,6 +27,7 @@ A record of algorithm practice.
 - [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
 #### medium
 - [114-二叉树展开为链表](Tree/medium/114-二叉树展开为链表/114-flatten.js)
+- [多叉树遍历][341-扁平化嵌套列表迭代器](Tree/medium/341-扁平化嵌套列表迭代器/341-NestedIterator.js)
 ### 层序遍历BFS
 #### medium
 - [116-填充每个节点的下一个右侧节点指针](Tree/medium/116-填充每个节点的下一个右侧节点指针/116-connect.js)
