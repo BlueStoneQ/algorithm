@@ -198,6 +198,7 @@ A record of algorithm practice.
 
 ## 题集
 - [labuladong](https://mp.weixin.qq.com/s/ir1Hk06HcT8W_qz0MtyONA)
+  - [labuladong-算法秘籍](https://mp.weixin.qq.com/s/00yRZUaU5c5KV-yTWhoDig)
 - [代码随想录-题型体系也是很好的](https://github.com/youngyangyang04/leetcode-master)
   - TODO: 最终整理出自己的一份体系化的算法清单
 - [codetop](https://codetop.cc/home)
