@@ -18,7 +18,6 @@ A record of algorithm practice.
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247490891&idx=1&sn=677a7e887fa551e994ba73bcb2538cea&scene=21#wechat_redirect)
 - [代码随想录：这里的习题都刷一下，知识结构较好](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%A7%8D%E7%B1%BB)
-- [leetCode上没有这道题-计算完全二叉树的节点数-高效方法](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485057&idx=1&sn=45a3b89a4efef236cb662d5505d7ce36&scene=21#wechat_redirect)
 ### 遍历
 #### easy 
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
