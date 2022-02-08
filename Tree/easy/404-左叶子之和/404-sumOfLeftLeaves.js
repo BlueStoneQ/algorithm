@@ -3,6 +3,7 @@
  * Date: 2022-2-8
  * 代码随想录：https://programmercarl.com/0404.%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.html
  * 类型：二叉树属性
+ * my 题解: https://leetcode-cn.com/problems/sum-of-left-leaves/comments/1369301
  */
 
 
