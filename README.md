@@ -61,9 +61,10 @@ A record of algorithm practice.
 - [297-二叉树的序列化与反序列化-后序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-postorder.js)
 - [297-二叉树的序列化与反序列化-前序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-preorder.js)
 - [297-二叉树的序列化与反序列化-层序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-BFS.js)
-### BST 与 中序遍历
+### 求BST属性（BST与中序遍历）
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
+- [530-二叉搜索树的最小绝对差](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-1.js)
 #### medium 
 - [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js)
 - [1038-把二叉搜索树转换为累加树](Tree/medium/1038-把二叉搜索树转换为累加树/1038-bstToGst.js)
