@@ -45,6 +45,7 @@ A record of algorithm practice.
 - [222-完全二叉树的节点个数](Tree/medium/222-完全二叉树的节点个数/222-countNodes.js)
   - [222-利用满二叉树性质优化版](Tree/medium/222-完全二叉树的节点个数/222-countNodes-optimize.js)
 - [513-找树左下角的值](Tree/medium/513-找树左下角的值/513-findBottomLeftValue.js)
+- [113-路径总和II](Tree/medium/113-路径总和II/113-pathSum.js)
 ### 二叉树构建
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
