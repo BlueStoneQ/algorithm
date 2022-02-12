@@ -21,7 +21,6 @@ A record of algorithm practice.
 ### 遍历
 #### easy 
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
-- [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
 #### medium
 - [114-二叉树展开为链表](Tree/medium/114-二叉树展开为链表/114-flatten.js)
 - [多叉树遍历][341-扁平化嵌套列表迭代器](Tree/medium/341-扁平化嵌套列表迭代器/341-NestedIterator.js)
@@ -46,7 +45,10 @@ A record of algorithm practice.
   - [222-利用满二叉树性质优化版](Tree/medium/222-完全二叉树的节点个数/222-countNodes-optimize.js)
 - [513-找树左下角的值](Tree/medium/513-找树左下角的值/513-findBottomLeftValue.js)
 - [113-路径总和II](Tree/medium/113-路径总和II/113-pathSum.js)
-### 二叉树构建
+### 二叉树的修改与构造
+#### easy
+- [617-合并二叉树](Tree/easy/617-合并二叉树/617-mergeTrees.js)
+- [226-翻转二叉树](Tree/easy/226-翻转二叉树/226-invertTree.js)
 #### medium
 - [654-最大二叉树](Tree/medium/654-最大二叉树/654-constructMaximumBinaryTree.js)
 - [105-从前序与中序遍历序列构造二叉树](Tree/medium/105-从前序与中序遍历序列构造二叉树/105-buildTree.js)
