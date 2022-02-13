@@ -67,6 +67,8 @@ A record of algorithm practice.
 - 530-二叉搜索树的最小绝对差
   - [方法2](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-1.js)
   - [方法1](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-2.js)
+- 501-二叉搜索树中的众数
+  - [方法1-二叉树通用递归方法](Tree/easy/501-二叉搜索树中的众数/501-findMode.js)
 #### medium 
 - [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js) 
 - [1038-把二叉搜索树转换为累加树](Tree/medium/1038-把二叉搜索树转换为累加树/1038-bstToGst.js)
