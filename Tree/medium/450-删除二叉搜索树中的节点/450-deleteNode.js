@@ -71,6 +71,7 @@ function _findMinNode(curRoot) {
 
   let _curRoot = curRoot;
 
+  // BST中找当前root下的子树的最小节点 一路沿着left子树递归而下到叶子节点即可 就是最小节点
   while (_curRoot !== null && _curRoot.left !== null) {
       _curRoot = _curRoot.left;
   }

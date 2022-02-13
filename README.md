@@ -61,7 +61,7 @@ A record of algorithm practice.
 - [297-二叉树的序列化与反序列化-后序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-postorder.js)
 - [297-二叉树的序列化与反序列化-前序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-preorder.js)
 - [297-二叉树的序列化与反序列化-层序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-BFS.js)
-### 求BST属性（BST与中序遍历）
+### BST的修改与构造
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
 - 530-二叉搜索树的最小绝对差
@@ -76,6 +76,7 @@ A record of algorithm practice.
 - [98-验证二叉搜索树](Tree/medium/98-验证二叉搜索树/98-isValidBST.js)
 - [701-二叉搜索树中的插入操作](Tree/medium/701-二叉搜索树中的插入操作/701-insertIntoBST.js)
 - [450-删除二叉搜索树中的节点](Tree/medium/450-删除二叉搜索树中的节点/450-deleteNode.js)
+- [669-修剪二叉搜索树](Tree/medium/669-修剪二叉搜索树/669-trimBST.js)
 ### 最近公共祖先
 #### easy
 - [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
