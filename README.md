@@ -70,6 +70,7 @@ A record of algorithm practice.
 - 501-二叉搜索树中的众数
   - [方法1-二叉树通用递归方法](Tree/easy/501-二叉搜索树中的众数/501-findMode.js)
   - [方法2-推荐-无需额外的空间](Tree/easy/501-二叉搜索树中的众数/501-findMode-2.js)
+- [108-将有序数组转换为二叉搜索树](Tree/easy/108-将有序数组转换为二叉搜索树/108-sortedArrayToBST.js)
 #### medium 
 - [230-二叉搜索树中第K小的元素](Tree/medium/230-二叉搜索树中第K小的元素/230-kthSmallest.js) 
 - [1038-把二叉搜索树转换为累加树](Tree/medium/1038-把二叉搜索树转换为累加树/1038-bstToGst.js)
