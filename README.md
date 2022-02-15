@@ -13,6 +13,10 @@ A record of algorithm practice.
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
 # 题型清单
+## 栈和队列
+### easy
+- [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)
+### medium
 ## 树
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
