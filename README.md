@@ -16,6 +16,7 @@ A record of algorithm practice.
 ## 栈和队列
 ### easy
 - [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)
+- [225-用队列实现栈](stack&queue/easy/225-用队列实现栈/225-MyStack.js)
 ### medium
 ## 树
 ### TODO
