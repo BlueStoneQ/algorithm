@@ -18,6 +18,7 @@ A record of algorithm practice.
 - [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)
 - [225-用队列实现栈](stack&queue/easy/225-用队列实现栈/225-MyStack.js)
 - [20-有效的括号](stack&queue/easy/20-有效的括号/20-isValid.js)
+- [1047-删除字符串中的所有相邻重复项](stack&queue/easy/1047-删除字符串中的所有相邻重复项/1047-removeDuplicates.js)
 ### medium
 - [921-使括号有效的最少添加](stack&queue/medium/921-使括号有效的最少添加/921-minAddToMakeValid.js)
 - [1541-平衡括号字符串的最少插入次数](stack&queue/medium/1541-平衡括号字符串的最少插入次数/1541-minInsertions.js)
