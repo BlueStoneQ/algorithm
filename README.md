@@ -20,6 +20,7 @@ A record of algorithm practice.
 - [20-有效的括号](stack&queue/easy/20-有效的括号/20-isValid.js)
 ### medium
 - [921-使括号有效的最少添加](stack&queue/medium/921-使括号有效的最少添加/921-minAddToMakeValid.js)
+- [1541-平衡括号字符串的最少插入次数](stack&queue/medium/1541-平衡括号字符串的最少插入次数/1541-minInsertions.js)
 ## 树
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
