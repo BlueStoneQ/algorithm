@@ -30,7 +30,7 @@
       // 判断为右括号 则取其对应的左括号和栈顶比较 相同时则匹配 栈顶出栈
       if ([')', '}', ']'].includes(curChar)) {
           const left = right2LeftMap.get(curChar);
-          if (left !== stack[stack.length - 1]) return false;
+          if (stack.length === 0 || left !== stack[stack.length - 1]) return false;
           stack.pop();
       }
   }
