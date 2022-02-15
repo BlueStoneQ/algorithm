@@ -19,6 +19,7 @@ A record of algorithm practice.
 - [225-用队列实现栈](stack&queue/easy/225-用队列实现栈/225-MyStack.js)
 - [20-有效的括号](stack&queue/easy/20-有效的括号/20-isValid.js)
 ### medium
+- [921-使括号有效的最少添加](stack&queue/medium/921-使括号有效的最少添加/921-minAddToMakeValid.js)
 ## 树
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
