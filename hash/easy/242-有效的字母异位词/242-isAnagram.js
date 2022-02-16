@@ -4,6 +4,35 @@
  * kaer: https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html#_242-%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D
  */
 
+
+/**
+ * 方法2： 利用数组+ascll构造hash
+ * 这里使用通过字符ascll产生数组下标,生成数组 对比t
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+ var isAnagram = function(s, t) {
+  // defend
+  if (s.length !== t.length) return false;
+  // init data
+  const ascllArr = new Array(26).fill(0); // 下标为ascll-'a'的ascll 
+  const baseAscll = 'a'.charCodeAt();
+  // algo
+  // 1. 利用s构建对应的ascllArr
+  for (const sChar of s) {
+      ascllArr[sChar.charCodeAt() - baseAscll]++;
+  }
+  // 2. 用ascllArr对比t
+  for (const tChar of t) {
+      // 当前t的字符在arr中出现的频率为0或者不存在 则表明s t不相配了
+      if (!ascllArr[tChar.charCodeAt() - baseAscll]) return false;
+      ascllArr[tChar.charCodeAt() - baseAscll]--;
+  }
+  // return 
+  return true;
+};
+
 /**
  * 方法1：使用map
  * @param {string} s
