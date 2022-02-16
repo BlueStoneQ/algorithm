@@ -23,6 +23,8 @@ A record of algorithm practice.
 - [921-使括号有效的最少添加](stack&queue/medium/921-使括号有效的最少添加/921-minAddToMakeValid.js)
 - [1541-平衡括号字符串的最少插入次数](stack&queue/medium/1541-平衡括号字符串的最少插入次数/1541-minInsertions.js)
 - [150-逆波兰表达式求值](stack&queue/medium/150-逆波兰表达式求值/150-evalRPN.js)
+### hard
+- [239-滑动窗口最大值](stack&queue/hard/239-滑动窗口最大值/239-maxSlidingWindow.js)
 ## 树
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
