@@ -14,6 +14,9 @@ A record of algorithm practice.
 
 # 题型清单
 ## 栈和队列
+### TODO
+- [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
+  - [涉及到需要构造一个最小堆-可以放到后面-题解](https://programmercarl.com/0347.%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.html)
 ### easy
 - [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)
 - [225-用队列实现栈](stack&queue/easy/225-用队列实现栈/225-MyStack.js)
