@@ -13,6 +13,9 @@ A record of algorithm practice.
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
 # 题型清单
+## hash
+### easy
+- [242-有效的字母异位词](hash/easy/242-有效的字母异位词/242-isAnagram.js)
 ## 栈和队列
 ### TODO
 - [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
