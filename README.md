@@ -14,8 +14,11 @@ A record of algorithm practice.
 
 # 题型清单
 ## hash
-### easy
+### 异位词
+#### easy
 - [242-有效的字母异位词](hash/easy/242-有效的字母异位词/242-isAnagram.js)
+#### medium
+- [49-字母异位词分组](hash/medium/49-字母异位词分组/49-groupAnagrams.js)
 ## 栈和队列
 ### TODO
 - [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
