@@ -18,6 +18,7 @@ A record of algorithm practice.
 ### 异位词
 #### easy
 - [242-有效的字母异位词](hash/easy/242-有效的字母异位词/242-isAnagram.js)
+- [383-赎金信](hash/easy/383-赎金信/383-canConstruct.js)
 #### medium
 - [49-字母异位词分组](hash/medium/49-字母异位词分组/49-groupAnagrams.js)
 ### 几数之和
