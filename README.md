@@ -5,6 +5,7 @@ A record of algorithm practice.
 - [题集](#题集)
 - [标签](#标签)
 - [数组](#数组)
+- [hash](#hash)
 - [链表](#链表)
 - [树](#树)
 
@@ -22,6 +23,7 @@ A record of algorithm practice.
 ## others
 ### easy
 - [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
+- [202-快乐数](hash/easy/202-快乐数/202-isHappy.js)
 ## 栈和队列
 ### TODO
 - [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
