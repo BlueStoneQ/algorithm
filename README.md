@@ -20,8 +20,11 @@ A record of algorithm practice.
 - [242-有效的字母异位词](hash/easy/242-有效的字母异位词/242-isAnagram.js)
 #### medium
 - [49-字母异位词分组](hash/medium/49-字母异位词分组/49-groupAnagrams.js)
-## others
-### easy
+### 几数之和
+#### medium
+- [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
+### others
+#### easy
 - [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
 - [202-快乐数](hash/easy/202-快乐数/202-isHappy.js)
 ## 栈和队列
