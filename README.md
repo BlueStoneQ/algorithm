@@ -19,6 +19,9 @@ A record of algorithm practice.
 - [242-有效的字母异位词](hash/easy/242-有效的字母异位词/242-isAnagram.js)
 #### medium
 - [49-字母异位词分组](hash/medium/49-字母异位词分组/49-groupAnagrams.js)
+## others
+### easy
+- [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
 ## 栈和队列
 ### TODO
 - [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
@@ -180,6 +183,7 @@ A record of algorithm practice.
 1. 滑动窗口的题的特征： 
   1. 理解滑动窗口的作用：就是动态遍历子串，提供访问时机
   2. 一般是2个串 子串问题，子串也就是要求顺序是和原来母字符串一致，这个时候，遍历所有的子串，需要一个滑动窗口遍历所有情况
+2. 滑动窗口本质上是双指针的一个特例
 ```
 #### medium
 - [567-字符串的排列](Array/medium/567-字符串的排列/567-checkInclusion.js)
