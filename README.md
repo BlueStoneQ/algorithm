@@ -125,7 +125,12 @@ A record of algorithm practice.
 - [25-K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
   - 边界 基础反转的掌握不够
 - 约瑟夫环问题-循环链表
-
+### 链表基本操作
+#### easy
+- [203-移除链表元素](Linked-list/easy/203-移除链表元素/203-removeElements.js)
+#### medium
+- [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
+- [707-设计链表](Linked-list/medium/707-设计链表/707-MyLinkedList.js)
 ### 链表反转
 #### easy
 - [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
@@ -142,11 +147,6 @@ A record of algorithm practice.
 #### medium
 - [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
 - [92-反转链表II](Linked-list/medium/92-反转链表II/92-reverseBetween.js)
-### 链表基本操作
-#### easy
-- [203-移除链表元素](Linked-list/easy/203-移除链表元素/203-removeElements.js)
-#### medium
-- [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
 ## 数组
 ### 前缀和数组
 ```
