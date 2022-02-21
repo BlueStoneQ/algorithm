@@ -25,6 +25,7 @@ A record of algorithm practice.
 #### medium
 - [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
 - [15-三数之和](hash/medium/15-三数之和/15-threeSum.js)
+- [18-四数之和](hash/medium/18-四数之和/18-fourSum.js)
 ### others
 #### easy
 - [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
