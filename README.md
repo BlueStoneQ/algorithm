@@ -16,6 +16,7 @@ A record of algorithm practice.
 - [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
 - [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
 - [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
+- [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
