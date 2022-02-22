@@ -14,6 +14,7 @@ A record of algorithm practice.
 ## 串
 ### easy
 - [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
+- [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
