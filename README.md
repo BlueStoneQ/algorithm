@@ -5,11 +5,15 @@ A record of algorithm practice.
 - [题集](#题集)
 - [标签](#标签)
 - [数组](#数组)
+- [串](#串)
 - [hash](#hash)
 - [链表](#链表)
 - [树](#树)
 
 # 数据结构
+## 串
+### easy
+- [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
