@@ -135,6 +135,8 @@ A record of algorithm practice.
 #### easy
 - [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
 - [234-回文链表](Linked-list/easy/234-回文链表/234-isPalindrome.js)
+#### medium
+- [24-两两交换链表中的节点](Linked-list/medium/24-两两交换链表中的节点/24-swapPairs.js)
 ### 链表合并
 #### easy 
 - [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
