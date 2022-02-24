@@ -12,13 +12,21 @@ A record of algorithm practice.
 
 # 数据结构
 ## 串
-### easy
+### KMP-子串匹配
+#### easy
+- [28-实现strStr(KMP经典题目)](String/easy/28-实现strStr()/28-strStr.js)
+- [459-重复的子字符串](String/easy/459-重复的子字符串/459-repeatedSubstringPattern.js)
+
+### 翻转字符串
+#### easy
 - [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
 - [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
-- [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
 - [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
 - [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer 58-II-reverseLeftWords.js)
-- [28-实现strStr(KMP经典题目)](String/easy/28-实现strStr()/28-strStr.js)
+
+### others
+#### easy
+- [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
