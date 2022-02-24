@@ -258,6 +258,10 @@ A record of algorithm practice.
   - 剩最后2个用例，输入量太大，暂时难以排查，后面再看，思路okay
 
 
+## others
+### LRU
+- 146-LRU缓存
+  - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
