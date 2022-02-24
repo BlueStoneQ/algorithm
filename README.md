@@ -18,6 +18,7 @@ A record of algorithm practice.
 - [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
 - [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
 - [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer 58-II-reverseLeftWords.js)
+- [28-实现strStr(KMP经典题目)](String/easy/28-实现strStr()/28-strStr.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
