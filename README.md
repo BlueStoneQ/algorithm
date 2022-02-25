@@ -262,6 +262,8 @@ A record of algorithm practice.
 ### LRU
 - 146-LRU缓存
   - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
+### LFU
+- [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
