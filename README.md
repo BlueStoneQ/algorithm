@@ -264,6 +264,8 @@ A record of algorithm practice.
   - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
 ### LFU
 - [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
+### 数据结构设计
+- [380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
