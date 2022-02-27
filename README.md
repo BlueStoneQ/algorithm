@@ -272,6 +272,7 @@ A record of algorithm practice.
 
 ### 水塘抽样
 - [382-链表随机节点](others/水塘抽样/382-链表随机节点/382-Solution.js)
+- [398-随机数索引](others/水塘抽样/398-随机数索引/398-Solution.js)
 ### 数据结构设计
 #### 随机数
 - [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
