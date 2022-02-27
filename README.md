@@ -265,8 +265,10 @@ A record of algorithm practice.
 ### LFU
 - [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
 ### 数据结构设计
-- [380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
-- [380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
+#### 随机数
+- [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
+- [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
+- [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
