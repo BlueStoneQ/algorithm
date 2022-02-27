@@ -9,6 +9,11 @@ A record of algorithm practice.
 - [hash](#hash)
 - [链表](#链表)
 - [树](#树)
+- [others](#others)
+  - [LRU](#LRU)
+  - [LFU](#LFU)
+  - [水塘抽样](#水塘抽样)
+  - [随机数](#随机数)
 
 # 数据结构
 ## 串
@@ -24,7 +29,7 @@ A record of algorithm practice.
 - [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
 - [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer 58-II-reverseLeftWords.js)
 
-### others
+### 串-其他
 #### easy
 - [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
 ## Heap
@@ -43,7 +48,7 @@ A record of algorithm practice.
 - [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
 - [15-三数之和](hash/medium/15-三数之和/15-threeSum.js)
 - [18-四数之和](hash/medium/18-四数之和/18-fourSum.js)
-### others
+### 数组-其他
 #### easy
 - [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
 - [202-快乐数](hash/easy/202-快乐数/202-isHappy.js)
@@ -264,6 +269,9 @@ A record of algorithm practice.
   - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
 ### LFU
 - [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
+
+### 水塘抽样
+- [382-链表随机节点](others/水塘抽样/382-链表随机节点/382-Solution.js)
 ### 数据结构设计
 #### 随机数
 - [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)

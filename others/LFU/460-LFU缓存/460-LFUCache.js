@@ -9,6 +9,7 @@
  const addKeyVal = Symbol('addKeyVal');
  
  /**
+  * 3个Map互相配合：key2ValMap key2FreqMap freq2KeyMap
   * @param {number} capacity
   */
  var LFUCache = function(capacity) {
