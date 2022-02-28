@@ -274,10 +274,21 @@ A record of algorithm practice.
 - [382-链表随机节点](others/水塘抽样/382-链表随机节点/382-Solution.js)
 - [398-随机数索引](others/水塘抽样/398-随机数索引/398-Solution.js)
 ### 数据结构设计
+#### TODO
+- [流中位数-需要大小顶堆](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487197&idx=1&sn=0cb587fda164bda7fbcaa54cb9630fde&scene=21#wechat_redirect)
+- [设计推特](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484499&idx=1&sn=64f75d4bdbb4c5777ba199aae804d138&scene=21#wechat_redirect)
+- [前缀树](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247495471&idx=1&sn=fd180d7e207e92a87a9c9cce69b8cdb9&scene=21#wechat_redirect)
+- [单调栈](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487704&idx=1&sn=eb9ac24c644aa0950638c9b20384e982&scene=21#wechat_redirect)
+- [单调队列](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247488087&idx=1&sn=673aa4e8deb942b951948650928c336e&scene=21#wechat_redirect)
+
 #### 随机数
 - [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
 - [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
 - [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
+
+## DFS 回溯
+### medium
+- [46-全排列](DFS/medium/46-全排列/46-permute.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
