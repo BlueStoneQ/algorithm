@@ -14,6 +14,7 @@ A record of algorithm practice.
   - [LFU](#LFU)
   - [水塘抽样](#水塘抽样)
   - [随机数](#随机数)
+- [DFS回溯](#DFS回溯)
 
 # 数据结构
 ## 串
@@ -286,9 +287,15 @@ A record of algorithm practice.
 - [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
 - [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
 
-## DFS 回溯
-### medium
+## DFS回溯
+### 子集
+### 排列
+#### medium
 - [46-全排列](DFS/medium/46-全排列/46-permute.js)
+### 组合
+### 分割
+### 棋盘
+### 其他
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
