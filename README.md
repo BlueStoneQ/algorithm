@@ -295,6 +295,8 @@ A record of algorithm practice.
 ### 组合
 ### 分割
 ### 棋盘
+#### hard
+- [51-N皇后](DFS/hard/51-N皇后/51-solveNQueens.js)
 ### 其他
 ## 动态规划DP
 ### 矩阵中的动态规划
