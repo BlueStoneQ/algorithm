@@ -6,6 +6,7 @@ A record of algorithm practice.
 - [标签](#标签)
 - [数组](#数组)
 - [串](#串)
+- [栈和队列](#栈和队列)
 - [hash](#hash)
 - [链表](#链表)
 - [树](#树)
@@ -296,6 +297,7 @@ A record of algorithm practice.
 #### medium
 - [77-组合](DFS/medium/77-组合/77-combine.js)
 - [216-组合总和III](DFS/medium/216-组合总和III/216-combinationSum3.js)
+- [17-电话号码的字母组合](DFS/medium/17-电话号码的字母组合/17-letterCombinations.js)
 ### 分割
 ### 棋盘
 #### hard
