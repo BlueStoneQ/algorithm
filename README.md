@@ -295,6 +295,7 @@ A record of algorithm practice.
 ### 组合
 #### medium
 - [77-组合](DFS/medium/77-组合/77-combine.js)
+- [216-组合总和III](DFS/medium/216-组合总和III/216-combinationSum3.js)
 ### 分割
 ### 棋盘
 #### hard
