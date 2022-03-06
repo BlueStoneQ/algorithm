@@ -297,6 +297,9 @@ A record of algorithm practice.
 #### medium
 - [46-全排列](DFS/medium/46-全排列/46-permute.js)
 ### 组合
+### 子序列
+#### medium
+- [491-递增子序列](DFS/medium/491-递增子序列/491-findSubsequences.js)
 #### medium
 - [77-组合](DFS/medium/77-组合/77-combine.js)
 - [40-组合总和II](DFS/medium/40-组合总和II/40-combinationSum2.js)
