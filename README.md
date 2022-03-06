@@ -290,6 +290,8 @@ A record of algorithm practice.
 
 ## DFS回溯
 ### 子集
+#### medium
+- [78-子集](DFS/medium/78-子集/78-subsets.js)
 ### 排列
 #### medium
 - [46-全排列](DFS/medium/46-全排列/46-permute.js)
