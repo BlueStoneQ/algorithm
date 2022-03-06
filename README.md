@@ -301,6 +301,7 @@ A record of algorithm practice.
 - [39-组合总和](DFS/medium/39-组合总和/39-combinationSum.js)
 - [17-电话号码的字母组合](DFS/medium/17-电话号码的字母组合/17-letterCombinations.js)
 - [131-分割回文串](DFS/medium/131-分割回文串/131-partition.js)
+- [93-复原IP地址](DFS/medium/93-复原IP地址/93-restoreIpAddresses.js)
 ### 分割
 ### 棋盘
 #### hard
