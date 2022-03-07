@@ -300,9 +300,6 @@ A record of algorithm practice.
 - [46-全排列](DFS/medium/46-全排列/46-permute.js)
 - [47-全排列II](DFS/medium/47-全排列II/47-permuteUnique.js)
 ### 组合
-### 子序列
-#### medium
-- [491-递增子序列](DFS/medium/491-递增子序列/491-findSubsequences.js)
 #### medium
 - [77-组合](DFS/medium/77-组合/77-combine.js)
 - [40-组合总和II](DFS/medium/40-组合总和II/40-combinationSum2.js)
@@ -311,6 +308,10 @@ A record of algorithm practice.
 - [17-电话号码的字母组合](DFS/medium/17-电话号码的字母组合/17-letterCombinations.js)
 - [131-分割回文串](DFS/medium/131-分割回文串/131-partition.js)
 - [93-复原IP地址](DFS/medium/93-复原IP地址/93-restoreIpAddresses.js)
+- [22-括号生成](DFS/medium/22-括号生成/22-generateParenthesis.js)
+### 子序列
+#### medium
+- [491-递增子序列](DFS/medium/491-递增子序列/491-findSubsequences.js)
 ### 分割
 ### 棋盘
 #### hard
