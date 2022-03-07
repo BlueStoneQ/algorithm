@@ -6,39 +6,42 @@
  */
 
 /**
- * DFS 回溯法
+ * DFS-排列去重-树枝去重-采用辅助数据结构-数组优先
  * @param {number[]} nums
  * @return {number[][]}
  */
  var permute = function(nums) {
-  // defend
-  // init data
-  const res = [];
-  const numsLen = nums.length;
-  /**
-  * 辅助递归函数: 遍历一棵多叉树（决策树）
-  */
-  function _permute(path) {
-      // base case: 选择列表为空 此时一个路径已经被穷举到头了
-      if (path.length === numsLen) {
-          res.push(path.slice()); // 由于是引用类型 这里必须拷贝一个path 要不然后面的操作会污染到这里的res中的引用
-          return;
-      }
-      // 递归
-      for (let item of nums) {
-          // 对于已经选择过的进行跳过
-          if (path.includes(item)) continue;
-          // 作选择
-          path.push(item);
-          // 递归到下一层
-          _permute(path);
-          // 撤销选择
-          path.pop();
-      }
-  }
+    // defend
+    // init data
+    const res = [];
+    const numsLen = nums.length;
+    /**
+    * 辅助递归函数: 遍历一棵多叉树（决策树）
+    * @param {array} usedArry 下标是数字，value是标记该值是否使用过，true代表使用过
+    */
+    function _permute(path, usedArray) {
+        // base case: 选择列表为空 此时一个路径已经被穷举到头了
+        if (path.length === numsLen) {
+            res.push(path.slice()); // 由于是引用类型 这里必须拷贝一个path 要不然后面的操作会污染到这里的res中的引用
+            return;
+        }
+        // 递归
+        for (let i = 0; i < nums.length; i++) {
+            // 对于已经选择过的进行跳过
+            if (usedArray[i] === true) continue;
+            // 作选择
+            path.push(nums[i]);
+            usedArray[i] = true;
+            // 递归到下一层
+            _permute(path, usedArray);
+            // 撤销选择
+            path.pop();
+            usedArray[i] = false;
+        }
+    }
 
-  // algo
-  _permute([]);
+    // algo
+    _permute([], []);
 
-  return res;
+    return res;
 };
