@@ -318,6 +318,10 @@ A record of algorithm practice.
 - [51-N皇后](DFS/hard/51-N皇后/51-solveNQueens.js)
 - [37-解数独](DFS/hard/37-解数独/37-solveSudoku.js)
 
+### 岛屿问题
+#### medium
+- [200-岛屿数量](DFS/medium/200-岛屿数量/200-numIslands.js)
+
 ### 其他
 ## 动态规划DP
 ### 矩阵中的动态规划
