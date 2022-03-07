@@ -296,6 +296,7 @@ A record of algorithm practice.
 ### 排列
 #### medium
 - [46-全排列](DFS/medium/46-全排列/46-permute.js)
+- [47-全排列II](DFS/medium/47-全排列II/47-permuteUnique.js)
 ### 组合
 ### 子序列
 #### medium
