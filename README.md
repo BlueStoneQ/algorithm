@@ -88,6 +88,7 @@ A record of algorithm practice.
 #### easy
 - [104-二叉树的最大深度](Tree/easy/104-二叉树的最大深度/104-maxDepth.js)
 - [111-二叉树的最小深度](Tree/easy/111-二叉树的最小深度/111-minDepth.js)
+  - [111-二叉树的最小深度-BFS](Tree/easy/111-二叉树的最小深度/111-minDepth-BFS.js)
 - [101-对称二叉树](Tree/easy/101-对称二叉树/101-isSymmetric.js)
   - [101-对称二叉树-迭代法](Tree/easy/101-对称二叉树/101-isSymmetric-iteration.js)
 - [543-二叉树的直径](Tree/easy/543-二叉树的直径/543-diameterOfBinaryTree.js)
@@ -327,6 +328,8 @@ A record of algorithm practice.
 - [694-不同岛屿的数量](DFS/medium/694-不同岛屿的数量/694-numDistinctIslands.js)
 
 ### 其他
+## BFS
+- [111-二叉树的最小深度-BFS](Tree/easy/111-二叉树的最小深度/111-minDepth-BFS.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
