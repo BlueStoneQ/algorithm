@@ -324,6 +324,7 @@ A record of algorithm practice.
 - [1254-统计封闭岛屿的数目](DFS/medium/1254-统计封闭岛屿的数目/1254-closedIsland.js)
 - [695-岛屿的最大面积](DFS/medium/695-岛屿的最大面积/695-maxAreaOfIsland.js)
 - [1905-统计子岛屿](DFS/medium/1905-统计子岛屿/1905-countSubIslands.js)
+- [694-不同岛屿的数量](DFS/medium/694-不同岛屿的数量/694-numDistinctIslands.js)
 
 ### 其他
 ## 动态规划DP
