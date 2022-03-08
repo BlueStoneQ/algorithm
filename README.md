@@ -323,6 +323,7 @@ A record of algorithm practice.
 - [200-岛屿数量](DFS/medium/200-岛屿数量/200-numIslands.js)
 - [1254-统计封闭岛屿的数目](DFS/medium/1254-统计封闭岛屿的数目/1254-closedIsland.js)
 - [695-岛屿的最大面积](DFS/medium/695-岛屿的最大面积/695-maxAreaOfIsland.js)
+- [1905-统计子岛屿](DFS/medium/1905-统计子岛屿/1905-countSubIslands.js)
 
 ### 其他
 ## 动态规划DP
@@ -357,6 +358,7 @@ labuladong + 代码随想录 + code_top + 剑指offer + 结构化刷题清单
   - 名企题库（会员）
 - [结构化刷题清单](https://leetcode-cn.com/circle/article/48kq9d/)
 - [要注意ACM模式-一定要提前练习并熟悉](https://programmercarl.com/%E5%89%8D%E5%BA%8F/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F%EF%BC%8C%E4%BB%80%E4%B9%88%E5%8F%88%E6%98%AFACM%E6%A8%A1%E5%BC%8F%EF%BC%9F.html)
+- 注意：leet在面试阶段需要准备新账号 以前练习过的会有题解和提交记录 会比较尴尬~~
 
 ---
 ## 标签
