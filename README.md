@@ -344,10 +344,22 @@ A record of algorithm practice.
 - [95-不同的二叉搜索树II](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 
 ## greedy
-### easy
+```
+其实一般而言
+贪心是动规的一个特别情况
+也就是说 贪心一般用来解决和动规同类型的问题
+能用贪心解的 一般都可以用动规
+但是 能用动规的 不一定能用贪心
+```
+### 区间问题
+#### medium
+- [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
+
+### other
+#### easy
 - [455-分发饼干](greedy/easy/455-分发饼干/455-findContentChildren.js)
 - [53-最大子数组和](greedy/easy/53-最大子数组和/53-maxSubArray.js)
-### medium
+#### medium
 - [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
   - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
 - [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
