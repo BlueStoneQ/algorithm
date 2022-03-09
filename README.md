@@ -345,9 +345,9 @@ A record of algorithm practice.
 
 ## greedy
 ### easy
-
-### medium
 - [455-分发饼干](greedy/easy/455-分发饼干/455-findContentChildren.js)
+### medium
+- [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
 
 ---
 
