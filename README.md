@@ -15,8 +15,9 @@ A record of algorithm practice.
   - [LFU](#LFU)
   - [水塘抽样](#水塘抽样)
   - [随机数](#随机数)
-- [DFS回溯](#DFS回溯)
 - [BFS](#BFS)
+- [DFS回溯](#DFS回溯)
+- [DP动态规划](#DP动态规划)
 - [greedy](#greedy)
 
 # 数据结构
@@ -363,6 +364,23 @@ A record of algorithm practice.
 - [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
   - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
 - [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
+
+## DP动态规划
+### 基础题目
+#### easy
+- [509-斐波那契数](DP/基础题目/easy/509-斐波那契数/509-fib.js)
+### 背包
+#### 背包
+#### 完全背包
+#### 多重背包
+### 打家劫舍
+### 股票问题
+### 子序列问题
+#### 不连续子序列
+#### 连续子序列
+#### 编辑距离
+#### 回文
+### 用动态规划玩游戏
 
 ---
 
