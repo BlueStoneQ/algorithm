@@ -333,6 +333,8 @@ A record of algorithm practice.
 - [111-二叉树的最小深度-BFS](Tree/easy/111-二叉树的最小深度/111-minDepth-BFS.js)
 ### medium
 - [752-打开转盘锁](BFS/medium/752-打开转盘锁/752-openLock.js)
+### hard
+- [773-滑动谜题](BFS/hard/773-滑动谜题/773-slidingPuzzle.js)
 ## 动态规划DP
 ### 矩阵中的动态规划
 #### medium
