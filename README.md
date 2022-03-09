@@ -369,6 +369,7 @@ A record of algorithm practice.
 ### 基础题目
 #### easy
 - [509-斐波那契数](DP/基础题目/easy/509-斐波那契数/509-fib.js)
+- [70-爬楼梯](DP/基础题目/easy/70-爬楼梯/70-climbStairs.js)
 ### 背包
 #### 背包
 #### 完全背包
