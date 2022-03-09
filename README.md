@@ -16,6 +16,8 @@ A record of algorithm practice.
   - [水塘抽样](#水塘抽样)
   - [随机数](#随机数)
 - [DFS回溯](#DFS回溯)
+- [BFS](#BFS)
+- [greedy](#greedy)
 
 # 数据结构
 ## 串
@@ -340,6 +342,12 @@ A record of algorithm practice.
 #### medium
 - [96-不同的二叉搜索树](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
 - [95-不同的二叉搜索树II](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
+
+## greedy
+### easy
+
+### medium
+- [455-分发饼干](greedy/easy/455-分发饼干/455-findContentChildren.js)
 
 ---
 
