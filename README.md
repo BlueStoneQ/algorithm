@@ -373,6 +373,7 @@ A record of algorithm practice.
 - [746-使用最小花费爬楼梯](DP/基础题目/easy/746-使用最小花费爬楼梯/746-minCostClimbingStairs.js)
 #### medium
 - [62-不同路径](DP/基础题目/medium/62-不同路径/62-uniquePaths.js)
+- [63-不同路径II](DP/基础题目/medium/63-不同路径II/63-uniquePathsWithObstacles.js)
 ### 背包
 #### 背包
 #### 完全背包
