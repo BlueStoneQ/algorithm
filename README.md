@@ -338,11 +338,6 @@ A record of algorithm practice.
 - [752-打开转盘锁](BFS/medium/752-打开转盘锁/752-openLock.js)
 ### hard
 - [773-滑动谜题](BFS/hard/773-滑动谜题/773-slidingPuzzle.js)
-## 动态规划DP
-### 矩阵中的动态规划
-#### medium
-- [96-不同的二叉搜索树](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
-- [95-不同的二叉搜索树II](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 
 ## greedy
 ```
@@ -375,6 +370,12 @@ A record of algorithm practice.
 - [62-不同路径](DP/基础题目/medium/62-不同路径/62-uniquePaths.js)
 - [63-不同路径II](DP/基础题目/medium/63-不同路径II/63-uniquePathsWithObstacles.js)
 - [343-整数拆分](DP/基础题目/medium/343-整数拆分/343-integerBreak.js)
+#### medium
+- [96-不同的二叉搜索树]
+  - [递归法+备忘录](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees.js)
+  - [DP法](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
+- [95-不同的二叉搜索树II]
+  - [递归法+备忘录](DP/基础题目/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 ### 背包
 #### 背包
 #### 完全背包
