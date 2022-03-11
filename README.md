@@ -374,6 +374,7 @@ A record of algorithm practice.
 #### medium
 - [62-不同路径](DP/基础题目/medium/62-不同路径/62-uniquePaths.js)
 - [63-不同路径II](DP/基础题目/medium/63-不同路径II/63-uniquePathsWithObstacles.js)
+- [343-整数拆分](DP/基础题目/medium/343-整数拆分/343-integerBreak.js)
 ### 背包
 #### 背包
 #### 完全背包
