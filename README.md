@@ -138,6 +138,12 @@ A record of algorithm practice.
 - [701-二叉搜索树中的插入操作](Tree/medium/701-二叉搜索树中的插入操作/701-insertIntoBST.js)
 - [450-删除二叉搜索树中的节点](Tree/medium/450-删除二叉搜索树中的节点/450-deleteNode.js)
 - [669-修剪二叉搜索树](Tree/medium/669-修剪二叉搜索树/669-trimBST.js)
+### BST
+- [96-不同的二叉搜索树]
+  - [递归法+备忘录](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees.js)
+  - [DP法](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
+- [95-不同的二叉搜索树II]
+  - [递归法+备忘录](DP/基础题目/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 ### 最近公共祖先
 #### easy
 - [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
@@ -370,12 +376,6 @@ A record of algorithm practice.
 - [62-不同路径](DP/基础题目/medium/62-不同路径/62-uniquePaths.js)
 - [63-不同路径II](DP/基础题目/medium/63-不同路径II/63-uniquePathsWithObstacles.js)
 - [343-整数拆分](DP/基础题目/medium/343-整数拆分/343-integerBreak.js)
-#### medium
-- [96-不同的二叉搜索树]
-  - [递归法+备忘录](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees.js)
-  - [DP法](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
-- [95-不同的二叉搜索树II]
-  - [递归法+备忘录](DP/基础题目/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 ### 背包
 #### 背包
 #### 完全背包
