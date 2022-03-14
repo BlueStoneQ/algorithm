@@ -377,7 +377,9 @@ A record of algorithm practice.
 - [63-不同路径II](DP/基础题目/medium/63-不同路径II/63-uniquePathsWithObstacles.js)
 - [343-整数拆分](DP/基础题目/medium/343-整数拆分/343-integerBreak.js)
 ### 背包
-#### 背包
+#### 01背包
+- 416-分割等和子集
+  - [416-分割等和子集-二维dp数组法](DP/背包/01背包/416-分割等和子集/416-canPartition-二维dp数组.js)
 #### 完全背包
 #### 多重背包
 ### 打家劫舍
