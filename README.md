@@ -385,6 +385,7 @@ A record of algorithm practice.
 - 494-目标和
   - [DFS回溯](DP/背包/01背包/494-目标和/494-findTargetSumWays-DFS.js)
   - [DP-转换为01背包-用背包模型解决组合问题](DP/背包/01背包/494-目标和/494-findTargetSumWays-DP.js)
+- [474-一和零](DP/背包/01背包/474-一和零/474-findMaxForm.js)
 #### 完全背包
 #### 多重背包
 ### 打家劫舍
