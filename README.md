@@ -382,6 +382,9 @@ A record of algorithm practice.
   - （帮助过渡理解）[416-分割等和子集-二维dp数组法](DP/背包/01背包/416-分割等和子集/416-canPartition-二维dp数组.js)
   - （主推的01背包阶梯方法）[416-分割等和子集-一维dp数组法](DP/背包/01背包/416-分割等和子集/416-canPartition-一维dp数组.js)
 - [1049-最后一块石头的重量II](DP/背包/01背包/1049-最后一块石头的重量II/1049-lastStoneWeightII.js)
+- 494-目标和
+  - [DFS回溯](DP/背包/01背包/494-目标和/494-findTargetSumWays-DFS.js)
+  - [DP-转换为01背包-用背包模型解决组合问题](DP/背包/01背包/494-目标和/494-findTargetSumWays-DP.js)
 #### 完全背包
 #### 多重背包
 ### 打家劫舍

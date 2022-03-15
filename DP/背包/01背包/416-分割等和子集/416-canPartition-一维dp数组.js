@@ -52,12 +52,7 @@ var canPartition = function(nums) {
   // algo
   for (let i = 0; i < numsLen; i++) {
       // 注意 内循环需要倒序 这里的原由能够理解并描述清楚
-      for (let j = target; j >= 0; j--) {
-          // 当前容量j放不下nums[i] 则不放入nums[i] dp值保持上面的不变（未放入i）
-          if (j < nums[i]) {
-              dp[j] = dp[j];
-              continue;
-          }
+      for (let j = target; j >= nums[i]; j--) {
           // 当前容量可以放下nums[i] 则 取 不放入nums[i] 和 放入nums[i]的最大值
           dp[j] = Math.max(dp[j], dp[j - nums[i]] + nums[i]);
       }

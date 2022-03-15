@@ -42,13 +42,8 @@ var lastStoneWeightII = function(stones) {
 
   // algo
   for (let i = 0; i < stonesLen; i++) { // 遍历物品
-      for (let j = target; j >= 0; j--) { // 倒序遍历背包容量, j = 0 必然为0（参考dp含义）直接从1开始遍历
+      for (let j = target; j >= stones[i]; j--) { // 倒序遍历背包容量, j = 0 必然为0（参考dp含义）直接从1开始遍历
           // 一维dp数组的本质 就是在遍历中不断更新覆盖这个数组
-          // 当前背包容量不足以放下物品i
-          if (j < stones[i]) {
-              dp[j]= dp[j];
-              continue;
-          }
           // 当前背包容量足以放下物品i 取不放i 和 放入i 2种情况中的最大值 更新到dp[j]中
           dp[j] = Math.max(dp[j], dp[j - stones[i]] + stones[i]);
       }
