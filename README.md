@@ -389,6 +389,7 @@ A record of algorithm practice.
 #### 完全背包
 - [518-零钱兑换II](DP/背包/完全背包/518-零钱兑换II/518-change.js)
 - [377-组合总和Ⅳ](DP/背包/完全背包/377-组合总和Ⅳ/377-combinationSum4.js)
+- [70-爬楼梯-完全背包模板解决](DP/基础题目/easy/70-爬楼梯/70-climbStairs-完全背包模板解决.js)
 #### 多重背包
 ### 打家劫舍
 ### 股票问题
