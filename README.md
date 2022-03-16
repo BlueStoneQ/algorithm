@@ -388,6 +388,7 @@ A record of algorithm practice.
 - [474-一和零](DP/背包/01背包/474-一和零/474-findMaxForm.js)
 #### 完全背包
 - [518-零钱兑换II](DP/背包/完全背包/518-零钱兑换II/518-change.js)
+- [377-组合总和Ⅳ](DP/背包/完全背包/377-组合总和Ⅳ/377-combinationSum4.js)
 #### 多重背包
 ### 打家劫舍
 ### 股票问题
