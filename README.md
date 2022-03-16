@@ -392,6 +392,7 @@ A record of algorithm practice.
 - [70-爬楼梯-完全背包模板解决](DP/基础题目/easy/70-爬楼梯/70-climbStairs-完全背包模板解决.js)
 - [322-零钱兑换](DP/背包/完全背包/322-零钱兑换/322-coinChange.js)
 - [279-完全平方数](DP/背包/完全背包/279-完全平方数/279-numSquares.js)
+- [139-单词拆分](DP/背包/完全背包/139-单词拆分/139-wordBreak.js)
 #### 多重背包
 ### 打家劫舍
 ### 股票问题
