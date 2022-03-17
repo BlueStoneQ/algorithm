@@ -39,7 +39,7 @@ dp[0][1] = 0 // 第一天不持有 就什么都不做
   // defend
   // init data
   const pricesLen = prices.length;
-  const dp = new Array(pricesLen).fill(0).map(() => [0, 0])
+  const dp = new Array(2).fill(0).map(() => [0, 0]);
   dp[0][0] = -prices[0];
   dp[0][1] = 0;
 
