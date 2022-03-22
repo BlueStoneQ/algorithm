@@ -421,6 +421,7 @@ A record of algorithm practice.
 - [53-最大子数组和](DP/子序列问题/连续子序列/53-最大子数组和/53-maxSubArray.js)
 #### 编辑距离
 - [392-判断子序列](DP/子序列问题/编辑距离/392-判断子序列/392-isSubsequence.js)
+- [115-不同的子序列](DP/子序列问题/编辑距离/115-不同的子序列/115-numDistinct.js)
 #### 回文
 ### 用动态规划玩游戏
 
