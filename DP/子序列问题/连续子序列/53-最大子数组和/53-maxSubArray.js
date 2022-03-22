@@ -1,0 +1,52 @@
+/**
+ * leet: https://leetcode-cn.com/problems/maximum-subarray/
+ * 2022-3-22
+ * kaer: https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%89.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC
+ */
+
+/**
+
+* 方法1: dp
+
+ DP五部曲：
+ 1. 定义dp数组
+dp[i]: 以dp[i]为结尾的子数组的最大和为dp[i]
+ 2. 状态转移方程
+dp[i]只有两个方向可以推出来：
+dp[i - 1] + nums[i]，即：nums[i]加入当前连续子序列和
+nums[i]，即：从头开始计算当前连续子序列和
+一定是取最大的，所以dp[i] = max(dp[i - 1] + nums[i], nums[i]);
+ 3. 初始化dp数组
+ - base case:
+    - dp[0] = nums[0] // 最大和 不一定是正整数 只要是最大即可
+ 4. 遍历方向
+ 小 -> 大
+ 5. 举例推导dp
+
+ 复杂度：
+
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var maxSubArray = function(nums) {
+  // defend
+  const numsLen = nums.length;
+
+  if (numsLen === 0) return 0;
+
+  // init data
+  
+  const dp = new Array(numsLen).fill(0);
+  dp[0] = nums[0]; // 最大和 不一定是正整数 只要是最大即可
+
+  let maxLen = dp[0];
+  // algo
+  for (let i = 1; i < numsLen; i++) {
+      dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+      // 更新下最长子数组长度
+      if (dp[i] > maxLen) maxLen = dp[i];
+  }
+
+  // return 
+  return maxLen;
+};
