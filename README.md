@@ -414,6 +414,7 @@ A record of algorithm practice.
 #### 不连续子序列
 - [300-最长递增子序列](DP/子序列问题/编辑距离/300-最长递增子序列/300-lengthOfLIS.js)
 - [1143-最长公共子序列](DP/子序列问题/不连续子序列/1143-最长公共子序列/1143-longestCommonSubsequence.js)
+- [1035-不相交的线](DP/子序列问题/不连续子序列/1035-不相交的线/1035-maxUncrossedLines.js)
 #### 连续子序列
 - [674-最长连续递增序列](DP/子序列问题/连续子序列/674-最长连续递增序列/674-findLengthOfLCIS.js)
 - [718-最长重复子数组](DP/子序列问题/连续子序列/718-最长重复子数组/718-findLength.js)
