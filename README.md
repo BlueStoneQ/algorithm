@@ -426,6 +426,7 @@ A record of algorithm practice.
 - [72-编辑距离](DP/子序列问题/编辑距离/72-编辑距离/72-minDistance.js)
 #### 回文
 - [647-回文子串](DP/子序列问题/回文/647-回文子串/647-countSubstrings.js)
+- [516-最长回文子序列](DP/子序列问题/回文/516-最长回文子序列/516-longestPalindromeSubseq.js)
 ### 用动态规划玩游戏
 
 ---
