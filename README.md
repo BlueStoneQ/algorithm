@@ -425,6 +425,7 @@ A record of algorithm practice.
 - [583-两个字符串的删除操作](DP/子序列问题/编辑距离/583-两个字符串的删除操作/583-minDistance.js)
 - [72-编辑距离](DP/子序列问题/编辑距离/72-编辑距离/72-minDistance.js)
 #### 回文
+- [647-回文子串](DP/子序列问题/回文/647-回文子串/647-countSubstrings.js)
 ### 用动态规划玩游戏
 
 ---

@@ -21,13 +21,17 @@ dp[i][j]: 使得word1[i - 1]和word2[j - 1]相同的最小步数
 2. 状态转移公式
     case1: word1[i - 1] === word2[j - 1]
         - 编辑动作：跳过word1[i - 1],也就是用word1[i - 1]匹配，相等的时候，也就是说不需要编辑操作，继承之前2个子串的dp值即可
+            - me: 当前元素不需要编辑，直接将剩下的 word1[0, i - 2]编辑成 word2[0, j - 2]
             - dp[i][j] = dp[i - 1][j - 1]
     case2: word1[i - 1] !== word2[j - 1]
         - case2.1 删除word1[i - 1]
+            - me: 也就是先删除当前元素word1[i - 1], 然后将i-2结尾的word1 通过编辑（删除）操作变成 j-1结尾的word2
             - 最少操作次数：dp[i - 1][j] + 1
         - case2.2 删除word2[i - 1]
+            - me: 同上，先删除当前元素word2[j - 1], 然后将j-2结尾的word2 通过编辑（删除）操作变成 i-1结尾的word1
             - 最少操作次数 dp[i][j - 1] + 1
         - case2.3 同时删除word[i - 1]和 word2[j - 1]
+            - me: 这里是先同时编辑（删除）了 word1 和 word2的当前元素，然后将word1[0, i - 2] 通过编辑成 word2[0, j - 2]
             - 最少操作次数 dp[i - 1][j - 1] + 2
     - 则：dp[i][j] = min([case2.1], [case2.2], [case2.3])
                   = min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + 2)
