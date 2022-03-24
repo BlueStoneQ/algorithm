@@ -369,6 +369,7 @@ A record of algorithm practice.
 - [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
 - 134-加油站
   - [方法1: 暴力](greedy/medium/134-加油站/134-canCompleteCircuit-force.js)
+  - [方法2：贪心](greedy/medium/134-加油站/134-canCompleteCircuit-greedy.js)
 
 ## DP动态规划
 ### 基础题目
