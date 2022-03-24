@@ -356,6 +356,7 @@ A record of algorithm practice.
 ### 区间问题
 #### medium
 - [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
+- [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
 
 ### other
 #### easy
