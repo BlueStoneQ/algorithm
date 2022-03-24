@@ -357,6 +357,8 @@ A record of algorithm practice.
 #### medium
 - [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
 - [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
+### 2个维度权衡问题
+- [135-分发糖果](greedy/hard/135-分发糖果/135-candy.js)
 
 ### other
 #### easy
