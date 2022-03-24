@@ -358,7 +358,13 @@ A record of algorithm practice.
 - [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
 - [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
 ### 2个维度权衡问题
+```
+遇到两个维度权衡的时候，一定要先确定一个维度，再确定另一个维度。如果两个维度一起考虑一定会顾此失彼。
+一般2个维度：也采用两次循环 一个循环确定给一个维度
+2个维度的特征：一般就是二维数组之类的，有2个特征值
+```
 - [135-分发糖果](greedy/hard/135-分发糖果/135-candy.js)
+- [406-根据身高重建队列](greedy/medium/406-根据身高重建队列/406-reconstructQueue.js)
 
 ### other
 #### easy
