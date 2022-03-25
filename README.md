@@ -354,6 +354,7 @@ A record of algorithm practice.
 但是 能用动规的 不一定能用贪心
 ```
 ### 区间问题
+- [452-用最少数量的箭引爆气球](greedy/medium/452-用最少数量的箭引爆气球/452-findMinArrowShots.js)
 #### medium
 - [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
 - [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
