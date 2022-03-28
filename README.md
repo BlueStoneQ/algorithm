@@ -357,6 +357,7 @@ A record of algorithm practice.
 - [452-用最少数量的箭引爆气球](greedy/medium/452-用最少数量的箭引爆气球/452-findMinArrowShots.js)
 - [435-无重叠区间](greedy/medium/435-无重叠区间/435-eraseOverlapIntervals.js)
 - [763-划分字母区间](greedy/medium/763-划分字母区间/763-partitionLabels.js)
+- [56-合并区间](greedy/medium/56-合并区间/56-merge.js)
 #### medium
 - [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
 - [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
