@@ -369,6 +369,11 @@ A record of algorithm practice.
 ```
 - [135-分发糖果](greedy/hard/135-分发糖果/135-candy.js)
 - [406-根据身高重建队列](greedy/medium/406-根据身高重建队列/406-reconstructQueue.js)
+### 序列问题
+- [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
+  - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
+- 738-单调递增的数字
+  - [暴力法-会超时-训练下编程模拟能力](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-force.js)
 
 ### other
 #### easy
@@ -377,8 +382,6 @@ A record of algorithm practice.
 - [1005-K次取反后最大化的数组和](greedy/easy/1005-K次取反后最大化的数组和/1005-largestSumAfterKNegations.js)
 - [860-柠檬水找零](greedy/easy/860-柠檬水找零/860-lemonadeChange.js)
 #### medium
-- [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
-  - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
 - [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
 - 134-加油站
   - [方法1: 暴力](greedy/medium/134-加油站/134-canCompleteCircuit-force.js)
