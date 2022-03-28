@@ -373,6 +373,7 @@ A record of algorithm practice.
 - [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
   - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
 - 738-单调递增的数字
+  - [贪心](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-greedy.js)
   - [暴力法-会超时-训练下编程模拟能力](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-force.js)
 
 ### other
