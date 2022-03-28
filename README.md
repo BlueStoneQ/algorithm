@@ -387,6 +387,8 @@ A record of algorithm practice.
 - 134-加油站
   - [方法1: 暴力](greedy/medium/134-加油站/134-canCompleteCircuit-force.js)
   - [方法2：贪心](greedy/medium/134-加油站/134-canCompleteCircuit-greedy.js)
+#### hard
+- [968-监控二叉树](greedy/hard/968-监控二叉树/968-minCameraCover.js)
 
 ## DP动态规划
 ### 基础题目
