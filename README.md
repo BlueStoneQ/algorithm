@@ -19,6 +19,7 @@ A record of algorithm practice.
 - [DFS回溯](#DFS回溯)
 - [DP动态规划](#DP动态规划)
 - [greedy](#greedy)
+- [单调栈](#单调栈)
 
 # 数据结构
 ## 串
@@ -354,13 +355,12 @@ A record of algorithm practice.
 但是 能用动规的 不一定能用贪心
 ```
 ### 区间问题
+- [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
+- [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
 - [452-用最少数量的箭引爆气球](greedy/medium/452-用最少数量的箭引爆气球/452-findMinArrowShots.js)
 - [435-无重叠区间](greedy/medium/435-无重叠区间/435-eraseOverlapIntervals.js)
 - [763-划分字母区间](greedy/medium/763-划分字母区间/763-partitionLabels.js)
 - [56-合并区间](greedy/medium/56-合并区间/56-merge.js)
-#### medium
-- [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
-- [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
 ### 2个维度权衡问题
 ```
 遇到两个维度权衡的时候，一定要先确定一个维度，再确定另一个维度。如果两个维度一起考虑一定会顾此失彼。
@@ -453,6 +453,10 @@ A record of algorithm practice.
 - [5-最长回文子串](DP/子序列问题/回文/5-最长回文子串/5-longestPalindrome.js)
 - [516-最长回文子序列](DP/子序列问题/回文/516-最长回文子序列/516-longestPalindromeSubseq.js)
 ### 用动态规划玩游戏
+
+## 单调栈
+### medium
+### hard
 
 ---
 

@@ -6,6 +6,8 @@
  */
 
 /**
+ * * greedy-区间
+ *  - 覆盖范围 超过数组长度
  * 贪心：根据题 只要可以跳跃的最大长度超过了数组的长度 就一定可以调到最后一个位置
  * @param {number[]} nums
  * @return {boolean}
@@ -14,7 +16,7 @@
   // defend
   if (nums.length <= 1) return true;
   // init data
-  let maxCover = 0; // 可以跳跃的最大长度
+  let maxCover = 0; // 可以跳跃的最大长度(其实也是下标值）
   const numsLen = nums.length;
   // algo 注意这里的控制条件 i的上限边界是maxCover （只有在最大的可以跳跃的范围内 才能跳跃，而边界是maxCover 不是 maxCover-1哦 关于边界 可以草纸上画一下即可）
   for (let i = 0; i <= maxCover; i++) {

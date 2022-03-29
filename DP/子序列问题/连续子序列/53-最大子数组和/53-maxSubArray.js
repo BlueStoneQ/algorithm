@@ -39,14 +39,14 @@ nums[i]，即：从头开始计算当前连续子序列和
   const dp = new Array(numsLen).fill(0);
   dp[0] = nums[0]; // 最大和 不一定是正整数 只要是最大即可
 
-  let maxLen = dp[0];
+  let maxSum = dp[0];
   // algo
   for (let i = 1; i < numsLen; i++) {
       dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
-      // 更新下最长子数组长度
-      if (dp[i] > maxLen) maxLen = dp[i];
+      // 更新下最长子数组的元素累加和
+      if (dp[i] > maxSum) maxSum = dp[i];
   }
 
   // return 
-  return maxLen;
+  return maxSum;
 };

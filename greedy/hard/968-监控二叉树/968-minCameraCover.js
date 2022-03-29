@@ -51,7 +51,11 @@
   let cameraCount = 0;
   /**
    * 定义：Tree递归遍历函数, 返回curRoot应该的状态
-   * @return {Number} 状态
+   * @return {Number} curRoot应该的状态
+   * 节点状态：
+        0 - 该节点无覆盖 
+        1 - 该节点有摄像头
+        2 - 该节点有覆盖
    */
   const traverse = function(curRoot) {
       // base case

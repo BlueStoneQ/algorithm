@@ -47,6 +47,6 @@
           // 当前区间和上一个区间重叠 则更新下这个重叠区间群的公共右边界（就是最小右边界）
           intervals[i][1] = Math.min(intervals[i][1], intervals[i - 1][1]);
       }
-      // return
+      // return 需要移除的区间个数 = 区间总数 - 非交叉区间的个数
       return intervalsLen - count;
   };
