@@ -456,6 +456,8 @@ A record of algorithm practice.
 
 ## 单调栈
 ### medium
+- [739-每日温度](单调栈/medium/739-每日温度/739-dailyTemperatures.js)
+- [496-下一个更大元素I](单调栈/medium/496-下一个更大元素I/496-nextGreaterElement.js)
 ### hard
 
 ---
