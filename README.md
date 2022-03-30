@@ -460,6 +460,7 @@ A record of algorithm practice.
 - [496-下一个更大元素I](单调栈/medium/496-下一个更大元素I/496-nextGreaterElement.js)
 - [503-下一个更大元素II](单调栈/medium/503-下一个更大元素II/503-nextGreaterElements.js)
 ### hard
+- [42-接雨水](单调栈/hard/42-接雨水/42-trap-dp.js)
 
 ---
 
