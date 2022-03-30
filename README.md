@@ -463,6 +463,7 @@ A record of algorithm practice.
 - 42-接雨水
   - [方法1-动态规划]((单调栈/hard/42-接雨水/42-trap-dp.js)
   - [方法2-单调栈](单调栈/hard/42-接雨水/42-trap-stack.js)
+  - [方法3-双指针-最优的解法](单调栈/hard/42-接雨水/42-trap-stac-doublePoints.js)
 
 ---
 
