@@ -464,6 +464,8 @@ A record of algorithm practice.
   - [方法1-动态规划]((单调栈/hard/42-接雨水/42-trap-dp.js)
   - [方法2-单调栈](单调栈/hard/42-接雨水/42-trap-stack.js)
   - [方法3-双指针-最优的解法](单调栈/hard/42-接雨水/42-trap-stac-doublePoints.js)
+- 84-柱状图中最大的矩形
+  - [暴力法-会超时](单调栈/hard/84-柱状图中最大的矩形/84-largestRectangleArea-force.js)
 
 ---
 
