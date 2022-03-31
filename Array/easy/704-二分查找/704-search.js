@@ -38,3 +38,42 @@
   // return
   return -1;
 };
+
+
+
+
+/**
+ * 
+ 
+   二分-迭代实现
+
+  最好画下x-y图
+
+  这里采用的区间 [left, right)
+ 
+ @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+ var search = function(nums, target) {
+  // defend
+  // init data
+  const numsLen = nums.length;
+  let left = 0, right = numsLen;
+  // algo
+  while (left < right) {
+      const mid = left + Math.floor((right - left) / 2);
+      if (nums[mid] > target) {
+          // target在左区间 区间需要向左收缩 新区间应该是 [left, mid)
+          right = mid;
+      } else if (nums[mid] < target) {
+          // target在右区间 区间需要向右收缩 新区间应该是 [mid + 1, right)
+          left = mid + 1;
+      } else {
+          // nums[mid] === target
+          return mid;
+      }
+  }
+  // return 
+  return -1;
+};

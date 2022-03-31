@@ -34,7 +34,7 @@ A record of algorithm practice.
 - [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
 - [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
 - [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
-- [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer 58-II-reverseLeftWords.js)
+- [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer58-II-reverseLeftWords.js)
 
 ### 串-其他
 #### easy
@@ -427,8 +427,8 @@ A record of algorithm practice.
 #### 多重背包
 ```md
 将数量摊平后，可以转化为0-1背包问题
-[多重背包问题模型分析](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85.html#%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85)
 ```
+- [多重背包问题模型分析](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85.html#%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85)
 ### 打家劫舍
 - [198-打家劫舍](DP/打家劫舍/198-打家劫舍/198-rob.js)
 - [213-打家劫舍II](DP/打家劫舍/213-打家劫舍II/213-rob.js)
@@ -468,7 +468,7 @@ A record of algorithm practice.
 - [503-下一个更大元素II](单调栈/medium/503-下一个更大元素II/503-nextGreaterElements.js)
 ### hard
 - 42-接雨水
-  - [方法1-动态规划]((单调栈/hard/42-接雨水/42-trap-dp.js)
+  - [方法1-动态规划](单调栈/hard/42-接雨水/42-trap-dp.js)
   - [方法2-单调栈](单调栈/hard/42-接雨水/42-trap-stack.js)
   - [方法3-双指针-最优的解法](单调栈/hard/42-接雨水/42-trap-stac-doublePoints.js)
 - 84-柱状图中最大的矩形
@@ -491,11 +491,13 @@ labuladong + 代码随想录 + code_top + 剑指offer + 结构化刷题清单
   - MS
     - 苏州 - FE
     - FE (17)
+    - freq >= 2
   - BT
     - 杭州 - FE
     - FE（156）
 - 《剑指offer》
 - [leetcode](https://leetcode-cn.com/problemset/all/)
+  - [hot100](https://leetcode-cn.com/problem-list/2cktkvj/)
   - 剑指offer题库（80）
   - top200
   - 名企题库（会员）
