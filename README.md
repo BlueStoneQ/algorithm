@@ -15,6 +15,7 @@ A record of algorithm practice.
   - [LFU](#LFU)
   - [水塘抽样](#水塘抽样)
   - [随机数](#随机数)
+  - [Math](#Math)
 - [BFS](#BFS)
 - [DFS回溯](#DFS回溯)
 - [DP动态规划](#DP动态规划)
@@ -298,6 +299,10 @@ A record of algorithm practice.
 - [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
 - [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
 - [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
+
+### Math
+#### 快速幂算法
+- [50-Pow(x,n)](others/Math/快速幂算法/50-Pow(x,n)/50-myPow-quikMue.js)
 
 ## DFS回溯
 ### TODO
