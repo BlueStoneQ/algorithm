@@ -14,6 +14,13 @@
  * 2. 在排序过程中需要不断申请新空间：leftArr rightArr, 所以对内存消耗会多一些
  * 3. 非原地排序，返回一个新的排序后的数组，原数组顺序不变
  * 4. 资料中的这个方法实现有缺陷,以我手写的为准
+ * 复杂度：
+ * 时间复杂度：O(nlogN) （n = arr.length）
+ * 递归算法复杂度 = 递归层数 * 每层的复杂度 = logN *  n = nLogN;
+ * 
+ * 空间复杂度：快排的空间复杂度是Θ(\lgn)，因为快排的实现是递归调用的， 而且每次函数调用中只使用了常数的空间，因此空间复杂度等于递归深度Θ(\lgn)。
+ * 
+ * 是否稳定: 不稳定，同值的元素有可能相对位置被改变
  */
 const quickSort1 = (arr) => {
   // defend
@@ -47,8 +54,23 @@ const quickSort1 = (arr) => {
 }
 
 /**
- * 实现2val
+ * 实现2：时间考虑，暂未完成
+ * 1. 更推荐，优先掌握
+ * 2. 原地排序，递归时传递index信息
+ * 3. 内存更优异：基于原地交换 而不是 申请新的内存空间
+ * 4. 比上一个方法稍微难懂一些
+ * @param {*} arr 被排序数组引用
+ * @param {*} leftIndex 该数组需要本次排序的左边界
+ * @param {*} rightIndex 该数组需要本次排序的右边界
  */
+const quickSort2 = (arr, leftIndex = 0, rightIndex = arr.length - 1) => {
+    // defend
+    if (!Array.isArray(arr)) {
+      throw new TypeError('quickSort入参必须是Array类型');
+    }
+    // 遍历 产生出左右新边界
+}
+
 
 
 /**

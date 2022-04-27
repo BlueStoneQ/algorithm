@@ -25,6 +25,7 @@ A record of algorithm practice.
 
 ## sort
 - [快速排序](sort/quickSort.js)
+-[归并排序](sort/mergeSort.js)
 ## 串
 ### KMP-子串匹配
 #### easy
