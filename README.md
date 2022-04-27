@@ -4,6 +4,7 @@ A record of algorithm practice.
 # 目录
 - [题集](#题集)
 - [标签](#标签)
+- [sort](#sort)
 - [数组](#数组)
 - [串](#串)
 - [栈和队列](#栈和队列)
@@ -22,7 +23,8 @@ A record of algorithm practice.
 - [greedy](#greedy)
 - [单调栈](#单调栈)
 
-# 数据结构
+## sort
+- [快速排序](sort/quickSort.js)
 ## 串
 ### KMP-子串匹配
 #### easy
