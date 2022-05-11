@@ -1,3 +1,8 @@
+/**
+ * 小顶堆
+ * 2022-2-2
+ * 《学习js数据结构与算法》3版
+ */
 const { defaultCompare, COMPARE_RESULT } = require('../../utils/compareFn');
 const { swapArr } = require('../../utils/swap');
 
