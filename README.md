@@ -30,7 +30,7 @@ A record of algorithm practice.
 - [选择排序](sort/selectSort.js)
 - [冒泡排序](sort/bubbleSort.js)
 
-## Heap
+## data-structor
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
 # 题型清单
