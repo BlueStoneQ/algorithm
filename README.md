@@ -29,22 +29,7 @@ A record of algorithm practice.
 - [插入排序](sort/insertSort.js)
 - [选择排序](sort/selectSort.js)
 - [冒泡排序](sort/bubbleSort.js)
-## 串
-### KMP-子串匹配
-#### easy
-- [28-实现strStr(KMP经典题目)](String/easy/28-实现strStr()/28-strStr.js)
-- [459-重复的子字符串](String/easy/459-重复的子字符串/459-repeatedSubstringPattern.js)
 
-### 翻转字符串
-#### easy
-- [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
-- [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
-- [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
-- [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer58-II-reverseLeftWords.js)
-
-### 串-其他
-#### easy
-- [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
 ## Heap
 - [MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)
 
@@ -150,6 +135,24 @@ A record of algorithm practice.
   - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
 
 
+
+## 串
+### 翻转字符串
+#### easy
+- [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
+- [541-反转字符串II](String/easy/541-反转字符串II/542-reverseStr.js)
+- [151-翻转字符串里的单词](String/easy/151-翻转字符串里的单词/151-reverseWords.js)
+- [剑指Offer58-II-左旋转字符串](String/easy/剑指Offer58-II-左旋转字符串/Offer58-II-reverseLeftWords.js)
+### 子串匹配（KMP）
+#### easy
+- [28-实现strStr(KMP经典题目)](String/easy/28-实现strStr()/28-strStr.js)
+- [459-重复的子字符串](String/easy/459-重复的子字符串/459-repeatedSubstringPattern.js)
+
+
+### 串-其他
+#### easy
+- [剑指Offer05-替换空格](String/easy/剑指Offer05-替换空格/剑指offer05-replaceSpace.js)
+
 ## hash
 ### 异位词
 #### easy
@@ -181,6 +184,44 @@ A record of algorithm practice.
 - [150-逆波兰表达式求值](stack&queue/medium/150-逆波兰表达式求值/150-evalRPN.js)
 ### hard
 - [239-滑动窗口最大值](stack&queue/hard/239-滑动窗口最大值/239-maxSlidingWindow.js)
+
+## 链表
+```
+注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
+```
+### TODO
+- 23. 合并K个升序链表 ([MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)已有)
+  - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect)
+- [25-K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+  - 边界 基础反转的掌握不够
+- 约瑟夫环问题-循环链表
+### 链表基本操作
+#### easy
+- [203-移除链表元素](Linked-list/easy/203-移除链表元素/203-removeElements.js)
+#### medium
+- [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
+- [707-设计链表](Linked-list/medium/707-设计链表/707-MyLinkedList.js)
+### 链表反转
+#### easy
+- [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
+- [234-回文链表](Linked-list/easy/234-回文链表/234-isPalindrome.js)
+#### medium
+- [24-两两交换链表中的节点](Linked-list/medium/24-两两交换链表中的节点/24-swapPairs.js)
+### 链表合并
+#### easy 
+- [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
+### 双指针
+#### easy
+- [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
+- [876-链表的中间结点](Linked-list/easy/876-链表的中间结点/876-middleNode.js)
+- [判断环形链][141-环形链表](Linked-list/easy/141-环形链表/141-hasCycle.js)
+- [160-相交链表](Linked-list/easy/160-相交链表/160-getIntersectionNode.js)
+- [面试题02.07-链表相交](Linked-list/easy/面试题02.07-链表相交/面试题02.07-getIntersectionNode.js)
+#### medium
+- [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
+- [92-反转链表II](Linked-list/medium/92-反转链表II/92-reverseBetween.js)
+
+
 ## 树
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
@@ -258,68 +299,7 @@ A record of algorithm practice.
 - [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
 #### medium
 - [236-二叉树的最近公共祖先](Tree/medium/236-二叉树的最近公共祖先/236-lowestCommonAncestor.js)
-## 链表
-```
-注意：链表中的虚拟头结点 是一个很重要的技巧, 用来防止很多边界错误
-```
-### TODO
-- 23. 合并K个升序链表 ([MinHeap](Data-structure/binary-heap/min-heap/MinHeap.js)已有)
-  - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect)
-- [25-K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
-  - 边界 基础反转的掌握不够
-- 约瑟夫环问题-循环链表
-### 链表基本操作
-#### easy
-- [203-移除链表元素](Linked-list/easy/203-移除链表元素/203-removeElements.js)
-#### medium
-- [19-删除链表的倒数第N个结点](Linked-list/medium/19-删除链表的倒数第N个结点/19-removeNthFromEnd.js)
-- [707-设计链表](Linked-list/medium/707-设计链表/707-MyLinkedList.js)
-### 链表反转
-#### easy
-- [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
-- [234-回文链表](Linked-list/easy/234-回文链表/234-isPalindrome.js)
-#### medium
-- [24-两两交换链表中的节点](Linked-list/medium/24-两两交换链表中的节点/24-swapPairs.js)
-### 链表合并
-#### easy 
-- [21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
-### 双指针
-#### easy
-- [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
-- [876-链表的中间结点](Linked-list/easy/876-链表的中间结点/876-middleNode.js)
-- [判断环形链][141-环形链表](Linked-list/easy/141-环形链表/141-hasCycle.js)
-- [160-相交链表](Linked-list/easy/160-相交链表/160-getIntersectionNode.js)
-- [面试题02.07-链表相交](Linked-list/easy/面试题02.07-链表相交/面试题02.07-getIntersectionNode.js)
-#### medium
-- [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
-- [92-反转链表II](Linked-list/medium/92-反转链表II/92-reverseBetween.js)
 
-## others
-### LRU
-- 146-LRU缓存
-  - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
-### LFU
-- [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
-
-### 水塘抽样
-- [382-链表随机节点](others/水塘抽样/382-链表随机节点/382-Solution.js)
-- [398-随机数索引](others/水塘抽样/398-随机数索引/398-Solution.js)
-### 数据结构设计
-#### TODO
-- [流中位数-需要大小顶堆](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487197&idx=1&sn=0cb587fda164bda7fbcaa54cb9630fde&scene=21#wechat_redirect)
-- [设计推特](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484499&idx=1&sn=64f75d4bdbb4c5777ba199aae804d138&scene=21#wechat_redirect)
-- [前缀树](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247495471&idx=1&sn=fd180d7e207e92a87a9c9cce69b8cdb9&scene=21#wechat_redirect)
-- [单调栈](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487704&idx=1&sn=eb9ac24c644aa0950638c9b20384e982&scene=21#wechat_redirect)
-- [单调队列](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247488087&idx=1&sn=673aa4e8deb942b951948650928c336e&scene=21#wechat_redirect)
-
-#### 随机数
-- [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
-- [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
-- [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
-
-### Math
-#### 快速幂算法
-- [50-Pow(x,n)](others/Math/快速幂算法/50-Pow(x,n)/50-myPow-quikMue.js)
 
 ## DFS回溯
 ### TODO
@@ -368,49 +348,6 @@ A record of algorithm practice.
 ### hard
 - [773-滑动谜题](BFS/hard/773-滑动谜题/773-slidingPuzzle.js)
 
-## greedy
-```
-其实一般而言
-贪心是动规的一个特别情况
-也就是说 贪心一般用来解决和动规同类型的问题
-能用贪心解的 一般都可以用动规
-但是 能用动规的 不一定能用贪心
-```
-### 区间问题
-- [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
-- [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
-- [452-用最少数量的箭引爆气球](greedy/medium/452-用最少数量的箭引爆气球/452-findMinArrowShots.js)
-- [435-无重叠区间](greedy/medium/435-无重叠区间/435-eraseOverlapIntervals.js)
-- [763-划分字母区间](greedy/medium/763-划分字母区间/763-partitionLabels.js)
-- [56-合并区间](greedy/medium/56-合并区间/56-merge.js)
-### 2个维度权衡问题
-```
-遇到两个维度权衡的时候，一定要先确定一个维度，再确定另一个维度。如果两个维度一起考虑一定会顾此失彼。
-一般2个维度：也采用两次循环 一个循环确定给一个维度
-2个维度的特征：一般就是二维数组之类的，有2个特征值
-```
-- [135-分发糖果](greedy/hard/135-分发糖果/135-candy.js)
-- [406-根据身高重建队列](greedy/medium/406-根据身高重建队列/406-reconstructQueue.js)
-### 序列问题
-- [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
-  - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
-- 738-单调递增的数字
-  - [贪心](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-greedy.js)
-  - [暴力法-会超时-训练下编程模拟能力](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-force.js)
-
-### other
-#### easy
-- [455-分发饼干](greedy/easy/455-分发饼干/455-findContentChildren.js)
-- [53-最大子数组和](greedy/easy/53-最大子数组和/53-maxSubArray.js)
-- [1005-K次取反后最大化的数组和](greedy/easy/1005-K次取反后最大化的数组和/1005-largestSumAfterKNegations.js)
-- [860-柠檬水找零](greedy/easy/860-柠檬水找零/860-lemonadeChange.js)
-#### medium
-- [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
-- 134-加油站
-  - [方法1: 暴力](greedy/medium/134-加油站/134-canCompleteCircuit-force.js)
-  - [方法2：贪心](greedy/medium/134-加油站/134-canCompleteCircuit-greedy.js)
-#### hard
-- [968-监控二叉树](greedy/hard/968-监控二叉树/968-minCameraCover.js)
 
 ## DP动态规划
 ### 基础题目
@@ -476,6 +413,52 @@ A record of algorithm practice.
 - [516-最长回文子序列](DP/子序列问题/回文/516-最长回文子序列/516-longestPalindromeSubseq.js)
 ### 用动态规划玩游戏
 
+
+## greedy
+```
+其实一般而言
+贪心是动规的一个特别情况
+也就是说 贪心一般用来解决和动规同类型的问题
+能用贪心解的 一般都可以用动规
+但是 能用动规的 不一定能用贪心
+```
+### 区间问题
+- [55-跳跃游戏](greedy/medium/55-跳跃游戏/55-canJump.js)
+- [45-跳跃游戏II](greedy/medium/45-跳跃游戏II/45-jump.js)
+- [452-用最少数量的箭引爆气球](greedy/medium/452-用最少数量的箭引爆气球/452-findMinArrowShots.js)
+- [435-无重叠区间](greedy/medium/435-无重叠区间/435-eraseOverlapIntervals.js)
+- [763-划分字母区间](greedy/medium/763-划分字母区间/763-partitionLabels.js)
+- [56-合并区间](greedy/medium/56-合并区间/56-merge.js)
+### 2个维度权衡问题
+```
+遇到两个维度权衡的时候，一定要先确定一个维度，再确定另一个维度。如果两个维度一起考虑一定会顾此失彼。
+一般2个维度：也采用两次循环 一个循环确定给一个维度
+2个维度的特征：一般就是二维数组之类的，有2个特征值
+```
+- [135-分发糖果](greedy/hard/135-分发糖果/135-candy.js)
+- [406-根据身高重建队列](greedy/medium/406-根据身高重建队列/406-reconstructQueue.js)
+### 序列问题
+- [376-摆动序列](greedy/medium/376-摆动序列/376-wiggleMaxLength.js)
+  - TODO[376-动规解法](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
+- 738-单调递增的数字
+  - [贪心](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-greedy.js)
+  - [暴力法-会超时-训练下编程模拟能力](greedy/medium/738-单调递增的数字/738-monotoneIncreasingDigits-force.js)
+
+### other
+#### easy
+- [455-分发饼干](greedy/easy/455-分发饼干/455-findContentChildren.js)
+- [53-最大子数组和](greedy/easy/53-最大子数组和/53-maxSubArray.js)
+- [1005-K次取反后最大化的数组和](greedy/easy/1005-K次取反后最大化的数组和/1005-largestSumAfterKNegations.js)
+- [860-柠檬水找零](greedy/easy/860-柠檬水找零/860-lemonadeChange.js)
+#### medium
+- [122-买卖股票的最佳时机II](greedy/medium/122-买卖股票的最佳时机II/122-maxProfit.js)
+- 134-加油站
+  - [方法1: 暴力](greedy/medium/134-加油站/134-canCompleteCircuit-force.js)
+  - [方法2：贪心](greedy/medium/134-加油站/134-canCompleteCircuit-greedy.js)
+#### hard
+- [968-监控二叉树](greedy/hard/968-监控二叉树/968-minCameraCover.js)
+
+
 ## 单调栈
 ### medium
 - [739-每日温度](单调栈/medium/739-每日温度/739-dailyTemperatures.js)
@@ -489,6 +472,34 @@ A record of algorithm practice.
 - 84-柱状图中最大的矩形
   - [暴力法-会超时](单调栈/hard/84-柱状图中最大的矩形/84-largestRectangleArea-force.js)
   - [84-柱状图中最大的矩形](单调栈/hard/84-柱状图中最大的矩形/84-largestRectangleArea-stack.js)
+
+## others
+### LRU
+- 146-LRU缓存
+  - [146-LRU缓存:Map法](others/LRU/146-LRU缓存/146-LRUCache-map.js)
+### LFU
+- [460-LFU缓存](others/LFU/460-LFU缓存/460-LFUCache.js)
+
+### 水塘抽样
+- [382-链表随机节点](others/水塘抽样/382-链表随机节点/382-Solution.js)
+- [398-随机数索引](others/水塘抽样/398-随机数索引/398-Solution.js)
+### 数据结构设计
+#### TODO
+- [流中位数-需要大小顶堆](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487197&idx=1&sn=0cb587fda164bda7fbcaa54cb9630fde&scene=21#wechat_redirect)
+- [设计推特](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484499&idx=1&sn=64f75d4bdbb4c5777ba199aae804d138&scene=21#wechat_redirect)
+- [前缀树](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247495471&idx=1&sn=fd180d7e207e92a87a9c9cce69b8cdb9&scene=21#wechat_redirect)
+- [单调栈](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487704&idx=1&sn=eb9ac24c644aa0950638c9b20384e982&scene=21#wechat_redirect)
+- [单调队列](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247488087&idx=1&sn=673aa4e8deb942b951948650928c336e&scene=21#wechat_redirect)
+
+#### 随机数
+- [mid][380-O(1)时间插入、删除和获取随机元素](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet.js)
+- [mid][380-O(1)时间插入、删除和获取随机元素-主流解法](others/数据结构设计/随机数/380-O(1)时间插入、删除和获取随机元素/380-RandomizedSet-2.js)
+- [hard][710-黑名单中的随机数](others/数据结构设计/随机数/710-黑名单中的随机数/710-Solution.js)
+
+### Math
+#### 快速幂算法
+- [50-Pow(x,n)](others/Math/快速幂算法/50-Pow(x,n)/50-myPow-quikMue.js)
+
 
 ---
 
