@@ -37,18 +37,6 @@ A record of algorithm practice.
 # 题型清单
 ## 数组
 
-### 二分法
-```
-1. 二分法一般适用于求某个区间的最值（左边界值 === min; 右边界值 === max;）
-```
-#### easy
-- [704-二分查找](Array/easy/704-二分查找/704-search.js)
-#### medium
-- [875-爱吃香蕉的珂珂](Array/medium/875-爱吃香蕉的珂珂/875-minEatingSpeed.js)
-- [1011-在D天内送达包裹的能力](Array/medium/1011-在D天内送达包裹的能力/1011-shipWithinDays.js)
-#### hard
-- [×][410-分割数组的最大值](Array/hard/[×]410-分割数组的最大值/410-splitArray.js)
-
 ### 双指针
 ```
 双指针可以把需要双层遍历的事情 合并在一层遍历中
@@ -96,6 +84,18 @@ A record of algorithm practice.
 - [283-移动零](Array/easy/283-移动零/283-moveZeroes.js)
 #### medium 
 - [316-去除重复字母](Array/medium/316-去除重复字母/316-removeDuplicateLetters.js)
+
+### 二分法
+```
+1. 二分法一般适用于求某个区间的最值（左边界值 === min; 右边界值 === max;）
+```
+#### easy
+- [704-二分查找](Array/easy/704-二分查找/704-search.js)
+#### medium
+- [875-爱吃香蕉的珂珂](Array/medium/875-爱吃香蕉的珂珂/875-minEatingSpeed.js)
+- [1011-在D天内送达包裹的能力](Array/medium/1011-在D天内送达包裹的能力/1011-shipWithinDays.js)
+#### hard
+- [×][410-分割数组的最大值](Array/hard/[×]410-分割数组的最大值/410-splitArray.js)
 
 ### 随机算法
 ```
