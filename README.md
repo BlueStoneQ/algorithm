@@ -5,6 +5,7 @@ A record of algorithm practice.
 - [题集](#题集)
 - [标签](#标签)
 - [sort](#sort)
+- [data-structor](#data-structor)
 - [数组](#数组)
 - [串](#串)
 - [栈和队列](#栈和队列)
