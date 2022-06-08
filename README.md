@@ -193,9 +193,6 @@ A record of algorithm practice.
 - [环起点][142-环形链表II](Linked-list/medium/142-环形链表II/142-detectCycle.js)
 - [92-反转链表II](Linked-list/medium/92-反转链表II/92-reverseBetween.js)
 ## 数组
-
-### 二分法
-- [704-二分查找](Array/easy/704-二分查找/704-search.js)
 ### 前缀和数组
 ```
 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。
@@ -266,6 +263,8 @@ A record of algorithm practice.
 ```
 1. 二分法一般适用于求某个区间的最值（左边界值 === min; 右边界值 === max;）
 ```
+#### easy
+- [704-二分查找](Array/easy/704-二分查找/704-search.js)
 #### medium
 - [875-爱吃香蕉的珂珂](Array/medium/875-爱吃香蕉的珂珂/875-minEatingSpeed.js)
 - [1011-在D天内送达包裹的能力](Array/medium/1011-在D天内送达包裹的能力/1011-shipWithinDays.js)
