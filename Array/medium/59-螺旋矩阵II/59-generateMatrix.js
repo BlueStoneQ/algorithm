@@ -24,7 +24,7 @@ var generateMatrix = function(n) {
 
   // 当前要填入matrix的数字
   let curNum = 1;
-  // 1. 定义4个边界
+  // 1. 定义4个边界（均是index值）
   let upperBound = 0;
   let rightBound = n - 1;
   let bottomBound = n - 1;
