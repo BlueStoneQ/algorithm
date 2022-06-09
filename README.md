@@ -48,6 +48,7 @@ A record of algorithm practice.
 - [26-删除有序数组中的重复项](Array/easy/26-删除有序数组中的重复项/26-removeDuplicates.js)
 - [27-移除元素](Array/easy/27-移除元素/27-removeElement.js)
 - [844-比较含退格的字符串](Array/easy/844-比较含退格的字符串/844-backspaceCompare.js)
+- [977-有序数组的平方](Array/easy/977-有序数组的平方/844-sortedSquares.js)
 
 ### 滑动窗口
 ```
