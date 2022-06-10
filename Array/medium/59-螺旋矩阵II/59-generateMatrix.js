@@ -6,6 +6,8 @@
  */
 
 /**
+ * 四边迫近 - 模拟法
+ * 
  * @param {number} n
  * @return {number[][]}
  */

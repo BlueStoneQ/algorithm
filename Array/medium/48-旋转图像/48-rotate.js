@@ -2,10 +2,11 @@
  * leet: https://leetcode-cn.com/problems/rotate-image/
  * Date: 2022-1-30
  * 东哥题解：https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247494275&idx=1&sn=8521942340ebd1793530507451fb60d3&scene=21#wechat_redirect
+ * 针对矩阵旋转，都套用这个模型：对角线对折 + 翻转每一行
  * 核心思路：
  * - 沿对角线对折（对角线的方向 决定了交换的映射关系 和 是顺逆时针）
  * - reverse每一行
- * 1. me:这种题 画一个4*4的矩阵 就能找到坐标的映射关系了
+ * 1. me:这种题 画一个3*3的矩阵 就能找到坐标的映射关系了
  */
 
 /**
