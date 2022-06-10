@@ -20,7 +20,6 @@ var generateMatrix = function(n) {
     res[j] = new Array(n);
     j++;
   }
-  console.log(res);
 
   // 当前要填入matrix的数字
   let curNum = 1;

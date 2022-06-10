@@ -30,8 +30,6 @@ var lengthOfLongestSubstring = function(s) {
   while (s.length > rightIndex) {
     // 将要移进窗口的字符
     const willInChar = s[rightIndex];
-    // 扩大窗口
-    rightIndex++;
     // 更新数据
     windowChar2CountMap.$addCount(willInChar, 1);
     // 该字符还有重复时 需要进一步缩小窗口
@@ -44,7 +42,9 @@ var lengthOfLongestSubstring = function(s) {
       windowChar2CountMap.$addCount(willOutChar, -1);
     }
     // 更新下res 此刻的subStr就是无重复字符的
-    res = Math.max(res, rightIndex - leftIndex);
+    res = Math.max(res, rightIndex - leftIndex + 1);
+    // 扩大窗口
+    rightIndex++;
   }
   // 返回值
   return res;
