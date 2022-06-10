@@ -30,9 +30,10 @@ var deleteDuplicates = function(head) {
 
   while (fastPoint !== null) {
     if (fastPoint.val !== slowPoint.val) {
-      slowPoint.next = fastPoint;
+      // 要删除的其实是 slowP.next
+      slowPoint.next = fastPoint; // 删除了原来的slowP.next
       // slow++
-      slowPoint = slowPoint.next;
+      slowPoint = slowPoint.next; // 移动slowP 相当于数组中slow++
     }
     // fast++
     fastPoint = fastPoint.next;

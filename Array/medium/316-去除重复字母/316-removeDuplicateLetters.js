@@ -1,7 +1,7 @@
 /**
  * leet: https://leetcode-cn.com/problems/remove-duplicate-letters/
  * date：2022-2-2
- * dong: https://leetcode-cn.com/problems/remove-duplicate-letters/
+ * dong: https://labuladong.github.io/algo/2/18/31/
  * 参考：[字符编码](https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
  *  - 对于英语字母，UTF-8 编码和 ASCII 码是相同的
  * 同类型题：[1081](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/)
