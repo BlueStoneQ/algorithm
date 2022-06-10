@@ -6,6 +6,15 @@
  * 1. 写一个更清晰的版本 将判断是否为子串的动作 封装为一个单独函数 同时 注意效率
  */
 
+
+ (() => {
+  // 重写一个计数用的Map方法
+  Map.prototype.$addCount = function(key, val) {
+    const originalCharCount = this.get(key) || 0;
+    this.set(key, originalCharCount + val);
+  }
+})()
+
 /**
  * 滑动窗口
  * 1. me: valid的问题 - 判断是否为子串的问题
@@ -26,18 +35,16 @@ var minWindow = function(s, t) {
   const tChar2CountMap = new Map(); // Map 需要匹配的串t中字符:该字符出现的次数
   for (let i = 0; i < t.length; i++) {
     const curChar = t[i];
-    tChar2CountMap.set(curChar, (tChar2CountMap.get(curChar) || 0) + 1);
+    tChar2CountMap.$addCount(curChar, 1);
   }
   // 核心算法
   while (RIndex < s.length) {
-    // 扩大窗口：右边界向右滑动
     // curChar 是即将移入window的字符
     const curChar = s[RIndex];
-    RIndex++;
     // 判断当前字符是否在t中 yes: 更新窗口内一系列数据
     if (tChar2CountMap.has(curChar)) {
       // 更新window的数量计数表
-      windowChar2CountMap.set(curChar, (windowChar2CountMap.get(curChar) || 0) + 1);
+      windowChar2CountMap.$addCount(curChar, 1);
       // 更新valid计数
       if (windowChar2CountMap.get(curChar) === tChar2CountMap.get(curChar)) {
         valid++;
@@ -60,12 +67,15 @@ var minWindow = function(s, t) {
         // 更新有效值计数
         if (windowChar2CountMap.get(willDelChar) === tChar2CountMap.get(willDelChar)) valid--;
         // 更新window计数器
-        windowChar2CountMap.set(willDelChar, windowChar2CountMap.get(willDelChar) - 1);
+        windowChar2CountMap.$addCount(willDelChar, -1);
       }
     }
+  
+    // 扩大窗口：右边界向右滑动
+    RIndex++;
   }
-  // 返回值
-  return resEnd === Number.MAX_VALUE ? '' : s.substring(resStart, resEnd);
+  // 返回值 这里resEnd不用考虑是因为resEnd在窗口滑动过程中已经
+  return resEnd === Number.MAX_VALUE ? '' : s.substring(resStart, resEnd + 1);
 };
 
 module.exports = minWindow;

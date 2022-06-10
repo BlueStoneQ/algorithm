@@ -32,7 +32,7 @@ var lengthOfLongestSubstring = function(s) {
     const willInChar = s[rightIndex];
     // 更新数据
     windowChar2CountMap.$addCount(willInChar, 1);
-    // 该字符还有重复时 需要进一步缩小窗口
+    // 该字符还有重复时 需要进一步缩小窗口 => 缩小窗口 直到该窗口无重复字符串
     while (windowChar2CountMap.get(willInChar) > 1) {
       // 将要移出窗口的字符
       const  willOutChar = s[leftIndex];
