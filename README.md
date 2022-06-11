@@ -49,6 +49,9 @@ A record of algorithm practice.
 - [27-移除元素](Array/easy/27-移除元素/27-removeElement.js)
 - [844-比较含退格的字符串](Array/easy/844-比较含退格的字符串/844-backspaceCompare.js)
 - [977-有序数组的平方](Array/easy/977-有序数组的平方/844-sortedSquares.js)
+#### medium
+- [15-三数之和](hash/medium/15-三数之和/15-threeSum.js)
+- [18-四数之和](hash/medium/18-四数之和/18-fourSum.js)
 
 ### 滑动窗口
 ```
@@ -164,15 +167,12 @@ A record of algorithm practice.
 - [383-赎金信](hash/easy/383-赎金信/383-canConstruct.js)
 #### medium
 - [49-字母异位词分组](hash/medium/49-字母异位词分组/49-groupAnagrams.js)
-### 几数之和
-#### medium
-- [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
-- [15-三数之和](hash/medium/15-三数之和/15-threeSum.js)
-- [18-四数之和](hash/medium/18-四数之和/18-fourSum.js)
 ### 数组-其他
 #### easy
 - [349-两个数组的交集](hash/easy/349-两个数组的交集/349-intersection.js)
 - [202-快乐数](hash/easy/202-快乐数/202-isHappy.js)
+#### medium
+- [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
 ## 栈和队列
 ### TODO
 - [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
