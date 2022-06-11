@@ -35,6 +35,9 @@
 
 /**
  * 方法1：使用map
+ * 利用s构建出一个查的表 
+ * 然后遍历t来用查表检查t
+ * 通过检查 就是异位词
  * @param {string} s
  * @param {string} t
  * @return {boolean}
