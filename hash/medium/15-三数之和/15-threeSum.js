@@ -20,10 +20,9 @@
   // algo 这里注意：第一个数的边界是len-2 因为后面至少有2个数 left right
   for (let firstIndex = 0; firstIndex < len - 2; firstIndex++) {
       // 计算加上第一个数后剩下的部分: 剩余区间2个数需要满足的和
-      // 如果第一项（剩余有序数组最小值）就大于0 则后面就不会再有小于0的了 自然加不出来0了 就可以中断了
       const firstVal = nums[firstIndex];
-      if (firstVal > 0) break; // !!注意
-      if (firstIndex > 0 && firstVal === nums[firstIndex - 1]) continue; // 注意！！ a跳过连续的重复项 - 跳过当前项
+      if (firstVal > 0) break; // !!注意 如果第一项（剩余有序数组最小值）就大于0 因为排为了递增 则后面就不会再有小于0的了 自然加不出来0了 就可以中断了
+      if (firstIndex > 0 && firstVal === nums[firstIndex - 1]) continue; // 注意！！ 当前项与之前一项一样：a跳过连续的重复项 - 跳过当前项，因为相同的firstVal 很容易产生重复的三元组
       let left = firstIndex + 1, right = len - 1; // 对于firstIndex后面的区间进行左右指针滑动
       while (left < right) {
           const leftVal = nums[left], rightVal = nums[right];
