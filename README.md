@@ -175,8 +175,8 @@ A record of algorithm practice.
 - [454-四数相加II](hash/medium/454-四数相加II/454-fourSumCount.js)
 ## 栈和队列
 ### TODO
-- [347-前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
-  - [涉及到需要构造一个最小堆-可以放到后面-题解](https://programmercarl.com/0347.%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.html)
+- [🔥][超高频][topK问题]215-数组中的第K个最大元素
+  - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
 ### easy
 - [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)
 - [225-用队列实现栈](stack&queue/easy/225-用队列实现栈/225-MyStack.js)
@@ -186,6 +186,7 @@ A record of algorithm practice.
 - [921-使括号有效的最少添加](stack&queue/medium/921-使括号有效的最少添加/921-minAddToMakeValid.js)
 - [1541-平衡括号字符串的最少插入次数](stack&queue/medium/1541-平衡括号字符串的最少插入次数/1541-minInsertions.js)
 - [150-逆波兰表达式求值](stack&queue/medium/150-逆波兰表达式求值/150-evalRPN.js)
+- [🔥][347-前K个高频元素](stack&queue/medium/347-前K个高频元素/347-topKFrequent.js)
 ### hard
 - [239-滑动窗口最大值](stack&queue/hard/239-滑动窗口最大值/239-maxSlidingWindow.js)
 
