@@ -25,6 +25,15 @@
 
 截取优先级队列：size超过k时 pop出堆顶的小值 则保留的就是最大的k个的值
 
+复杂度分析：
+时间：O(nlogk), n = nums.length
+    - 主流程中的循环遍历nums O(n)
+    - heap中的操作：O(logK), 注意：二叉堆是一种完全二叉树，满二叉树的时间复杂度分析，总共有k个元素的二叉树，其便利操作一般是logK 
+        - 其实 就是完全二叉树有多少层： 2 ^ 层数 — 1 = k个节点，在堆中每次操作就是跳一层，一共操作的次数其实就是层数
+空间：O(n), n = nums.length,
+    - map消耗的空间为：O(n)
+    - 优先级队列消耗：O(k)
+
 @param {number[]} nums
 * @param {number} k
 * @return {number[]}
@@ -112,7 +121,7 @@ class PriorityQueue {
   }
 
   _compare (index1, index2) {
-      //defend 
+      //defend 注意这里的防御2个case！！！！！
       // case1 index1所在值无效 则此时需要选择index2 故返回值要大于0
       if (this.queue[index1] === undefined) {
           return 1;
