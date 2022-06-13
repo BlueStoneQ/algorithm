@@ -2,6 +2,9 @@
  * leet: https://leetcode-cn.com/problems/combinations/
  * 2022-3-1
  * https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html#javascript
+ *  剪枝本质：就是剪去一些没有必要的搜索路径（子分叉）
+ * 
+ * 优先保证写出来，然后再通过一些剪枝的方案进行优化
  */
 
 /**
@@ -28,7 +31,11 @@ const _combine = (path, startIndex) => {
 
     // 遍历当前层
     // 注意：排列这里i就是0开始，组合 是从startIndex开始的
-    for (let i = startIndex; i <= n; i++) {
+    // 这里可以剪枝！！！剩余组合元素 不足k时 怎么都组合不出来k个数 就可以剪枝了 https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html
+    // i需要满足这样的一个公式：当前可以提供的元素个数 >= 当前组合需要的元素个数  => k - path.length =< n - i + 1
+    // => i =< n - (k - path.length) + 1, 可以画图看看哪些枝被减掉了 或者 看下 https://www.bilibili.com/video/BV1wi4y157er?vd_source=9365026f6347e9c46f07d250d20b5787
+    for (let i = startIndex; i <= n - (k - path.length) + 1; i++) { // 剪枝优化版2
+    // for (let i = startIndex; i <= n; i++) { // 基础版1
         // todo: 剪枝 去重
         // 做出选择
         path.push(i);
