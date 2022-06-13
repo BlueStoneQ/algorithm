@@ -30,6 +30,10 @@
       // 遍历当前层
       for (let i = startIndex; i < candidates.length; i++) {
           const curNum = candidates[i];
+          // 去重-方式1: 跳过重复项 当前项 和 前一项相同
+          if (i > startIndex && curNum === candidates[i - 1]) {
+              continue;
+          }
           // 剪枝：其实如果已经知道下一层的sum会大于target，就没有必要进入下一层递归了。
           // 对总集合”排序“之后，如果下一层的sum（就是本层的 sum + candidates[i]）已经大于target，就可以结束本轮for循环的遍历。继续循环下去的值 都会到下一层的preSum > target 中结束 所以 可以提前结束 避免多一层递归
           if (curNum + pathSum > target) break; 
@@ -39,10 +43,10 @@
           backTrack(path, pathSum + curNum, i + 1); 
           // 撤销选择
           path.pop();
-          // 组合不能重复 所以 需要跳过相邻的重复项(同时确保下标不要越界, 因为下面会进行i++)
-          while (i < candidates.length - 1 && candidates[i] === candidates[i + 1]) {
-              i++; // candidates[i + 1]也是重复元素 为什么会跳过candidates[i + 1]呢 因为进入下一次循环的时候 会在循环控制条件里执行一次i++ 这样就等于直接到了 i + 2, 跳过了重复的i + 1
-          }
+          // 去-重方式2：组合不能重复 所以 需要跳过相邻的重复项(同时确保下标不要越界, 因为下面会进行i++) - 这里的这个判断 也可以写成：放在开头 + break
+        //   while (i < candidates.length - 1 && candidates[i] === candidates[i + 1]) {
+        //       i++; // candidates[i + 1]也是重复元素 为什么会跳过candidates[i + 1]呢 因为进入下一次循环的时候 会在循环控制条件里执行一次i++ 这样就等于直接到了 i + 2, 跳过了重复的i + 1
+        //   }
       }
   }
   // 调用回溯函数
