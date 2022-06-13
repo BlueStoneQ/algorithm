@@ -48,7 +48,7 @@
           backtrack(path, usedArry);
           // 撤销选择
           path.pop();
-          usedArry[i] = false;
+          usedArry[i] = false; // 所以 上面的判定 usedArray[i - 1] === false 则代表刚刚相邻的前一个节点 是刚被撤销标记的 相邻的相同元素 是需要去重的
       }
   }
   // 调用：递归回溯函数
