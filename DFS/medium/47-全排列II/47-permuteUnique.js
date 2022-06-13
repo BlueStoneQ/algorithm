@@ -19,7 +19,6 @@
   // init data
   const numsLen = nums.length;
   nums.sort((a, b) => a - b);
-  const usedArry = new Array(nums.length).fill(false);
   const result = [];
   // algo
   /**
