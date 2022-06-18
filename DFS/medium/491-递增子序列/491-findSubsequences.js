@@ -30,7 +30,7 @@
       // 单树层遍历
       for (let i = startIndex; i < numsLen; i++) {
           // 判断 如果当前值小于序列的末尾值 就跳过当前遍历 (注意 数组越界 所以 i > 0)
-          if (i > 0 && nums[i] < path[path.length - 1]) continue;
+          if (nums[i] < path[path.length - 1]) continue;
           // 去重 如果当前path（子序列）已经包含当前元素 就可以跳过当前元素 如果要追求好的时间复杂度 可以借助Set Map等来处理 这里直接使用数组的includes()
           if (usedSet.has(nums[i])) continue;
 
