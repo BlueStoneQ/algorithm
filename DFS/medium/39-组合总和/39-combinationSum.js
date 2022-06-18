@@ -1,7 +1,7 @@
 /**
  * leet: https://leetcode-cn.com/problems/combination-sum/
  * Date: 2022-3-2
- * kaer: https://programmercarl.com/0039.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.html#%E5%89%AA%E6%9E%9D%E4%BC%98%E5%8C%96
+ * kaer: https://prrogrammercarl.com/0039.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.html#%E5%89%AA%E6%9E%9D%E4%BC%98%E5%8C%96
  */
 
 /**

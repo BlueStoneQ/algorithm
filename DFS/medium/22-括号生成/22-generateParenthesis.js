@@ -31,7 +31,7 @@
          // base case1: 如果需要的左括号数量 > 需要的右括号的数量 则证明当前路径 右括号在前面多了 不合法了 ))(
          if (needLeftParCount > needRightParCount) return;
  
-         // base case2: 左右括号小于0 则不合法
+         // base case2: 左右括号其中有一方小于0 则不合法 （不能再组成合法括号了 - 这个路径走下去无意义）
          if (needLeftParCount < 0 || needRightParCount < 0) return;
  
          // base case2: 需要的左右括号刚好均为0 则该path满足情况 + 记录结果

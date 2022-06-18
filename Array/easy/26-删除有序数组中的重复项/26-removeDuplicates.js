@@ -16,7 +16,6 @@ var removeDuplicates = function(nums) {
   // 防御
   if (!Array.isArray(nums)) return;
   // 初始化变量
-  let res = 0;
   const numsLen = nums.length;
   let slowIndex = 0, fastIndex = 0;
   // 核心算法
