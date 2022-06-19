@@ -28,7 +28,7 @@
       for (let i = startIndex; i < s.length; i++) {
           // 防止越界
           // if (i === s.length - 1) return;
-          // 切割出当前子串
+          // [切割的关键操作！！！]切割出当前子串
           const curStr = s.substring(startIndex, i + 1); // 这里会不会越界呢？
           // 如果当前子串不是回文 则结束本次遍历 进入下一次循环
           if (!isPalindrome(curStr)) continue; // 不是回文串 则进入下一轮循环

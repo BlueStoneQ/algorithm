@@ -45,7 +45,7 @@
       }
   }
   // 调用回溯函数 传入初始值
-  backTrack([], 0, 0);
+  backTrack([], 0);
   // return 
   return result;
 };

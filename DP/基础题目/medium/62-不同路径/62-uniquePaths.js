@@ -1,12 +1,13 @@
 /**
  * leet: https://leetcode-cn.com/problems/unique-paths/
  * 2022-3-10
- * kaer: https://programmercarl.com/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92
+ * kaer: https://programmercarl.com/0062.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84.html
  */
 
 /**
  * dp五部曲：
- * dp[i][j]定义：机器人从[0, 0]到达[m-1, n-1]共有多少条路径
+ * 机器人从(0 , 0) 位置出发，到(m - 1, n - 1)终点。
+ * dp[i][j]定义：机器人从[0, 0]到达[i-1, j-1]共有多少条路径
  * 状态转移公式：dp[i][j] = dp[i-1][j] + dp[i][j-1]
  * 遍历的顺序：i j 都是从0 -> m  n 移动
  * dp的初始状态：dp[0][0] = 0; dp[0][1] = 1; dp[1][0] = 1;
@@ -36,6 +37,6 @@
           dp[row][col] = dp[row - 1][col] + dp[row][col - 1];
       }      
   }
-  // return
+  // return 机器人从(0 , 0) 位置出发，到(m - 1, n - 1)终点。
   return dp[m - 1][n - 1];
 };
