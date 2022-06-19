@@ -235,6 +235,7 @@ A record of algorithm practice.
 ### 遍历
 #### easy 
 - [144-二叉树的前序遍历](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal.js)
+  - [144-二叉树的前序遍历-迭代法](Tree/easy/144-二叉树的前序遍历/144-preorderTraversal-iteration.js)
 #### medium
 - [114-二叉树展开为链表](Tree/medium/114-二叉树展开为链表/114-flatten.js)
 - [多叉树遍历][341-扁平化嵌套列表迭代器](Tree/medium/341-扁平化嵌套列表迭代器/341-NestedIterator.js)
