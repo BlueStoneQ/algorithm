@@ -40,7 +40,7 @@
         rightHeight++;
     }
 
-    // 判定满二叉树：左右子树的层数一致
+    // 判定满二叉树：左右子树的层数一致 - 则完全二叉树此时必然是满二叉树
     if (leftHeight === rightHeight) return Math.pow(2, leftHeight) - 1;
 
     // 递归调用 左右子树节点和 + 1
