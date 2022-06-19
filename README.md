@@ -144,6 +144,9 @@ A record of algorithm practice.
 
 
 ## 串
+### 高频[🔥🔥🔥]
+- [14. 最长公共前缀](String/easy/14-最长公共前缀/14-longestCommonPrefix.js)
+
 ### 翻转字符串
 #### easy
 - [344-反转字符串](String/easy/344-反转字符串/344-reverseString.js)
