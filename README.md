@@ -228,6 +228,14 @@ A record of algorithm practice.
 
 
 ## 树
+```
+tree的核心处理框架就是它的遍历框架：
+遍历的顺序：
+DFS
+  - 递归实现
+  - 迭代法实现
+BFS
+```
 ### TODO
 - [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
   - [题解](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247490891&idx=1&sn=677a7e887fa551e994ba73bcb2538cea&scene=21#wechat_redirect)
