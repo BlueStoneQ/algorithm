@@ -16,6 +16,10 @@
  * 充分利用满二叉树的性质减少运算：
   - 满二叉树节点数 = 2^层数k - 1
   - 满二叉树：左右子树层数/高度一致
+  时间复杂度：O(log n × log n)
+    - 这里的logn * logn = 一共遍历logn层，每层通过while循环获得height，就是获得层数，操作数是logn，所以就是：logn * logn
+    - 其实：最好的时间复杂度是这个 O(logN) 也就是本身就是慢二叉树，那么获得leftHeight 和 rightHeight的操作步骤 就是层级，也就是logN
+  空间复杂度：O(log n)
 * @param {TreeNode} root
 * @return {number}
 */
