@@ -140,6 +140,7 @@ A record of algorithm practice.
 ### 高频
 - [topK问题]215-数组中的第K个最大元素
   - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
+- [88-合并两个有序数组](Array/easy/88-合并两个有序数组/88-merge.js)
 
 
 
