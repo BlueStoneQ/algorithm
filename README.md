@@ -269,6 +269,7 @@ BFS
 - [404-左叶子之和](Tree/easy/404-左叶子之和/404-sumOfLeftLeaves.js)
 - [112-路径总和](Tree/easy/112-路径总和/112-hasPathSum.js)
 - [100-相同的树](Tree/easy/100-相同的树/100-isSameTree.js)
+- [572-另一棵树的子树](Tree/easy/572-另一棵树的子树/572-isSubtree.js)
 #### medium
 - [222-完全二叉树的节点个数](Tree/medium/222-完全二叉树的节点个数/222-countNodes.js)
   - [222-利用满二叉树性质优化版](Tree/medium/222-完全二叉树的节点个数/222-countNodes-optimize.js)
