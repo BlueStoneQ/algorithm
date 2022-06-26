@@ -21,25 +21,26 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function(head) {
-  // 防御
-  if (head === null) return null;
-  // 初始化变量
-  let slowPoint = head, fastPoint = head;
-  // 核心算法
+ var deleteDuplicates = function(head) {
+  if (head === null) return head;
+  const dummy = new ListNode();
+  dummy.next = head;
+  // init data
+  let slowP = head, fastP = head;
+  // algo
+  while (fastP !== null) {
+      if (slowP.val !== fastP.val) {
+          // 要删除的其实是 slowP.next
+          slowP.next = fastP; // 删除了原来的slowP.next
+          slowP = slowP.next; // 移动slowP 相当于数组中slow++
+      }
 
-  while (fastPoint !== null) {
-    if (fastPoint.val !== slowPoint.val) {
-      // 要删除的其实是 slowP.next
-      slowPoint.next = fastPoint; // 删除了原来的slowP.next
-      // slow++
-      slowPoint = slowPoint.next; // 移动slowP 相当于数组中slow++
-    }
-    // fast++
-    fastPoint = fastPoint.next;
+      fastP = fastP.next;
   }
-  // 断开和后面元素的链接 【重要】
-  slowPoint.next = null;
-  // 返回结果
-  return head;
+
+  // 断开和后面元素的链接
+  slowP.next = null;
+
+  // return
+  return dummy.next;
 };
