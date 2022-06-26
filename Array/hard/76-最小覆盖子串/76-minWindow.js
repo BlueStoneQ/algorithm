@@ -66,9 +66,9 @@ var minWindow = function(s, t) {
       if (tChar2CountMap.has(willDelChar)) {
         // 更新有效值计数
         if (windowChar2CountMap.get(willDelChar) === tChar2CountMap.get(willDelChar)) valid--;
-        // 更新window计数器
-        windowChar2CountMap.$addCount(willDelChar, -1);
       }
+      // 更新window计数器
+      windowChar2CountMap.$addCount(willDelChar, -1);
     }
   
     // 扩大窗口：右边界向右滑动
