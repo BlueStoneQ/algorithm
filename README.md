@@ -62,7 +62,7 @@ A record of algorithm practice.
   2. 一般是2个串 子串问题，子串也就是要求顺序是和原来母字符串一致，这个时候，遍历所有的子串，需要一个滑动窗口遍历所有情况
 2. 滑动窗口本质上是双指针的一个特例
 3. 常见题目就是找满足某一条件的（最长/最短）子数组/子串
-4. 常配合 willInChar willOutChar 和 一些charCountMap
+4. 常配合 willInChar willOutChar 和 一些charCountMap,例如目标串可以建立一个mapz作为查表，每个item [char, count]
 5. 滑动窗口的左右边界指针 left right, 其实都是从0出发的，更像快慢指针。一般都是right先行扩大窗口，直到窗口的子串满足某一要求，这个时候又开始尝试缩小窗口（left++）,直到条件不满足，此时刚好拿到一个满足条件的临界值。不断刷新记录的最值，直到right到达母串的末尾。
 ```
 #### medium
