@@ -25,7 +25,7 @@
       if (i > 0 && num1 === nums[i - 1]) continue;
       for (let j = i + 1; j < len - 2; j++) { // 注意 这里的边界 len - 2
           const num2 = nums[j];
-          // 每一层(每一个加数)都要去重 
+          // ！！！每一层(每一个加数)都要去重 
           if (j > i + 1 && num2 === nums[j - 1]) continue;
 
           let left = j + 1, right = len - 1;

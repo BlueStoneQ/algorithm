@@ -13,6 +13,7 @@
  */
 /**
  * 双指针 + 虚拟头结点
+ * 从head开始合并 很像合拉链
  * @param {ListNode} list1
  * @param {ListNode} list2
  * @return {ListNode}

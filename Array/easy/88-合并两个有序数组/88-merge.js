@@ -1,5 +1,6 @@
 /**
  * 2022-6-24
+ * - https://leetcode.cn/problems/merge-sorted-array/
  * [高频考题](https://segmentfault.com/a/1190000023783535?sort=newest#item-2-1)
  */
 
@@ -30,7 +31,7 @@
       nowIndex--;
   }
 
-  // !!!可能其中一个数组的指针走到尽头了，而另一个还没走完
+  // !!!可能其中一个数组的指针走到尽头了，而另一个还没走完，主要是num1的长度是已经给好的-看题可知
   // 因为我们本身就是在往 nums1 中放元素，所以只需考虑 nums2 是否剩元素即可
   while (nums2Index >= 0) {
       nums1[nowIndex--] = nums2[nums2Index--];

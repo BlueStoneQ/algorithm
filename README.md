@@ -49,6 +49,8 @@ A record of algorithm practice.
 - [27-移除元素](Array/easy/27-移除元素/27-removeElement.js)
 - [844-比较含退格的字符串](Array/easy/844-比较含退格的字符串/844-backspaceCompare.js)
 - [977-有序数组的平方](Array/easy/977-有序数组的平方/844-sortedSquares.js)
+- [88-合并两个有序数组](Array/easy/88-合并两个有序数组/88-merge.js)
+  - 类似的思路[21-合并两个有序链表](Linked-list/easy/21-合并两个有序链表/21-mergeTwoLists.js)
 #### medium
 - [15-三数之和](hash/medium/15-三数之和/15-threeSum.js)
 - [18-四数之和](hash/medium/18-四数之和/18-fourSum.js)
@@ -60,6 +62,8 @@ A record of algorithm practice.
   2. 一般是2个串 子串问题，子串也就是要求顺序是和原来母字符串一致，这个时候，遍历所有的子串，需要一个滑动窗口遍历所有情况
 2. 滑动窗口本质上是双指针的一个特例
 3. 常见题目就是找满足某一条件的（最长/最短）子数组/子串
+4. 常配合 willInChar willOutChar 和 一些charCountMap
+5. 滑动窗口的左右边界指针 left right, 其实都是从0出发的，更像快慢指针。一般都是right先行扩大窗口，直到窗口的子串满足某一要求，这个时候又开始尝试缩小窗口（left++）,直到条件不满足，此时刚好拿到一个满足条件的临界值。不断刷新记录的最值，直到right到达母串的末尾。
 ```
 #### medium
 - [209-长度最小的子数组](Array/medium/209-长度最小的子数组/209-minSubArrayLen.js)
@@ -137,13 +141,6 @@ A record of algorithm practice.
 #### medium
 - [370-区间加法](Array/medium/370-区间加法/370-getModifiedArray.js)
 
-### 高频
-- [topK问题]215-数组中的第K个最大元素
-  - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
-- [88-合并两个有序数组](Array/easy/88-合并两个有序数组/88-merge.js)
-
-
-
 ## 串
 ### 高频[🔥🔥🔥]
 - [14. 最长公共前缀](String/easy/14-最长公共前缀/14-longestCommonPrefix.js)
@@ -180,6 +177,8 @@ A record of algorithm practice.
 ## 栈和队列
 ### TODO
 - [🔥][超高频][topK问题]215-数组中的第K个最大元素
+  - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
+- [🔥🔥🔥][topK问题]215-数组中的第K个最大元素
   - [只适合机试的方法-借助了sort](Array/medium/215-数组中的第K个最大元素/215-findKthLargest-机考版.js)
 ### easy
 - [232-用栈实现队列](stack&queue/easy/232-用栈实现队列/232-MyQueue.js)

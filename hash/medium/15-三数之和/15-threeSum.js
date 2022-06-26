@@ -5,7 +5,7 @@
  */
 
 /**
- * 方法1：经典解法 排序后 利用循环穷举第一个数组 剩余的部分使用左右指针进行滑动窗口
+ * 方法1：经典解法 排序后 利用循环穷举第一个数组 剩余的部分使用左右指针进行类滑动窗口
  * 注意：该题是下标不敏感 所以 可以数组原地排序
  * @param {number[]} nums
  * @return {number[][]}
@@ -22,7 +22,7 @@
       // 计算加上第一个数后剩下的部分: 剩余区间2个数需要满足的和
       const firstVal = nums[firstIndex];
       if (firstVal > 0) break; // !!注意 如果第一项（剩余有序数组最小值）就大于0 因为排为了递增 则后面就不会再有小于0的了 自然加不出来0了 就可以中断了
-      if (firstIndex > 0 && firstVal === nums[firstIndex - 1]) continue; // 注意！！ 当前项与之前一项一样：a跳过连续的重复项 - 跳过当前项，因为相同的firstVal 很容易产生重复的三元组
+      if (firstIndex > 0 && firstVal === nums[firstIndex - 1]) continue; // [!!!去重] 注意！！ 当前项与之前一项一样：a跳过连续的重复项 - 跳过当前项，因为相同的firstVal 很容易产生重复的三元组
       let left = firstIndex + 1, right = len - 1; // 对于firstIndex后面的区间进行左右指针滑动
       while (left < right) {
           const leftVal = nums[left], rightVal = nums[right];
@@ -39,8 +39,8 @@
           }
           // curSum === 0
           res.push([firstVal, leftVal, rightVal]);
-          while (left < right && nums[left] === leftVal) left++; // b跳过重复项 排序后重复项相邻
-          while (left < right && nums[right] === rightVal) right--; // c跳过重复项 排序后重复项相邻
+          while (left < right && nums[left] === leftVal) left++; // [!!!去重]b跳过重复项 排序后重复项相邻
+          while (left < right && nums[right] === rightVal) right--; // [!!!去重]c跳过重复项 排序后重复项相邻
       }
   }
   // return 
