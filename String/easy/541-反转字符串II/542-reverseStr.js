@@ -9,6 +9,8 @@
  * 1. 空间 换 时间，分割后反转绕后拼接
  * 2. 双层循环 大循环分割出小循环的字符子串 小循环部分进行一个字符串反转即可
  * 3. 字符串需要先转成array，才能利用下标进行写操作
+ * 
+ * 这个其实就是一个分而治之的思想：先分割，分割后对每一份进行一个单纯的翻转，其他case都可以在翻转前确定
  * @param {string} s
  * @param {number} k
  * @return {string}
@@ -22,7 +24,9 @@
   // algo
   for (let i = 0; i < len; i += 2 * k) {
       let left = i;
-      let right = i + k > len ? len -1 : i + k - 1; // 两两反转 下标和边界是最考验的地方
+      // [!!!]两两反转 下标和边界是最考验的地方
+      // 下面判断式：剩余的字符数量len-i小于k时，right边界就是len-1,大于k时,就是大部分常规情况，i + k - 1
+      let right = len - i < k ? len -1 : i + k - 1;
       while (left < right) {
           const temp = arr[left];
           arr[left] = arr[right];

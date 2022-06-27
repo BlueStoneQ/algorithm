@@ -35,11 +35,11 @@ var reverseLeftWords = function(s, n) {
       }
   }
   // algo
-  // 1. 翻转整个字符串
+  // 1. 翻转整个字符串 abcde => edcba,剩下2步的顺序不影响结果
   _reverse(0, len - 1);
-  // 2. 翻转 之前的前半部分字符串[0,n - 1] 下标映射翻转后的[len - n, len - 1]
+  // 2. 翻转 之前的前半部分字符串[0,n - 1] 下标映射翻转后的[len - n, len - 1], 也就是 edcab
   _reverse(len - n, len - 1);
-  // 3. 翻转 之前的后半部分[n, len - 1] 下标映射翻转后的[0, len - n - 1]
+  // 3. 翻转 之前的后半部分[n, len - 1] 下标映射翻转后的[0, len - n - 1], 也就是 cdeab
   _reverse(0, len - n - 1);
   // return
   return arr.join('');

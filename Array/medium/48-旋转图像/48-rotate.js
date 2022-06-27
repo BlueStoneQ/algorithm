@@ -1,6 +1,8 @@
 /**
  * leet: https://leetcode-cn.com/problems/rotate-image/
  * Date: 2022-1-30
+ * - 通过这个习题，我们要理解各种旋转：
+ *  - 顺时针 逆时针 180°（对折） 90°（先对折，再逆序），我们主要关注对角数字最终走到哪儿，就能确定对折轴线
  * 东哥题解：https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247494275&idx=1&sn=8521942340ebd1793530507451fb60d3&scene=21#wechat_redirect
  * 针对矩阵旋转，都套用这个模型：对角线对折 + 翻转每一行
  * 核心思路：
@@ -24,7 +26,7 @@ var rotate = function(matrix) {
   // 核心算法
   // 1. 沿对角线对折(沿对角线交换每个镜像元素)
   for (let i = 0; i < matrixWidth; i++) {
-    // 这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可 对折边界-起点：对折遇到对角线就不要对折了
+    // [!!!]这里从j从i 开始 我们画图就可以知道 对角线对折 只需要遍历对角线一侧的元素即可 对折边界-起点：对折遇到对角线就不要对折了
     for (let j = i; j < matrixWidth; j++) {
       const temp = matrix[i][j];
       matrix[i][j] = matrix[j][i];
