@@ -18,7 +18,7 @@
   // 定义：递归回溯函数
   const backtrack = function(path, startIndex) {
       // base case + 记录结果(实际这里的base case可以不return 因为这时候 startIndex已经超过numsLen了 for循环也结束 这个函数也结束了)
-      if (startIndex >= numsLen) {
+      if (startIndex > numsLen) {
           return;
       }
 
