@@ -23,16 +23,7 @@ MyStack.prototype.push = function(x) {
 */
 MyStack.prototype.pop = function() {
   // 将队尾元素排到队头 然后弹出队头
-  let size = this.queue.length;
-  
-  // size-- > 1实际上就是 queue.length - 1 > 0, 且初始下标是size - 1
-  // 这样就遍历到了最后一个元素，将最后一个元素放到了队头
-  while (size - 1 > 0) {
-      // 这种操作 需要size - 1次，则队尾就到了队头
-      this.queue.push(this.queue.shift());
-      size--;
-  }
-
+  this._adjust();
   return this.queue.shift();
 };
 
@@ -45,7 +36,7 @@ MyStack.prototype.top = function() {
 
   this.queue.push(res);
 
-  return res;
+  return res; // 或者直接：this.queue[this.queue.length - 1];
 };
 
 /**
@@ -54,6 +45,14 @@ MyStack.prototype.top = function() {
 MyStack.prototype.empty = function() {
   return this.queue.length === 0;
 };
+
+// 把队列前面的都取出来再加入队尾，让之前的队尾元素排到队头，这样就可以取出了
+MyStack.prototype._adjust = function () {
+  // 这样就遍历到了最后一个元素，将最后一个元素放到了队头
+  for (let i = 0; i < this.queue.length - 1; i++) {
+      this.queue.push(this.queue.shift());
+  }
+}
 
 /**
 * Your MyStack object will be instantiated and called as such:
