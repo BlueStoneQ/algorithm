@@ -121,7 +121,7 @@ class PriorityQueue {
   }
 
   _compare (index1, index2) {
-      //defend 注意这里的防御2个case！！！！！
+      //defend 注意这里的防御2个case！！！！！ 主要是为了 _getSelectedChildIndex， 在堆底的情况中 有时候 堆底有时候 不一定有右孩子
       // case1 index1所在值无效 则此时需要选择index2 故返回值要大于0
       if (this.queue[index1] === undefined) {
           return 1;
@@ -151,6 +151,8 @@ class PriorityQueue {
   }
 
   _getParentIndex (index) {
-      return Math.floor((index - 1) / 2); // https://www.zoo.team/article/binary-heap-with-js
+    // 推导：leftChildIndex = parentIndex * 2 + 1, rightChildIndex = parentIndex * 2 + 2
+    // Math.floor((index - 1) / 2) 和 Math.floor((index - 2) / 2) 值是一样的 所以 这里不用作区分
+    return Math.floor((index - 1) / 2); // https://www.zoo.team/article/binary-heap-with-js
   }
 }
