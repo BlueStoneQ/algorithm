@@ -24,7 +24,7 @@
    * @param {Array} path 表示一个ip的情况 数组形式 例如['127', '127', '127', '0']
    */
   const backTrack = function(path, startIndex) {
-      // base case + 记录结果
+      // base case + 记录结果  [!!!]注意 path.length === 4 这个 条件
       if (startIndex === sLen && path.length === 4) {
           result.push(path.join('.'));
           return;

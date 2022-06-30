@@ -5,6 +5,7 @@
  */
 
 /**
+ * 
  * @param {number[]} candidates
  * @param {number} target
  * @return {number[][]}
@@ -13,7 +14,7 @@
   // defend
   // init data
   const res = [];
-  candidates.sort((a, b) => a - b); // 为了配合后面的剪枝 
+  candidates.sort((a, b) => a - b); // 为了配合后面的剪枝，而不是为了去重
   // algo
   // 定义回溯函数
   const backTrack = (path, preSum, startIndex) => {
@@ -33,7 +34,7 @@
           // 作出选择
           path.push(curNum);
           // 遍历下一层
-          backTrack(path, preSum + curNum, i); // 本题元素为可重复选取的: 关键点:不用i+1了，表示可以重复读取当前的数
+          backTrack(path, preSum + curNum, i); // [!!!]本题元素为可重复选取的: 关键点:不用i+1了，表示可以重复读取当前的数
           // 撤销选择
           path.pop();
       }

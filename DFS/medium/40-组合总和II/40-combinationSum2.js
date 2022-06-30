@@ -8,6 +8,9 @@
 /**
  * 回溯 + 排序去重
  * 组合 与 排列 的区别： 在代码中的体现就是，排列问题每次通过 contains 方法来排除在 track 中已经选择过的数字；而组合问题通过传入一个 start 参数，来排除 start 索引之前的数字。
+ * 
+ * -  * 这道题和39题的最大区别在于：39题candidates本身是没有重复元素的，而本题candidates是含有重复元素，
+ *  这种含有重复元素的集合，一般都是排序（让相邻的挨在一起）+ candidates[i ] === candidates[i - 1] 来去重
  * @param {number[]} candidates
  * @param {number} target
  * @return {number[][]}

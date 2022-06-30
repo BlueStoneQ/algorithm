@@ -9,6 +9,8 @@
  * 切割问题本质上是一种组合问题
  * 时间: O()
  * 空间：O()
+ * 
+ * 先学会切割，切割的框架, 然后再考虑
  * @param {string} s
  * @return {string[][]}
  */
@@ -29,7 +31,7 @@
           // 防止越界
           // if (i === s.length - 1) return;
           // [切割的关键操作！！！]切割出当前子串
-          const curStr = s.substring(startIndex, i + 1); // 这里会不会越界呢？
+          const curStr = s.substring(startIndex, i + 1); // 这里会不会越界呢？- 不会，这里i的最高值就是len - 1, subString截取的最远空间是[startIndex, len)，开区间,不会访问到s[len]的
           // 如果当前子串不是回文 则结束本次遍历 进入下一次循环
           if (!isPalindrome(curStr)) continue; // 不是回文串 则进入下一轮循环
           // 如果当前子串是回文 则加入到path中

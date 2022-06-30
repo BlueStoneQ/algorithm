@@ -11,6 +11,10 @@
  * 以该版为参考：
  * DFS+startIndex 这是解决组合问题的通用模版
  * 
+ * 其实 DFS就是多叉树遍历
+ * 那么 树的宽度 就是 for循环的length值
+ * 树的深度 其实path的length值
+ * 
  * @param {number} n
  * @param {number} k
  * @return {number[][]}
@@ -32,7 +36,8 @@ const _combine = (path, startIndex) => {
     // 遍历当前层
     // 注意：排列这里i就是0开始，组合 是从startIndex开始的
     // 这里可以剪枝！！！剩余组合元素 不足k时 怎么都组合不出来k个数 就可以剪枝了 https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html
-    // i需要满足这样的一个公式：当前可以提供的元素个数 >= 当前组合需要的元素个数  => k - path.length =< n - i + 1
+    // i需要满足这样的一个公式：当前可以提供的元素个数 >= 当前组合需要的元素个数  =>  n - i + 1 >= k - path.length
+        // 当前可以提供的元素个数 = n - i + 1, 就是下标间元素个数的计算，可以举个例子数数看就知道了
     // => i =< n - (k - path.length) + 1, 可以画图看看哪些枝被减掉了 或者 看下 https://www.bilibili.com/video/BV1wi4y157er?vd_source=9365026f6347e9c46f07d250d20b5787
     for (let i = startIndex; i <= n - (k - path.length) + 1; i++) { // 剪枝优化版2
     // for (let i = startIndex; i <= n; i++) { // 基础版1
