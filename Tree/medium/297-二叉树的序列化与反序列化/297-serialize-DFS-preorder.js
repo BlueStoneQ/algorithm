@@ -49,6 +49,11 @@
  
  /**
   * Decodes your encoded data to tree.
+  * 
+  * 一般语境下，单单前序遍历结果是不能还原二叉树结构的，因为缺少空指针的信息，至少要得到前、中、后序遍历中的两种才能还原二叉树。
+  * 但是这里的 node 列表(data)包含空指针的信息，所以只使用 node 列表就可以还原二叉树。
+  * 
+  * 先确定根节点 root，然后遵循前序遍历的规则，递归生成左右子树即可：
   *
   * @param {string} data
   * @return {TreeNode}
