@@ -40,7 +40,7 @@ nums[i]，即：从头开始计算当前连续子序列和
   dp[0] = nums[0]; // 最大和 不一定是正整数 只要是最大即可
 
   let maxSum = dp[0];
-  // algo
+  // algo [!!!]startIndex = 1
   for (let i = 1; i < numsLen; i++) {
       dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
       // 更新下最长子数组的元素累加和
@@ -50,3 +50,29 @@ nums[i]，即：从头开始计算当前连续子序列和
   // return 
   return maxSum;
 };
+
+
+
+/******************************************* 方法2：扫描法 *********************************************************************************** */
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var maxSubArray = function(nums) {
+  let curSum = nums[0];
+  let maxSum = curSum;
+  for (let i = 1; i < nums.length; i++) {
+      if (curSum < 0) {
+          curSum = nums[i];
+      } else {
+          curSum += nums[i];
+      }
+
+      if (maxSum < curSum) {
+          maxSum = curSum;
+      }
+  }
+
+  return maxSum;
+};
+
