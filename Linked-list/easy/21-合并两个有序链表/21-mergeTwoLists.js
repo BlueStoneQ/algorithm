@@ -13,6 +13,7 @@
  */
 /**
  * 双指针 + 虚拟头结点
+ * 双指针，各指向一个链表
  * 从head开始合并 很像合拉链
  * @param {ListNode} list1
  * @param {ListNode} list2
@@ -25,7 +26,7 @@ var mergeTwoLists = function(list1, list2) {
   const dummyHead = new ListNode();
   let p = dummyHead;
   let p1 = list1, p2 = list2;
-  // 核心算法
+  // 核心算法 [!!!]这里条件是&& 
   while (p1 !== null && p2 !== null) {
     // 其实就是不断填充p.next所指的指针位置 p不断沿着next前移 确定新链表的每一环
     if (p1.val < p2.val) {

@@ -7,6 +7,7 @@
 /**
    双指针+类比合并双链表
  * 将双指针初始化在数组的尾部，然后从后向前进行合并
+   !!!!从后向前填充
  - 你可以设计实现一个时间复杂度为 O(m + n) 的算法解决此问题吗？
  * @param {number[]} nums1
  * @param {number} m
@@ -22,7 +23,7 @@
   // algo
   while (nums1Index >= 0 && nums2Index >= 0) {
       if (nums1[nums1Index] > nums2[nums2Index]) {
-          // 因为从后向前填充 且 升序 大的数先填充
+          // [!!!]因为从后向前填充 且 升序 大的数先填充
           nums1[nowIndex] = nums1[nums1Index--];
       } else {
           nums1[nowIndex] = nums2[nums2Index--];
