@@ -1,6 +1,6 @@
 /**
  * 迭代法-通用迭代模板：[优先采用]
- * Date: 2022-2-7
+ * Date: 2022-7-1
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492107&idx=1&sn=3a6cd8ff3150a37ca1b7231e0846cfaa&scene=21#wechat_redirect
  * 
  * 核心思路：
@@ -24,6 +24,8 @@
     本质上就是：你先画个图 走一遍各种序遍历 然后用栈 + 循环 来实现这个过程
  */
 
+
+
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
@@ -34,58 +36,44 @@
  */
 /**
  * 迭代法：
- * 1. 本质就是用栈模拟递归
- * 2. 这可不是层序遍历 - 这个依然是深度优先的遍历，只是这是迭代法实现的，上面是遍历实现的
  * @param {TreeNode} root
  * @return {number[]}
  */
- var preorderTraversal = function(root) {
-  // 防御
-  // 定义初始值
-  const res = [];
-  // 如何判断p的左右子树到底被遍历过没有呢？其实很简单，我们只需要维护一个visited指针，指向「上一次遍历完成的根节点」，就可以判断p的左右子树遍历情况了
-  // 记录上一次遍历结束的树的节点,初始值需要和其他树中的值不要冲突，该值主要是辅助程序确定 中序 后序 访问的位置
-  // visited指针初始化指向一个新 new 出来的二叉树节点，相当于一个特殊值，目的是避免和输入二叉树中的节点重复
-  let lastVisitedNode = new TreeNode(-1);
-  // 辅助数据结构 栈：模拟递归，栈来模拟递归，其实就是用来按照层级记录每一层递归的信息，而出栈顺序刚好符合递归结束的顺序特点
+ var inorderTraversal = function(root) {
+  // defend
+  // init data
+  const result = [];
   const stack = [];
+  let lastVisitedNode = new TreeNode(-1); // 准确而言 是上一个出栈的元素（代表已经以该节点为root的子树已经被访问完毕）
 
-  /**
-   * 将左子树持续入栈
-   */
-  const pushLeftBranch = function(curRoot) {
-      // 入栈左节点 对应递归中的traverse(root.left)
+  const pushLeftBranch = (curRoot) => {
       while (curRoot !== null) {
-          // 前序遍历位置
-          res.push(curRoot.val);
-
+          // 前序访问位置：左右孩子还未访问
           stack.push(curRoot);
           curRoot = curRoot.left;
       }
   }
-
   // algo
   pushLeftBranch(root);
 
-  // 核心算法: 辅助栈未空 则继续遍历
   while (stack.length > 0) {
-      // 出栈 拿到了层层左节点的值 开始对右子树 作同样的push入栈操作
       const curRoot = stack[stack.length - 1];
-      // curRoot的左子树遍历完了 但是右子树还未遍历完
-      // curRoot.left === lastVisitedNode 标志着当前栈顶元素的left已经被访问过了 并且 右孩子还未遍历（有一种case: 左右孩子都遍历过了，此刻已遍历指针指向右孩子，left既不为空，也没有被visited指针指向）
+
+      // 左孩子为空 或者 左孩子已经被访问 + 右孩子还未访问
       if ((curRoot.left === null || curRoot.left === lastVisitedNode) && curRoot.right !== lastVisitedNode) {
-          // 中序遍历位置
-          // 去遍历curRoot的右子树 就是不断入栈的过程
+          // 中序访问位置
+          result.push(curRoot.val);
+
           pushLeftBranch(curRoot.right);
       }
-      // curRoot的右子树遍历完了, curRoot.right === lastVisitedNode 标志着右孩子也已经被访问了
+
+      // 右孩子为空 或者 右孩子已经被访问了
       if (curRoot.right === null || curRoot.right === lastVisitedNode) {
-          // 后续遍历位置
-          // 以curRoot为根的子树遍历结束 出栈
+          // 后序访问位置：
           lastVisitedNode = stack.pop();
       }
-      // curRoot节点遍历结束
   }
 
-  return res;
+  // return 
+  return result;
 };
