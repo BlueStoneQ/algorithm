@@ -1,6 +1,6 @@
 /**
  * 2022-2-6
- * dong: https://labuladong.gitee.io/algo/2/19/36/
+ * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485871&idx=1&sn=bcb24ea8927995b585629a8b9caeed01&scene=21#wechat_redirect
  */
 
 
