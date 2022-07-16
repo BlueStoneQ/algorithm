@@ -314,6 +314,7 @@ BFS
   - [DP法](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
 - [95-不同的二叉搜索树II]
   - [递归法+备忘录](DP/基础题目/medium/95-不同的二叉搜索树II/95-generateTrees.js)
+- [剑指Offer-54-二叉搜索树的第k大节点](Tree/easy/剑指Offer-54-二叉搜索树的第k大节点/剑指offer-54-kthLargest.js)
 ### 最近公共祖先
 #### easy
 - [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)

@@ -1,4 +1,5 @@
 /**
+ * leet: https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
  * 迭代法-通用迭代模板：[优先采用]
  * Date: 2022-2-7
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492107&idx=1&sn=3a6cd8ff3150a37ca1b7231e0846cfaa&scene=21#wechat_redirect
@@ -45,7 +46,7 @@
   const res = [];
   // 如何判断p的左右子树到底被遍历过没有呢？其实很简单，我们只需要维护一个visited指针，指向「上一次遍历完成的根节点」，就可以判断p的左右子树遍历情况了
   // 记录上一次遍历结束的树的节点,初始值需要和其他树中的值不要冲突，该值主要是辅助程序确定 中序 后序 访问的位置
-  // visited指针初始化指向一个新 new 出来的二叉树节点，相当于一个特殊值，目的是避免和输入二叉树中的节点重复
+  // visited指针初始化指向一个新 new 出来的二叉树节点，[!!!]相当于一个特殊值，目的是避免和输入二叉树中的节点重复
   let lastVisitedNode = new TreeNode(-1);
   // 辅助数据结构 栈：模拟递归，栈来模拟递归，其实就是用来按照层级记录每一层递归的信息，而出栈顺序刚好符合递归结束的顺序特点
   const stack = [];
@@ -71,14 +72,14 @@
   while (stack.length > 0) {
       // 出栈 拿到了层层左节点的值 开始对右子树 作同样的push入栈操作
       const curRoot = stack[stack.length - 1];
-      // curRoot的左子树遍历完了 但是右子树还未遍历完
+      // case1: curRoot的左子树遍历完了 但是右子树还未遍历完 (case1 和 case2 条件互斥，一个节点的情况只能是其中一种)
       // curRoot.left === lastVisitedNode 标志着当前栈顶元素的left已经被访问过了 并且 右孩子还未遍历（有一种case: 左右孩子都遍历过了，此刻已遍历指针指向右孩子，left既不为空，也没有被visited指针指向）
       if ((curRoot.left === null || curRoot.left === lastVisitedNode) && curRoot.right !== lastVisitedNode) {
           // 中序遍历位置
           // 去遍历curRoot的右子树 就是不断入栈的过程
           pushLeftBranch(curRoot.right);
       }
-      // curRoot的右子树遍历完了, curRoot.right === lastVisitedNode 标志着右孩子也已经被访问了
+      // case2: curRoot的右子树遍历完了, curRoot.right === lastVisitedNode 标志着右孩子也已经被访问了
       if (curRoot.right === null || curRoot.right === lastVisitedNode) {
           // 后续遍历位置
           // 以curRoot为根的子树遍历结束 出栈

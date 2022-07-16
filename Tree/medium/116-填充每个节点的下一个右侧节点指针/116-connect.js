@@ -37,7 +37,7 @@
       for (let i = 0; i < layerLength; i++) {
           const cur = queue.shift();
 
-          // 链接左右节点 边界：该层的末尾 是不连接的
+          // [!!!!]链接左右节点 边界：该层的末尾 是不连接的
           if (i < layerLength - 1) {
               cur.next = queue[0];
           }

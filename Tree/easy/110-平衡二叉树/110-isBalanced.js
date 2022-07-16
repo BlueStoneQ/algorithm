@@ -35,10 +35,9 @@ function _getHeight(curRoot) {
   
   // 递归调用 获得左右子树的高度
   const leftHeight = _getHeight(curRoot.left);
+  if (leftHeight === -1) return -1; // 及时短路 已经不平衡 右子树就不用看了
   const rightHeight = _getHeight(curRoot.right);
-
-  // 对于-1的情况 则后面的判断已无必要 直接向上return
-  if (leftHeight === -1 || rightHeight === -1) return -1;
+  if (rightHeight === -1) return -1;
 
   // 比较当前左右子树的高度差 是否>1
   if (Math.abs(leftHeight - rightHeight) > 1) {

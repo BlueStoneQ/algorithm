@@ -26,15 +26,16 @@
   flatten(root.left);
   flatten(root.right);
   // 记录之前的右子树
-  right = root.right;
+  originalRight = root.right;
   // 2. 将左子树接到右子树上，原左子树置为null
   root.right = root.left;
   root.left = null;
-  // 3. 将原来的右子树接到目前右子树的最末端
+  // 3. [!!!]将原来的右子树接到目前右子树的最末端
   while (root.right !== null) {
+      // 指针移动到当前右子树的叶子节点
       root = root.right;
   }
-  root.right = right;
+  root.right = originalRight;
 };
 
 module.exports = flatten;

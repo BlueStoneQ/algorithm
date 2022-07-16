@@ -23,7 +23,8 @@
 var reverseList = function(head) {
   // 防御
   if (!head || !head.next) return head;
-  // 初始化变量
+  // 初始化变量 目前来看 一般链表的节点操作 需要3个节点参与  - 也就是需要3个指针：preP curP temp(缓存next)
+  // 这里其实有一个虚拟头结点：就是preP作为初始值
   let preP = null, curP = head, temp = null;
   // 核心算法
   while (curP !== null) {
