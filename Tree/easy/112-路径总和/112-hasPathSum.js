@@ -13,6 +13,38 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
+
+/**
+ * 方法1： 模板化回溯
+ * @param {TreeNode} root
+ * @param {number} targetSum
+ * @return {boolean}
+ */
+ var hasPathSum = function(root, targetSum) {
+  // init data
+  if (root === null) return false;
+
+  const _binaryTreePaths = (curRoot, preSum) => {
+      if (curRoot === null) return;
+      if (curRoot.left === null && curRoot.right === null && preSum === targetSum) {
+          // 只在叶子节点收集路径
+          return true;
+      }
+
+      for (let key of ['left', 'right']) {
+          const selectedNode = curRoot[key];
+          if (selectedNode === null) {
+              continue;
+          }
+          // 回溯
+          const res = _binaryTreePaths(selectedNode, preSum + selectedNode.val);
+          if (res === true) return res;
+      }
+  }
+
+  return !!_binaryTreePaths(root, root.val);
+};
+
 /**
  * 迭代：回溯
  * @param {TreeNode} root

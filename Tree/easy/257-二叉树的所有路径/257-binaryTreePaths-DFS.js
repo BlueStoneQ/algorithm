@@ -26,10 +26,10 @@
   const res = [];
 
   /**
-  * 辅助函数定义：就是从上到下走每一条路径，到达叶子节点后 就证明一条路径走通了，记录到res中
-  * 这就是典型的回溯啊，从上到下，走通每一条路径
-  */
-  function _binaryTreePaths(curRoot, parentPath) {
+ * 辅助函数定义：就是从上到下走每一条路径，到达叶子节点后 就证明一条路径走通了，记录到res中
+ * 这就是典型的回溯啊，从上到下，走通每一条路径
+ */
+function _binaryTreePaths(curRoot, parentPath) {
       // base case: 
       if (curRoot === null) return;
       // base case 1: 到达叶子节点
@@ -59,7 +59,7 @@
  * @param {TreeNode} root
  * @return {string[]}
  */
- var binaryTreePaths = function(root) {
+var binaryTreePaths = function(root) {
     // defend
     if (root === null) return [];
     // init data
