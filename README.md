@@ -92,6 +92,7 @@ A record of algorithm practice.
   - 类似思路的 [83-删除排序链表中的重复元素](Linked-list/easy/83-删除排序链表中的重复元素/83-deleteDuplicates.js)
 - [27-移除元素](Array/easy/27-移除元素/27-removeElement.js)
 - [283-移动零](Array/easy/283-移动零/283-moveZeroes.js)
+- [剑指Offer-03-数组中重复的数字](Array/easy/剑指Offer-03-数组中重复的数字/剑指offer-03-findRepeatNumber.js)
 #### medium 
 - [316-去除重复字母](Array/medium/316-去除重复字母/316-removeDuplicateLetters.js)
 
@@ -210,6 +211,7 @@ A record of algorithm practice.
 ### 链表反转
 #### easy
 - [206-反转链表](Linked-list/easy/206-反转链表/206-reverseList.js)
+  - [同206][剑指OfferII-024-反转链表](https://leetcode.cn/problems/UHnkqh/)
 - [234-回文链表](Linked-list/easy/234-回文链表/234-isPalindrome.js)
 #### medium
 - [24-两两交换链表中的节点](Linked-list/medium/24-两两交换链表中的节点/24-swapPairs.js)
