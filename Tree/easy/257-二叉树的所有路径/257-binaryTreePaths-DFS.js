@@ -51,3 +51,42 @@
 
   return res;
 };
+
+
+/**
+ * DFS: 回溯 - 枚举路径
+ * 模板化的回溯法
+ * @param {TreeNode} root
+ * @return {string[]}
+ */
+ var binaryTreePaths = function(root) {
+    // defend
+    if (root === null) return [];
+    // init data
+    const result = [];
+
+    const _binaryTreePaths = (path, curRoot) => {
+        if (curRoot.left === null && curRoot.right === null) {
+            // 只在叶子节点收集路径
+            result.push(path.join('->'));
+            return;
+        }
+
+        for (let key of ['left', 'right']) {
+            const selectedNode = curRoot[key];
+            if (selectedNode === null) {
+                continue;
+            }
+            // 做出选择 
+            path.push(selectedNode.val);
+            // 回溯
+            _binaryTreePaths(path, selectedNode);
+            // 撤销选择
+            path.pop();
+        }
+    }
+    // algo
+    _binaryTreePaths([root.val], root);
+    // return
+    return result;
+};

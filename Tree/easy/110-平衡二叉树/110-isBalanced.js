@@ -17,7 +17,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
- var isBalanced = function(root) {
+var isBalanced = function(root) {
   // 防御 空节点默认为平衡 符合平衡的定义
   if (root === null) return true;
 
@@ -45,5 +45,5 @@ function _getHeight(curRoot) {
   }
 
   // 递归调用
-  return Math.max(_getHeight(curRoot.left), _getHeight(curRoot.right)) + 1;
+  return Math.max(leftHeight, rightHeight) + 1;
 }

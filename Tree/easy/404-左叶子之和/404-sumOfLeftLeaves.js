@@ -7,6 +7,40 @@
  */
 
 
+/**
+ * [以该方法为准]更清晰简单的方法 
+ * @param {TreeNode} root
+ * @return {number}
+ */
+ var sumOfLeftLeaves = function(root) {
+  let result = 0;
+
+  /**
+   * 
+   * @param {*} curRoot 
+   * @param {*} isLeft curRoot是不是左节点
+   * @returns 
+   */
+  const _sumOfLeftLeaves = (curRoot, isLeft) => {
+      if (curRoot === null) return;
+
+      // curRoot是左叶子节点
+      if (isLeft && curRoot.left === null && curRoot.right === null) {
+          // 左叶子节点 计入和中
+          result += curRoot.val;
+          return;
+      }
+
+      _sumOfLeftLeaves(curRoot.left, true);
+      _sumOfLeftLeaves(curRoot.right, false);
+  }
+
+  _sumOfLeftLeaves(root);
+
+  return result;
+};
+
+
 
 /**
  * Definition for a binary tree node.
@@ -17,7 +51,7 @@
  * }
  */
 /**
- * 递归法: 自己的一个解法
+ * 递归法: 自己的一个解法[复杂化了]
  * @param {TreeNode} root
  * @return {number}
  */
