@@ -42,6 +42,7 @@
       // base case2 叶子节点
       if (curRoot.left === null && curRoot.right === null) {
           // 如果深度大于最大深度 更新记录值
+          // 因为最左边的值更新后 同层的节点的curDepth都和前面的最左边的节点一致 就不会更新 - 也就是一层 只在第一个节点那里更新一次
           if (curDepth > maxDepth) {
               maxDepth = curDepth;
               maxLeftVal = curRoot.val;

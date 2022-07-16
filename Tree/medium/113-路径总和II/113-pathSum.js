@@ -5,6 +5,48 @@
  * 类型：求二叉树属性
  */
 
+
+/**
+ * DFS: 模板化回溯 枚举路径
+ *  - 更通用 贴近回溯的模版方法
+ * @param {TreeNode} root
+ * @param {number} targetSum
+ * @return {number[][]}
+ */
+ var pathSum = function(root, targetSum) {
+    // defend
+    if (root === null) return [];
+    // init data
+    const res = [];
+    // algo
+    const _pathSum = (path, curRoot, preSum) => {
+        if (curRoot === null) return;
+        if (preSum === targetSum && curRoot.left === null && curRoot.right === null) {
+            res.push(path.slice());
+            return;
+        }
+
+        for (let key of ['left', 'right']) {
+            const selectedNode = curRoot[key];
+
+            if (selectedNode === null) continue;
+
+            path.push(selectedNode.val);
+
+            _pathSum(path, selectedNode, preSum + selectedNode.val);
+
+            path.pop();
+        }
+    }
+
+    _pathSum([ root.val ], root, root.val);
+    // return
+    return res;
+};
+
+
+/************************方法2：树的定制化回溯********************* */
+
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
