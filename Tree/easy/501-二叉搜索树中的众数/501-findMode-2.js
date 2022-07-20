@@ -15,49 +15,51 @@
  * }
  */
 /**
- * 方法1： 用二叉树通用的解决方案 - 需要使用map
- * 方法2： 利用BST的特性进行解决
- * 这里先采用方法1
+ * 方法2：利用BST性质 不使用额外空间
+ *  - BST可是有序的 有序意味着重复值相邻
  * @param {TreeNode} root
  * @return {number[]}
  */
  var findMode = function(root) {
-  // 防御
-  // 初始化变量
-  let res = [];
-  const item2CountMap = new Map(); // map: [ val, count ]
-  /**
-   * 定义：辅助递归函数 （定义在内部 使用闭包）,在递归过程中生成map
-   */
-  const _findMode = function(curRoot) {
-      // base case
-      if (curRoot === null) return;
-      // 递归左右子树
-      _findMode(curRoot.left);
-      // 本层逻辑: 更新map值
-      const curVal = curRoot.val;
-      item2CountMap.set(
-          curVal,
-          item2CountMap.has(curVal) ? item2CountMap.get(curVal) + 1 : 1,
-      );
-      _findMode(curRoot.right);
-  }
-  // 调用辅助递归函数 生成map
-  _findMode(root);
-  // 处理生成的map 找到数量最多的众数组成的数组
-  let maxCount = item2CountMap.get(root.val);
-  for (const [val, count] of item2CountMap) {
-      // case1 当前值的出现次数和maxCount一致 则当前值进入结果中
-      if (count === maxCount) {
-          res.push(val);
-      }
-      // case2 当前值出现次数大于maxCount 则需要更新maxCount 并清空res 将当前值和次数作为最大值
-      if (count > maxCount) {
-          res = [];
-          maxCount = count;
-          res.push(val);
-      }
-  }
-  // 返回结果
-  return res;
+    // 防御
+    if (root === null) return [];
+    // 初始化变量 - me:零散的变量最好用一个结构体管理
+    let res = [];
+    let maxCount = 1;
+    let preNode = root; // !!!关键：记录上一个被遍历的节点，以做到相邻节点的比较-BST常用的方法
+    let count = 0;
+    // 定义：辅助定义函数，该函数递归遍历整棵树，在遍历过程中不断更新res和maxCount
+    const _findMode = function(curRoot) {
+        // base case
+        if (curRoot === null) return;
+        // 递归左右子树
+        _findMode(curRoot.left);
+        // 当前层逻辑: 在中序遍历中 - 保证有序 在有序数组中 重复元素刚好相邻
+        if (curRoot.val === preNode.val) {
+            // 当前节点和上一个节点相同
+            count++;
+        } else {
+            // 当前节点和上一个节点不同 则开始新一轮计数
+            count = 1;
+        }
+        // 更新preCode
+        preNode = curRoot;
+
+        // case1 当前值的cout和maxCount一样 则该值暂时进入res
+        if (count === maxCount) {
+            res.push(curRoot.val);
+        }
+        // case2 当前值的count大于maxCount 则更新res和maxCount
+        if (count > maxCount) {
+            maxCount = count;
+            res = [];
+            res.push(curRoot.val);
+        }
+
+        _findMode(curRoot.right);
+    }
+    // 调用辅助递归函数
+    _findMode(root);
+    // 返回结果
+    return res;
 };

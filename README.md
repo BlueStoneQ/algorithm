@@ -298,8 +298,8 @@ BFS
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
 - 530-二叉搜索树的最小绝对差
-  - [方法2](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-1.js)
-  - [方法1](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-2.js)
+  - [方法1](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-1.js)
+  - [方法2](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-2.js)
 - 501-二叉搜索树中的众数
   - [方法1-二叉树通用递归方法](Tree/easy/501-二叉搜索树中的众数/501-findMode.js)
   - [方法2-推荐-无需额外的空间](Tree/easy/501-二叉搜索树中的众数/501-findMode-2.js)
@@ -313,10 +313,10 @@ BFS
 - [669-修剪二叉搜索树](Tree/medium/669-修剪二叉搜索树/669-trimBST.js)
 ### BST
 - [96-不同的二叉搜索树]
-  - [递归法+备忘录](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees.js)
-  - [DP法](DP/基础题目/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
+  - [递归法+备忘录](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
+  - [DP法](Tree/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
 - [95-不同的二叉搜索树II]
-  - [递归法+备忘录](DP/基础题目/medium/95-不同的二叉搜索树II/95-generateTrees.js)
+  - [递归法+备忘录](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
 - [剑指Offer-54-二叉搜索树的第k大节点](Tree/easy/剑指Offer-54-二叉搜索树的第k大节点/剑指offer-54-kthLargest.js)
 ### 最近公共祖先
 #### easy

@@ -34,7 +34,8 @@
       // 序列化查重
       const preCount = map.get(curSerialization);
       if (preCount === 1) {
-          res.push(curRoot)
+        // !!!
+        res.push(curRoot);
       }
       // 序列化加入查重表
       map.set(curSerialization, (preCount || 0) + 1);

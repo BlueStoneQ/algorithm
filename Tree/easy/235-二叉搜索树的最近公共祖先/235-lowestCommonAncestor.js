@@ -21,6 +21,8 @@
  * @return {TreeNode}
  */
  var lowestCommonAncestor = function(root, p, q) {
+  // 这个防御是必须要做的 因为下面有 root.val的访问 
+  if (root === null) return null;
   // case1: 当前节点大于 p q的值 则 p q都在当前root的左子树中 只需要遍历左子树即可
   if (root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q);
   // case2: 当前节点小于 p q的值 则 p q都在当前root的右子树中 只需要遍历右子树即可

@@ -1,5 +1,6 @@
 /**
  * 2022-2-6
+ * leet: https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485871&idx=1&sn=bcb24ea8927995b585629a8b9caeed01&scene=21#wechat_redirect
  */
 
@@ -74,7 +75,7 @@
      // 构造当前root节点
      const curRoot = new TreeNode(+curRootVal); // 记得转变为数字再存入Tree中
      // 递归调用 用剩余的序列 获得左右子树: 
-     // 前续序列的特点：right - left - root，目前从前向后遍历序列，所以，接下来遍历的是left子树 然后是right子树
+     // 前序序列的特点：root - left - right，目前从前向后遍历序列，所以，接下来遍历的是left子树 然后是right子树
      const left = _deserialize(nodes);
      const right = _deserialize(nodes);
      // 挂载左右子树到当前节点上

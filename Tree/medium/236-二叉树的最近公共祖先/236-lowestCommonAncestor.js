@@ -2,7 +2,7 @@
  * leet: https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
  * Date: 2022-2-7
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485561&idx=1&sn=a394ba978283819da1eb34a256f6915b&scene=21#wechat_redirect
- * 参考题解：[代码随想录](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/236-er-cha-shu-de-zui-jin-gong-gong-zu-x-tl5b/)
+ * 参考题解：[代码随想录](https://programmercarl.com/0236.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html)
  *  - 这一篇讲得比较清晰易懂
  */
 
@@ -53,8 +53,11 @@ function _lowestCommonAncestor(curRoot, p , q) {
   const right = _lowestCommonAncestor(curRoot.right, p, q);
 
   // 判断左右子树返回值 决定目前的返回值
-  if (left !== null && right !== null) return curRoot;
-  if (right === null) return left;
+  // case1: 在当前子树的左右子树中找到了p q,则 curRoot就是最近的共工祖先，一路返回上去
+  if (left !== null && right !== null) return curRoot; // 左右子树中发现了p q,并传递了上来
+  // case2: 右子树没有找到p q,
+  if (right === null) return left; // 因为上面排除了左右子树都是null的情况 此时 right === null的情况下 left是不可能为null的 则left就是p q之一
   if (left === null) return right;
+  // 下面这个情况 包含在了上面case2 case3的情况之中
   // if (right === null && left === null) return null;
 }
