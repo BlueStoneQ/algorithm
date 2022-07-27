@@ -27,6 +27,7 @@ A record of algorithm practice.
 ## sort
 - [快速排序](sort/quickSort.js)
 - [归并排序](sort/mergeSort.js)
+- [计数排序](sort/countSort.js)
 - [插入排序](sort/insertSort.js)
 - [选择排序](sort/selectSort.js)
 - [冒泡排序](sort/bubbleSort.js)
