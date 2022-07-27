@@ -29,8 +29,8 @@
   if (root.val < p.val && root.val < q.val) return lowestCommonAncestor(root.right, p, q);
   // case3: 返回当前节点
       // case 3.1 p.val > root.val > q.val, 或者 p q位置互换，此时，左右p q分别在root的左右子树中 root自然是p q的最近公共祖先 返回root
-      // case 3.2 p.val === root.val 此时，q不论是在root的左子树 还是 右子树，root都是p q的公共节点
-      // case 3.3 q.val === root.val 和 case3.2一样 调换下p q 位置
+      // case 3.2 p.val === root.val 此时，q不论是在root的左子树 还是 右子树，root都是p q的公共节点， 返回root
+      // case 3.3 q.val === root.val 和 case3.2一样 调换下p q 位置, 依然返回root
   return root;
 };
 

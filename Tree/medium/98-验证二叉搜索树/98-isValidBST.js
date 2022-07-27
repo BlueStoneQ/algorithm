@@ -31,7 +31,8 @@ function _isValidBST(curRoot, minNode, maxNode) {
   // 判断当前树 是否不满足平衡规则
   if (minNode && minNode.val >= curRoot.val) return false;
   if (maxNode && maxNode.val <= curRoot.val) return false;
-  // 判断左子树 和 右子树 同时 返回结果
+  // 判断左子树 和 右子树 同时 返回结果，这里通过传参的方式 让子树能拿到父节点的信息
+    // 注意这里的传参：传递的约束 每个节点 应该大于其左子树的所有节点，小于右子树的所有节点，所以 minNode 和 MaxNode 就是承担传递这种最值约束的
   return _isValidBST(curRoot.left, minNode, curRoot) && _isValidBST(curRoot.right, curRoot, maxNode);
 }
 

@@ -2,6 +2,7 @@
  * leet: https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/
  * Date: 2022-2-5
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247488128&idx=2&sn=b8fb3fd2917f9ac86127054741cd5877&scene=21#wechat_redirect
+ * TODO: 可以关注下迭代法：官方：https://leetcode.cn/problems/insert-into-a-binary-search-tree/solution/er-cha-sou-suo-shu-zhong-de-cha-ru-cao-zuo-by-le-3/
  */
 
 /**
@@ -16,6 +17,7 @@
  * 递归法
  * 时间复杂度： O(logN)
  * 空间复杂度: ??
+ * - 可能存在多种有效的插入方式
  * @param {TreeNode} curRoot
  * @param {number} val
  * @return {TreeNode}

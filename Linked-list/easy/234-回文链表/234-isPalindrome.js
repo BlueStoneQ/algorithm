@@ -27,17 +27,17 @@ var isPalindrome = function(head) {
   // 构建stack
   let curP = head;
   while (curP !== null) {
-      stack.push(curP.val);
-      // 步进
-      curP = curP.next;
+    stack.push(curP.val);
+    // 步进
+    curP = curP.next;
   }
   // 核心算法：循环遍历
   // 重置遍历指针 curP
   curP = head;
-      while (curP !== null) {
-      if (stack.pop() !== curP.val) return false;
-      // 步进
-      curP = curP.next;
+  while (curP !== null) {
+    if (stack.pop() !== curP.val) return false;
+    // 步进
+    curP = curP.next;
   }
   // 返回结果
   return true;

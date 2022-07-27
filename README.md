@@ -294,9 +294,16 @@ BFS
 - [297-二叉树的序列化与反序列化-后序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-postorder.js)
 - [297-二叉树的序列化与反序列化-前序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-DFS-preorder.js)
 - [297-二叉树的序列化与反序列化-层序遍历法](Tree/medium/297-二叉树的序列化与反序列化/297-serialize-BFS.js)
-### BST的修改与构造
+
+### 最近公共祖先
+#### easy
+- [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
+#### medium
+- [236-二叉树的最近公共祖先](Tree/medium/236-二叉树的最近公共祖先/236-lowestCommonAncestor.js)
+### BST
 #### easy
 - [700-二叉搜索树中的搜索](Tree/easy/700-二叉搜索树中的搜索/700-searchBST.js)
+- [剑指Offer-54-二叉搜索树的第k大节点](Tree/easy/剑指Offer-54-二叉搜索树的第k大节点/剑指offer-54-kthLargest.js)
 - 530-二叉搜索树的最小绝对差
   - [方法1](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-1.js)
   - [方法2](Tree/easy/530-二叉搜索树的最小绝对差/530-getMinimumDifference-2.js)
@@ -311,18 +318,11 @@ BFS
 - [701-二叉搜索树中的插入操作](Tree/medium/701-二叉搜索树中的插入操作/701-insertIntoBST.js)
 - [450-删除二叉搜索树中的节点](Tree/medium/450-删除二叉搜索树中的节点/450-deleteNode.js)
 - [669-修剪二叉搜索树](Tree/medium/669-修剪二叉搜索树/669-trimBST.js)
-### BST
 - [96-不同的二叉搜索树]
   - [递归法+备忘录](Tree/medium/96-不同的二叉搜索树/96-numTrees.js)
   - [DP法](Tree/medium/96-不同的二叉搜索树/96-numTrees-DP.js)
 - [95-不同的二叉搜索树II]
   - [递归法+备忘录](Tree/medium/95-不同的二叉搜索树II/95-generateTrees.js)
-- [剑指Offer-54-二叉搜索树的第k大节点](Tree/easy/剑指Offer-54-二叉搜索树的第k大节点/剑指offer-54-kthLargest.js)
-### 最近公共祖先
-#### easy
-- [235-二叉搜索树的最近公共祖先](Tree/easy/235-二叉搜索树的最近公共祖先/235-lowestCommonAncestor.js)
-#### medium
-- [236-二叉树的最近公共祖先](Tree/medium/236-二叉树的最近公共祖先/236-lowestCommonAncestor.js)
 
 ---
 

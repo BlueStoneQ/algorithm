@@ -23,17 +23,15 @@
   if (root.length === 0) return root.val;
   // init data
   let res = null;
-  const arr = [];
   const _kthLargest = (curRoot) => {
       if (curRoot === null) return;
 
       // 第K大：需要对BST进行逆序 右 -> 根 -> 左
       _kthLargest(curRoot.right);
-      arr.push(curRoot.val);
       if (k === 0) {
           return;
       }
-      // 注意：这里的k不是下标
+      // 注意：这里的k不是下标 - 因为k是从1开始算的，也就是说k倒数到1的时候 就满足了第k个了
       if (--k === 0) {
           res = curRoot.val;
       }
@@ -43,7 +41,6 @@
   // algo
   _kthLargest(root);
 
-  console.log(arr);
   // return
   return res;
 };

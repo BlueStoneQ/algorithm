@@ -5,6 +5,7 @@
  * - https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect
  * - https://labuladong.gitee.io/algo/2/21/59/
  * 类型：快慢指针，环起点
+ * - 这个重点是一定要能解释这个算法：为什么这样可以拿到起点 - 最好画图说明，推导等式、
  */
 
 /**

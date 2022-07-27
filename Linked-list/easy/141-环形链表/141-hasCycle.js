@@ -25,7 +25,7 @@
   while (fastP !== null && fastP.next !== null) {
       fastP = fastP.next.next;
       slowP = slowP.next;
-      // 先步进 因为起点2个都是head 则会一直输出true
+      // !!!先步进 因为起点2个都是head 则会一直输出true
       if (slowP === fastP) return true;
   }
   // 返回结果

@@ -38,7 +38,7 @@
       fastP = fastP.next;
   }
 
-  // 断开和后面元素的链接
+  // 断开和后面元素的链接 - 因为现在 从 head 到 slowP 这一段是不重复的，重复的元素已经被fast跳过了
   slowP.next = null;
 
   // return

@@ -24,12 +24,10 @@
   while (nums1Index >= 0 && nums2Index >= 0) {
       if (nums1[nums1Index] > nums2[nums2Index]) {
           // [!!!]因为从后向前填充 且 升序 大的数先填充
-          nums1[nowIndex] = nums1[nums1Index--];
+          nums1[nowIndex--] = nums1[nums1Index--];
       } else {
-          nums1[nowIndex] = nums2[nums2Index--];
+          nums1[nowIndex--] = nums2[nums2Index--];
       }
-
-      nowIndex--;
   }
 
   // !!!可能其中一个数组的指针走到尽头了，而另一个还没走完，主要是num1的长度是已经给好的-看题可知
@@ -38,4 +36,5 @@
       nums1[nowIndex--] = nums2[nums2Index--];
   }
   // return
+  return nums1;
 };

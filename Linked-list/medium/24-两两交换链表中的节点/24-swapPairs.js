@@ -24,13 +24,13 @@
   
   // algo
   while(temp.next !== null && temp.next.next !== null) {
-      // 交换
+      // 交换 pre 和 cur
       const pre = temp.next, cur = temp.next.next;
       pre.next = cur.next;
       cur.next = pre;
       temp.next = cur; // 因为这一步 所以 头节点在这里完成了替换 dummy.next = 交换后的头节点
       // 步进
-      temp = pre;
+      temp = pre; // 这里为什么要指向pre呢 其实 因为pre和cur已经换了位置，pre现在是之前的位置（也就是之前temp.next.next了）画个图就知道了哈哈
   }
   // return 
   return dummy.next;

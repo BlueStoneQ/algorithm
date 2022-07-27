@@ -27,6 +27,7 @@
   // algo 
   while (p !== null && p.next !== null) {
       if (val === p.next.val) {
+          // 这里删除的是 p.next
           p.next = p.next.next;
           continue; // 注意删除后跳过当前节点
       }

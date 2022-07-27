@@ -1,4 +1,10 @@
 /**
+ * 2022-2-2
+ * leet: https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
+ * dong: https://labuladong.github.io/algo/2/18/17/
+ */
+
+/**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)
@@ -7,6 +13,7 @@
  */
 
 /**
+ * 核心方法：快慢指针
  * 找到倒数第n个节点
  * 构建一个辅助函数 保证主流程逻辑清晰
  */

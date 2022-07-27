@@ -21,7 +21,7 @@
   if (head === null) return;
   // 初始化变量
   let slowP = head, fastP = head;
-  // 核心算法: 快指针走2步 慢指针走一步 注意处理边界：走到末尾时的处理
+  // 核心算法: 快指针走2步 慢指针走一步 !!!注意处理边界：走到末尾时的处理
   while (fastP !== null && fastP.next !== null) {
       fastP = fastP.next.next;
       slowP = slowP.next;
