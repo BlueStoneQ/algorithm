@@ -17,6 +17,7 @@
 
   空间复杂度: https://blog.csdn.net/u010711495/article/details/117378617
   归并的空间复杂度就是那个临时的数组和递归时压入栈的数据占用的空间：n + logn；所以空间复杂度为: O(n)
+    - 这里的logn其实就是所有的递归算法都会造成这样的空间消耗 - 递归本质上就是栈操作 - 该栈一共有logn层 就是递归的层数 每一层都要入栈一次
     - 归并排序需要O(n)的辅助空间，而与之效率相同的快排和堆排分别需要O(logn)和O(1)的辅助空间，在同类算法中归并排序的空间复杂度略高
   [重要]实际上，递归代码的空间复杂度并不能像时间复杂度那样累加。
   刚刚我们忘记了最重要的一点，那就是，尽管每次合并操作都需要申请额外的内存空间，但在合并完成之后，临时开辟的内存空间就被释放掉了。
@@ -48,7 +49,8 @@ function merge (leftArr, rightArr) {
   const result = [];
 
   while (leftArr.length && rightArr.length) {
-    if (leftArr[0] < rightArr[0]) {
+    // 这里加 = 是为了保持稳定性
+    if (leftArr[0] <= rightArr[0]) {
       result.push(leftArr.shift());
     } else {
       result.push(rightArr.shift());
