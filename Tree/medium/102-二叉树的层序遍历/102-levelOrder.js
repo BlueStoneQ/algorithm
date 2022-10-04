@@ -85,3 +85,49 @@
     // return
     return result;
 };
+
+/**
+ * 变种面试题：
+ * 2022-10-4
+ * 多叉树, 获取每一层的节点之和
+ */
+
+function layerSum(root) {
+    // defend   
+    if (!root) return [];
+    // init data
+    const result = [];
+    const queue = [];
+    queue.push(root);
+    // algo
+    while (queue.length > 0) {
+        const layerLen = queue.length;
+        let layerSum = 0; // 当前层的节点和
+        for (let i = 0; i < layerLen; i++) {
+            const curNode = queue.shift();
+            // 遍历children 将子元素都加入queue
+            curNode.children && [].forEach.call(curNode.children, item => {
+                queue.push(item);
+            });
+            
+            layerSum += curNode.value;
+        }
+        result.push(layerSum);
+    }
+    // return
+    return result;
+}
+
+// test
+(() => {
+    const res = layerSum({
+        value: 2,
+        children: [
+            { value: 6, children: [ { value: 1 } ] },
+            { value: 3, children: [ { value: 2 }, { value: 3 }, { value: 4 } ] },
+            { value: 5, children: [ { value: 7 }, { value: 8 } ] }
+        ]
+    });
+    
+    console.log(res);
+})()
