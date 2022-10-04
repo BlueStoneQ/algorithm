@@ -16,6 +16,7 @@
   if (nums.length < 0) return [];
   // init data
   const res = [];
+  // 排序是为了防止遗漏某个组合 而排序后 因为找的sum呈现递增/减的变化 所以 不会遗漏
   nums.sort((a, b) => a - b); // 递增排序
   // algo 这里注意：第一个数的边界是len-2 因为后面至少有2个数 left right
   for (let firstIndex = 0; firstIndex < len - 2; firstIndex++) {

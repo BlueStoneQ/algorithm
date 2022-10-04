@@ -5,6 +5,8 @@
  */
 
 /**
+ * 1. 排序 确保不遗漏
+ * 2. 双层循环 枚举加数 加数2  + 剩下2个加数的时候 使用双指针
  * @param {number[]} nums
  * @param {number} target
  * @return {number[][]}

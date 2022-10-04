@@ -27,7 +27,7 @@ var isBalanced = function(root) {
 
 /**
 * 辅助递归函数定义：返回当前节点为root的树的高度; 
-  - 在函数体中判断：左右子树的高度差 如果超过1 则返回-1
+  - 🟥例外：在函数体中判断：左右子树的高度差 如果超过1 则返回-1
 */
 function _getHeight(curRoot) {
   // base case: null节点的高度，在leet这边定义为1；其他定义为0
