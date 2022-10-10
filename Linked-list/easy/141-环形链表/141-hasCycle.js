@@ -23,7 +23,7 @@
   let slowP = head, fastP = head;
   // 核心算法: fast是slow的二倍速 看2个指针是否相遇 相遇则代表有环
   while (fastP !== null && fastP.next !== null) {
-      fastP = fastP.next.next;
+      fastP = fastP.next.next; // fastP.next !== null 保证这里不会有非法访问
       slowP = slowP.next;
       // !!!先步进 因为起点2个都是head 则会一直输出true
       if (slowP === fastP) return true;

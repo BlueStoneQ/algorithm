@@ -1,11 +1,13 @@
 /**
  * 2022-6-28
+ * leet: https://leetcode.cn/problems/kth-largest-element-in-an-array/
  * 大名鼎鼎的TopK的问题哈哈
  * 维持一个size为k的minHeap 来解决这个问题，很好的题目
  */
 
 /**
- * 维持一个优先级队列
+ * 维持一个优先级队列[小顶堆]
+ * [二叉堆:政采云](https://www.zoo.team/article/binary-heap-with-js)
  */
  class PriorityQueue {
   constructor (compareFn) {
@@ -55,6 +57,7 @@
       this.queue[0] = this.queue.pop();
       let parentIndex = 0;
       let childIndex = this._getSelectedChildIndex(parentIndex);
+      // 调整相对顺序 - 直到父小于当前元素
       while (childIndex < this.size() && this._compare(parentIndex, childIndex) > 0) {
           this._swap(parentIndex, childIndex);
           parentIndex = childIndex;
@@ -63,7 +66,7 @@
   }
 
   _getParentIndex (index) {
-      // 推导：leftChildIndex = parentIndex * 2 + 1, rightChildIndex = parentIndex * 2 + 2
+      // ⭕️推导：leftChildIndex = parentIndex * 2 + 1, rightChildIndex = parentIndex * 2 + 2
       // Math.floor((index - 1) / 2) 和 Math.floor((index - 2) / 2) 值是一样的 所以 这里不用作区分
       return Math.floor((index - 1) / 2);
   }
