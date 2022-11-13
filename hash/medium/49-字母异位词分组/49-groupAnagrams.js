@@ -8,7 +8,7 @@
   Map.prototype.$addStr = function (key, str) {
       const originalVal = this.get(key) || [];
       originalVal.push(str);
-      this.set(key, originalVal);
+      this.set(key, originalVal); // 这一句可以不要
   }
 })()
 

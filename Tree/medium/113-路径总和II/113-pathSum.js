@@ -1,7 +1,7 @@
 /**
  * leet: https://leetcode-cn.com/problems/path-sum-ii/
  * date: 2022-2-12
- * 题解：https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html#javascript
+ * kaer：https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html#javascript
  * 类型：求二叉树属性
  */
 

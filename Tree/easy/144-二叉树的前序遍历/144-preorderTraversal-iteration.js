@@ -52,7 +52,7 @@
   const stack = [];
 
   /**
-   * 将左子树持续入栈
+   * 将左子树持续入栈：遍历左子树
    */
   const pushLeftBranch = function(curRoot) {
       // 入栈左节点 对应递归中的traverse(root.left)

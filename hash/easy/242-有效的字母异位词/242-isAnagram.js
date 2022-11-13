@@ -19,7 +19,7 @@
   const ascllArr = new Array(26).fill(0); // 下标为ascll-'a'的ascll 
   const baseAscll = 'a'.charCodeAt();
   // algo
-  // 1. 利用s构建对应的ascllArr
+  // 1. 利用s构建对应的查表：ascllArr
   for (const sChar of s) {
       ascllArr[sChar.charCodeAt() - baseAscll]++;
   }

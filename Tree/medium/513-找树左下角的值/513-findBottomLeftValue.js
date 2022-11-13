@@ -16,6 +16,40 @@
  */
 
 /**
+ * 方法2：为准：BFS：不断更新对每一层第一个节点的记录即可
+ */
+const findBottomLeftValue1 = function(root) {
+    // defend
+    if (root === null) return 0;
+    if (root.left === null && root.right === null) return root.val; // 单节点返回当前值
+    // init data
+    let result = 0; // 求最大值，用一个小值以便于启动比较更新
+    const queue = [];
+    queue.push(root);
+    // algo
+    while (queue.length > 0) {
+        const layerLen = queue.length;
+        // 遍历当前层
+        for (let i = 0; i < layerLen; i++) {
+            const curNode = queue.shift();
+            // 记录当前层的第一个值
+            if (i === 0) {
+                result = curNode.val;
+            }
+            if (curNode.left) {
+                queue.push(curNode.left);
+            }
+            if (curNode.right) {
+                queue.push(curNode.right);
+            }
+        }
+    }
+    // return
+    return result;
+}
+
+
+/**
  * 递归法
  * @param {TreeNode} root
  * @return {number}
