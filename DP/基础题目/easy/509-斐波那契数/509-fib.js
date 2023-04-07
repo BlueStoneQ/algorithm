@@ -22,8 +22,12 @@
   dp[1] = 1;
   // algo
   for (let i = 2; i <= n; i++) {
-      dp[i] = dp[i - 1]+ dp[i - 2];
+    dp[i] = dp[i - 1]+ dp[i - 2];
   }
   // return 
   return dp[n];
 };
+
+/**
+ * 被memo缓存高阶函数优化的：递归法
+ */

@@ -42,41 +42,46 @@
    * @param {*} rightIndex 
    * @returns index 返回最终pivot所在的下标
    */
-  const _partition = (leftIndex = 0, rightIndex = arr.length - 1) => {      
-    let pivotIndex = Math.floor(leftIndex + (rightIndex - leftIndex) / 2);
+  const _partition = (leftIndex, rightIndex) => {  
+    console.log('leftindex: ', leftIndex, '--rightIndex: ', rightIndex)    
+    const pivotIndex = Math.floor(leftIndex + (rightIndex - leftIndex) / 2);
     const pivotVal = arr[pivotIndex];
 
     while (leftIndex < rightIndex) {
-      // pivot取中间的值 然后让pivot左右两侧的值 与pivot比较大小 左侧遇到比pivot大的 右侧遇到比pivot小的（或者等于pivot的） 就交换这个元素
-      while (arr[leftIndex] < pivotVal) {
+      // 🟥pivot取中间的值 然后让pivot左右两侧的值 与pivot比较大小 左侧遇到比pivot大的 右侧遇到比pivot小的（或者等于pivot的） 就交换这个元素
+      while (leftIndex < rightIndex && arr[leftIndex] < pivotVal) {
         leftIndex++;
       }
 
-      while (arr[rightIndex] > pivotVal) {
+      while (leftIndex < rightIndex && arr[rightIndex] > pivotVal) {
         rightIndex--;
       }
 
       if (leftIndex < rightIndex) {
+        // 如果leftIndex大于了rightIndex 则循环应该终止 不用再交换了
         _swap(leftIndex, rightIndex);
         leftIndex++;
         rightIndex--;
       }
+      console.log('pivotIndex: ', pivotIndex,'--pivot: ', pivotVal, '--arr: ', arr)
     }
 
+    console.log('leftIndex: ', leftIndex)
     return leftIndex;
   }
 
   // 对区间进行-快速排序 [left, right]
-  const _quikeSort = (leftIndex = 0, rightIndex = arr.length - 1) => {
+  const _quikeSort = (leftIndex, rightIndex) => {
     // base case 
     if (rightIndex <= leftIndex) return;
     // defend
     const pivotIndex = _partition(leftIndex, rightIndex);
+    console.log(arr)
     _quikeSort(leftIndex, pivotIndex); // 排序pivot左边
     _quikeSort(pivotIndex + 1, rightIndex); // 排序pivot右边
   }
 
-  _quikeSort();
+  _quikeSort(0, arr.length - 1);
 
   return arr;
 }
@@ -146,6 +151,12 @@ const quickSort1 = (arr) => {
  */
 const input1 = [0, 1,2,3,4,5,6,7,8];
 const input2 = [4, 6, 2, 3, 1, 2 , 7, 8];
+const input3 = [5,1,1,2,0,0];
+const input4= [-1,2,-8,-10]
+const input5= [-1,-10, -8]
 // console.log('quickSort1: ', quickSort1(input));
-console.log('quickSort2-1: ', quickSort2(input1));
-console.log('quickSort2-2: ', quickSort2(input2));
+// console.log('quickSort2-1: ', quickSort2(input1));
+// console.log('quickSort2-2: ', quickSort2(input2));
+// console.log('quickSort2-3: ', quickSort2(input3));
+console.log('quickSort2-4: ', quickSort2(input4));
+// console.log('quickSort2-5: ', quickSort2(input5));

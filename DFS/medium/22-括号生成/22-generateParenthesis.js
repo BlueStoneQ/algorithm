@@ -36,8 +36,8 @@
  
          // base case2: 需要的左右括号刚好均为0 则该path满足情况 + 记录结果
          if (needLeftParCount === 0 && needRightParCount === 0) {
-             result.push(path.join(''));
-             return;
+            result.push(path.join(''));
+            return;
          }
  
          // 单层遍历: 一共有2种括号 “(” 和 “)”

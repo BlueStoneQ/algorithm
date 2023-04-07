@@ -21,7 +21,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
- var deleteDuplicates = function(head) {
+var deleteDuplicates = function(head) {
   if (head === null) return head;
   const dummy = new ListNode();
   dummy.next = head;

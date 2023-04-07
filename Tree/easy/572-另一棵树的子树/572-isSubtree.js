@@ -1,6 +1,7 @@
 /**
  * 2022-6-24
- * leet: https://leetcode.cn/problems/subtree-of-another-tree/solution/dui-cheng-mei-pan-duan-zi-shu-vs-pan-duan-xiang-de/
+ * leet: https://leetcode.cn/problems/subtree-of-another-tree/
+ * 题解: https://leetcode.cn/problems/subtree-of-another-tree/solution/dui-cheng-mei-pan-duan-zi-shu-vs-pan-duan-xiang-de/
  */
 
 /**

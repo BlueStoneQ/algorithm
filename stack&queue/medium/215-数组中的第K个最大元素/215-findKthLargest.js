@@ -10,9 +10,8 @@
  * [二叉堆:政采云](https://www.zoo.team/article/binary-heap-with-js)
  */
  class PriorityQueue {
-  constructor (compareFn) {
+  constructor () {
       this.queue = [];
-      this.compareFn = compareFn;
   }
 
   peak () {
@@ -102,16 +101,13 @@
 var findKthLargest = function(nums, k) {
   // defend
   if (nums.length < k) return;
-  // init data
-  const minHeap = new PriorityQueue((a, b) => a - b);
-  // 先填充满k个长度的最小堆
-  for (let i = 0; i < k; i++) {
-      minHeap.push(nums[i]);
-  }
-  // algo
-  for (let i = k; i < nums.length; i++) {
-      minHeap.push(nums[i]);
-      minHeap.pop();
+  // init data: 需要一个小顶堆 小顶堆每次pop都会去掉当前heap中最小的元素，留下的就是最大的一组，而堆顶就是当前最大的元素中最小的一个
+  const minHeap = new PriorityQueue((a, b) => a - b); // 小顶堆：小 -> 大
+  for (const num of nums) {
+    minHeap.push(num);
+    if (minHeap.size() > k) {
+        minHeap.pop();
+    }
   }
   // return 
   return minHeap.peak();

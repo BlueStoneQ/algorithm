@@ -13,6 +13,7 @@
  */
 /**
  * 递归法-逆序BST-理解第K大
+ * 因为正序：小 -> 大: 左 -> 根 -> 右
  * @param {TreeNode} root
  * @param {number} k
  * @return {number}
@@ -20,20 +21,18 @@
  var kthLargest = function(root, k) {
   // defend
   if (root === null) return null;
-  if (root.length === 0) return root.val;
   // init data
   let res = null;
   const _kthLargest = (curRoot) => {
-      if (curRoot === null) return;
+      if (curRoot === null) return null;
 
       // 第K大：需要对BST进行逆序 右 -> 根 -> 左
       _kthLargest(curRoot.right);
-      if (k === 0) {
-          return;
-      }
       // 注意：这里的k不是下标 - 因为k是从1开始算的，也就是说k倒数到1的时候 就满足了第k个了
+      // 这里是k发生变化的地方
       if (--k === 0) {
           res = curRoot.val;
+          return
       }
       _kthLargest(curRoot.left);
       

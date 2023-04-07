@@ -42,7 +42,7 @@
      // algo
      for (let row = 1; row < rowSize; row++) {
          for (let col = 1; col < colSize; col++) {
-             // [row][col]是障碍物 dp[row][col]则为默认值0
+             // [row][col]是障碍物 dp[row][col]则为默认值0 遇到障碍物 说明再往前的位置：此路不通 到达不了
              if (obstacleGrid[row][col] === BLOCK) continue;
              // 正常空格 则进行状态转移
              dp[row][col] = dp[row - 1][col] + dp[row][col - 1];

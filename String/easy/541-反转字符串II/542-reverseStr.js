@@ -21,19 +21,24 @@
   // 字符串非引用类型 可以先转成数组
   const arr = s.split('');
   const len = s.length;
+
+  const reverseSubArr = (left, right) => {
+    while (left < right) {
+        const temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left++;
+        right--;
+    }
+  }
+
   // algo
   for (let i = 0; i < len; i += 2 * k) {
       let left = i;
       // [!!!]两两反转 下标和边界是最考验的地方
       // 下面判断式：剩余的字符数量len-i小于k时，right边界就是len-1,大于k时,就是大部分常规情况，i + k - 1
       let right = len - i < k ? len -1 : i + k - 1;
-      while (left < right) {
-          const temp = arr[left];
-          arr[left] = arr[right];
-          arr[right] = temp;
-          left++;
-          right--;
-      }
+      reverseSubArr(left, right)
   }
   
   // return

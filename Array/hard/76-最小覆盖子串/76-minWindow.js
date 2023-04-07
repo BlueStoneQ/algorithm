@@ -34,8 +34,7 @@ var minWindow = function(s, t) {
   const windowChar2CountMap = new Map(); // Map 滑动窗口中字符:该字符出现的次数
   const tChar2CountMap = new Map(); // Map 需要匹配的串t中字符:该字符出现的次数
   for (let i = 0; i < t.length; i++) {
-    const curChar = t[i];
-    tChar2CountMap.$addCount(curChar, 1);
+    tChar2CountMap.$addCount(t[i], 1);
   }
   // 核心算法
   while (RIndex < s.length) {

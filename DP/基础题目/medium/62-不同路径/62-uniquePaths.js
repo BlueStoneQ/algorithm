@@ -34,6 +34,7 @@
   // algo
   for (let row = 1; row < m; row++) {
       for (let col = 1; col < n; col++) {
+          // 到达位置[row, col]可以从上 左 2个相邻的位置过来：每种过来的方法只有一种：
           dp[row][col] = dp[row - 1][col] + dp[row][col - 1];
       }      
   }

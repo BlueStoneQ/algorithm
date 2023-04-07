@@ -33,7 +33,7 @@
       // 遍历当前层
       for (let i = startIndex; i < candidates.length; i++) {
           const curNum = candidates[i];
-          // 去重-方式1: 跳过重复项 当前项 和 前一项相同
+          // 去重-方式1: 跳过重复项 当前项 和 前一项相同 ⭕️注意：这里i > start, 不是i > 0
           if (i > startIndex && curNum === candidates[i - 1]) {
               continue;
           }

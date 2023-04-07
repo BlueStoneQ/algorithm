@@ -1,6 +1,7 @@
 /**
  * 2022-6-24
  * leet: https://leetcode.cn/problems/same-tree/
+ * 比对: https://leetcode-cn.com/problems/symmetric-tree/
  */
 
 /**

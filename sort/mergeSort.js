@@ -1,6 +1,7 @@
 /**
  * 归并排序
  * 2022-4-27
+ * leet: https://leetcode.cn/problems/sort-an-array/description/
  * 递归将数组分成两个序列，有序合并这两个序列。作为一种典型的分治法思想算法应用，归并排序的实现有两种方法：
 自上而下的递归 
   - 其实递归的执行，就是先不断分割，直到最后成为lenth <= 1，即不需要排序的状态
@@ -43,7 +44,7 @@ const mergeSort = (arr) => {
   return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
 
-
+// 这里leftArr和rightArr 除了basecase（len <= 1） 都是被mergeSort排序后的，自底向上，底向上每一层传递的都是排序后的数据
 function merge (leftArr, rightArr) {
   // 遍历leftArr 或者 rightArr 将2者中的最小者不断入result 直到一方遍历结束
   const result = [];

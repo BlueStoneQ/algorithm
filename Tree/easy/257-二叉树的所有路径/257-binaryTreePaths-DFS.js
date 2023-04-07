@@ -54,7 +54,7 @@ function _binaryTreePaths(curRoot, parentPath) {
 
 
 /**
- * DFS: 回溯 - 枚举路径
+ * [推荐]DFS: 回溯 - 枚举路径
  * 模板化的回溯法
  * @param {TreeNode} root
  * @return {string[]}

@@ -40,3 +40,42 @@
   // return 
   return stack.pop();
 };
+
+
+/**
+ * 这一版更好理解些 和上一版思路其实相同 
+ */
+/**
+ * @param {string[]} tokens
+ * @return {number}
+ */
+var evalRPN = function(tokens) {
+    // defend
+    // init data
+    const stack = [];
+    const signSet = new Set(['+', '-', '*', '/']);
+    const sign2action = new Map([
+        ['+', (a, b) => +a + +b],
+        ['-', (a, b) => +a - +b],
+        ['*', (a, b) => +a * +b],
+        ['/', (a, b) => {
+            const res = +a / +b; 
+            return res > 0 ? Math.floor(res) : Math.ceil(res);
+        }]
+    ]);
+    // algo
+    for (const item of tokens) {
+        if (signSet.has(item)) {
+            const oprateFn = sign2action.get(item);
+            const rightNum = stack.pop();
+            const leftNum = stack.pop();
+
+            stack.push(oprateFn(leftNum, rightNum));
+            continue;
+        }
+
+        stack.push(item);
+    }
+    // return 
+    return stack.pop();
+};st

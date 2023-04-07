@@ -15,16 +15,14 @@
   // init data
   const stack = [];
   // algo
-  for (let i = 0; i < s.length; i++) {
-      const top = stack[stack.length - 1];
-      const curChar = s[i];
+  for (const char of s) {
       // 和栈顶相同的 则pop出栈顶
-      if (top === curChar) {
+      if (stack[stack.length - 1] === char) {
           stack.pop();
           continue;
       }
       // 和栈顶不同的 则入栈
-      stack.push(curChar);
+      stack.push(char);
   }
   // 经过以上去除 栈里就是相邻不重复的元素了
   // return 

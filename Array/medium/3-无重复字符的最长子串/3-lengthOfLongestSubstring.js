@@ -29,7 +29,7 @@ var lengthOfLongestSubstring = function(s) {
   // 核心算法
   // 判定不含有重复字符
   // 滑动窗口遍历 注意边界：保证right能访问到最后一个元素 但是下标不要越界 可以举边界的例子 代进去 即可弄清楚
-  while (s.length > rightIndex) {
+  while (rightIndex < s.length) {
     // 将要移进窗口的字符
     const willInChar = s[rightIndex];
     // 更新数据
@@ -45,7 +45,7 @@ var lengthOfLongestSubstring = function(s) {
     }
     // 更新下res 此刻的subStr就是无重复字符的
     res = Math.max(res, rightIndex - leftIndex + 1);
-    // 扩大窗口
+    // 等待上面res的计算结束后 再扩大窗口, 进入下一轮循环
     rightIndex++;
   }
   // 返回值
@@ -54,4 +54,4 @@ var lengthOfLongestSubstring = function(s) {
 
 // test
 // lengthOfLongestSubstring("abcabcbb");
-lengthOfLongestSubstring("bbbbb");
+console.log(lengthOfLongestSubstring("bbbbb")); // expect 1

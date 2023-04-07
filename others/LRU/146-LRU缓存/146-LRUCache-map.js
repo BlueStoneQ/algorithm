@@ -15,6 +15,8 @@
   这种数据结构：
   1. Map
   2. hash双向链表
+
+  map中队尾是最新的
   * @param {number} capacity
   */
  var LRUCache = function(capacity) {
@@ -48,7 +50,7 @@
          this[addRecently](key, value);
          return;
      }
-     // key不存在 先判满 然后delete第一条记录(最久未访问的) 重新set进新的k:v
+     // key不存在 先判满 然后delete第一条记录(最久未访问的) 重新set进新的k:v => 存满后淘汰一次缓存
      if (this.cache.size >= this.capacity) {
          const oldestKey = this.cache.keys().next().value;
          this.cache.delete(oldestKey);

@@ -85,3 +85,32 @@ while (n) {
 // 返回结果
 return res;
 }
+
+/**
+ * 方法3：方法1的另一种实现
+ * 1. 求各个位上的平方和
+ * 2. 拆解各位比较清晰
+ */
+const getPowSum = (arr) => {
+  return arr.reduce((preVar, curVal) => {
+      return +preVar + (+curVal * +curVal)
+  }, 0)
+}
+
+/**
+* @param {number} n
+* @return {boolean}
+*/
+var isHappy = function(n) {
+  const set = new Set()
+
+  while (n !== 1) {
+      const nArr = n.toString().split('').map(v => +v)
+      n = getPowSum(nArr)
+      // 查表
+      if (set.has(n)) return false
+      set.add(n)
+  }
+
+  return true
+};

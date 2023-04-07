@@ -23,7 +23,7 @@
   let slowP = head, fastP = head;
   // 核心算法
   // 1. fast先走n步
-  let fastStepsCount = 0; // fast先走的步数
+  let fastStepsCount = 0; // fast先走的步数n
   while (fastP !== null && fastStepsCount < n) {
       fastP = fastP.next;
       fastStepsCount++;

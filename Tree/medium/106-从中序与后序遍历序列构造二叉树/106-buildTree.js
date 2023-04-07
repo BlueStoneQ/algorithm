@@ -43,17 +43,18 @@
       // 找到当前树根节点(!!!当前树的post序列的最后一位，不是整个序列的最后一位哦)
       const curRootVal = postorder[postorderEnd];
       const curRootInIndex = val2InorderIndexMap.get(curRootVal); // 在中序遍历中的下标
+      const leftTreeLen = curRootInIndex - inorderStart
       // 生成当前根节点
       const curRoot = new TreeNode(curRootVal, null, null);
       // 调用递归 生成左右子树
       const left = _buildTree(
           postorderStart,
-          curRootInIndex - 1 - inorderStart + postorderStart,
+          postorderStart + leftTreeLen - 1,
           inorderStart,
           curRootInIndex - 1,
       );
       const right = _buildTree(
-          curRootInIndex - inorderStart + postorderStart,
+          postorderStart + leftTreeLen,
           postorderEnd - 1,
           curRootInIndex + 1,
           inorderEnd

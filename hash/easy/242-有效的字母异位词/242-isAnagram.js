@@ -48,7 +48,7 @@
   // init data
   const map = new Map(); // char => count, 字符：出现的次数
   // algo
-  // 1. 通过s构造其字符和其出现次数的map
+  // 1. 构建查表：通过s构造其字符和其出现次数的map
   for (const char of s) {
       const preCount = map.get(char) || 0;
       map.set(char, preCount + 1);

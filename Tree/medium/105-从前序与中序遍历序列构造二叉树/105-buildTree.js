@@ -48,17 +48,18 @@
       const curNode = new TreeNode(curVal, null, null);
       // 生成递归调用参数: 当前根节点在inorder中的index值
       const curIndexInorder = v2InorderIndexMap.get(curVal);
+      const leftTreeLen = curIndexInorder - inorderStart
       // 递归调用 构造子树 （这里参数的调用 希望画下 preorder 和 inorder的左右子树边界对应图）
       const left = _buildTree(
-          preorderStart + 1,
-          curIndexInorder - inorderStart + preorderStart,
-          inorderStart,
+          preorderStart + 1, // preorder中的leftTree
+          preorderStart + leftTreeLen, 
+          inorderStart, // inorder中的leftTree
           curIndexInorder - 1
           );
       const right = _buildTree(
-          curIndexInorder - inorderStart + preorderStart + 1,
+          preorderStart + leftTreeLen + 1, // preorder中的leftTree
           preorderEnd,
-          curIndexInorder + 1,
+          curIndexInorder + 1, // inorder中的leftTree
           inorderEnd
       );
       // 将构造的左右子树挂在当前节点上

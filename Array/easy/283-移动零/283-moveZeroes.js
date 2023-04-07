@@ -36,7 +36,7 @@ var moveZeroes = function(nums) {
 };
 
 /**
- * dongge的算法：
+ * [为准]dongge的算法：
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */

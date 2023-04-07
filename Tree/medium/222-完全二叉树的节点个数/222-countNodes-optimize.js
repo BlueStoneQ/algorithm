@@ -1,5 +1,5 @@
 /**
- * leet: https://leetcode-cn.com/problems/count-complete-tree-nodes/submissions/
+ * leet: https://leetcode.cn/problems/count-complete-tree-nodes/description/
  * Date: 2022-2-7
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485057&idx=1&sn=45a3b89a4efef236cb662d5505d7ce36&scene=21#wechat_redirect
  */

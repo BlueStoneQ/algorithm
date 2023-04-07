@@ -11,6 +11,10 @@
  *     this.left = (left===undefined ? null : left)
  *     this.right = (right===undefined ? null : right)
  * }
+ * 
+ * 前序：根左右
+ * 中序：左根右
+ * 后序：左右根
  */
 /**
  * @param {TreeNode} root
@@ -25,10 +29,13 @@
       if (cur === null) {
           return;
       }
+      // 前序遍历位置
       res.push(cur.val);
       // 递归遍历
       _traverse(cur.left);
+      // 中序遍历位置
       _traverse(cur.right);
+      // 后序遍历位置
   }
   // 调用辅助遍历函数
   _traverse(root);

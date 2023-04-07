@@ -34,6 +34,7 @@ const _combine = (path, startIndex) => {
     }
 
     // 遍历当前层
+    // [优化]这里不剪枝也可以: 直接用 i <= n即可
     // 注意：排列这里i就是0开始，组合 是从startIndex开始的
     // 这里可以剪枝！！！剩余组合元素 不足k时 怎么都组合不出来k个数 就可以剪枝了 https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html
     // i需要满足这样的一个公式：当前可以提供的元素个数 >= 当前组合需要的元素个数  =>  n - i + 1 >= k - path.length

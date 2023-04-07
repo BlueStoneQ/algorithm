@@ -28,7 +28,7 @@
   ];
   // algo
   /**
-   * @param {} index 当前按键数字在digists中的下标 
+   * @param {} index ⭕️当前按键数字在digists中的下标， 不是之前组合中的startIndex
    */
   const backTrack = (path, index) => {
       // base case + 在叶子节点 将当前路径加入结果
@@ -42,7 +42,7 @@
       for (let i = 0; i < curStr.length; i++) {
           // 作出选择
           path.push(curStr[i]);
-          // 遍历下一层
+          // 遍历下一层: 注意 这里是遍历下一个数字，用的是index, 而不是i
           backTrack(path, index + 1);
           // 回溯条件
           path.pop();

@@ -25,23 +25,25 @@
   if (root === null) return false;
 
   const _binaryTreePaths = (curRoot, preSum) => {
-      if (curRoot === null) return;
-      if (curRoot.left === null && curRoot.right === null && preSum === targetSum) {
-          // 只在叶子节点收集路径
-          return true;
+      if (curRoot.left === null && curRoot.right === null) {
+        // 只在叶子节点收集路径
+        if (preSum === targetSum) return true
+        return false
       }
 
       for (let key of ['left', 'right']) {
           const selectedNode = curRoot[key];
+          // 这里其实代替了下一层的base case: if (curRoot === null) return
           if (selectedNode === null) {
               continue;
           }
           // 回溯
           const res = _binaryTreePaths(selectedNode, preSum + selectedNode.val);
-          if (res === true) return res;
+          if (res === true) return res; // 短路：找到等于targetSum的路径 即可返回true
       }
   }
 
+  // 注意这里的第二个入参
   return !!_binaryTreePaths(root, root.val);
 };
 

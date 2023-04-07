@@ -25,7 +25,7 @@
 };
 
 /**
-* 辅助递归函数：将2个子树合并后返回该子树根节点
+* 辅助递归函数：将2个子树合并后返回该子树根节点，将Tree2合并到Tree1
 * curTree1
 * curTree2
 * @return TreeNode

@@ -35,7 +35,7 @@
       _sumOfLeftLeaves(curRoot.right, false);
   }
 
-  _sumOfLeftLeaves(root);
+  _sumOfLeftLeaves(root, false);
 
   return result;
 };

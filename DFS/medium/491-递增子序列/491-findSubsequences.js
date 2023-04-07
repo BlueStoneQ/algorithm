@@ -1,12 +1,13 @@
 /**
- * leet: https://leetcode-cn.com/problems/increasing-subsequences/
+ * leet: https://leetcode.cn/problems/non-decreasing-subsequences/description/
  * 2022-3-6
  * karl: https://programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC
+ * 1. 本题求自增子序列，是不能对原数组进行排序的
  */
 
 /**
  * 题型：取有序的子集 + 去重
- * 但是 不能采用排序后去重的方式了
+ * 本题求自增子序列，是不能对原数组进行排序的，所以， 不能采用排序后去重的方式了
  * @param {number[]} nums
  * @return {number[][]}
  */
@@ -19,7 +20,7 @@
   // algo
   // 定义：递归回溯函数
   const backtrack = function(path, startIndex) {
-      const usedSet = new Set(); // 记录当前元素在本层用过
+      const usedSet = new Set(); // 记录当前元素在本层用过，⭕️【新去重方法】这个是可以代替排序后 + 相邻比较的去重方法
       // 收集结果
       if (path.length >= 2) {
           result.push(path.slice());

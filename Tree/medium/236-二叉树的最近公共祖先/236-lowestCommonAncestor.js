@@ -4,6 +4,9 @@
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485561&idx=1&sn=a394ba978283819da1eb34a256f6915b&scene=21#wechat_redirect
  * 参考题解：[代码随想录](https://programmercarl.com/0236.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html)
  *  - 这一篇讲得比较清晰易懂
+ *  - 在gitbranch1上执行 git rebase branch2：本质上就是找到branch1 和 branch2 的公共祖先A，
+ *      然后将A到branch2.HEAD的所有节点copy一份，（同时新链条每个节点生成新的hashId）
+ *      将该A->branch2.HEAD'链接到A和branch1.HEAD, 形成A -> branch2.HEAD' -> branch1.HEAD
  */
 
 /**
@@ -45,7 +48,7 @@
   - base case2：遇到了p 或者 q 则该节点就一路向上返回
 */
 function _lowestCommonAncestor(curRoot, p , q) {
-  // base case
+  // base case：到了空节点 或者 遇到了p q其中一个 则返回该curRoot
   if (curRoot === null || curRoot === p || curRoot === q) return curRoot;
   
   // 调用递归 获取左右子树情况

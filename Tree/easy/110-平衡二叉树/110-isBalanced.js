@@ -2,6 +2,11 @@
  * leet: https://leetcode-cn.com/problems/balanced-binary-tree/
  * Date: 2022-2-7
  * 题解：https://programmercarl.com/0110.%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html
+ * 
+ * 概念：
+ * 二叉树节点的深度：指从根节点到该节点的最长简单路径边的条数。
+    二叉树节点的高度：指从该节点到叶子节点的最长简单路径边的条数。
+    但leetcode中强调的深度和高度很明显是按照节点来计算的
  */
 
 /**

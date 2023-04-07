@@ -20,7 +20,7 @@
     const res = [];
     // algo
     const _pathSum = (path, curRoot, preSum) => {
-        if (curRoot === null) return;
+        // if (curRoot === null) return;
         if (preSum === targetSum && curRoot.left === null && curRoot.right === null) {
             res.push(path.slice());
             return;
@@ -29,6 +29,7 @@
         for (let key of ['left', 'right']) {
             const selectedNode = curRoot[key];
 
+            // 代替了下一层的base case: if (curRoot === null) return;
             if (selectedNode === null) continue;
 
             path.push(selectedNode.val);

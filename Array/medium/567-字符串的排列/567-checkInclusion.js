@@ -14,21 +14,11 @@
 })()
 
 /**
- * me: 题解：所谓s2包含一个s1的排列：其实就是指 s2某个子串是s1的一种排列，该子串subStr的特征：
- * 1. subStr.length === s1.length
- * 2. subStr中包含s1的所有字符，且每种字符的count一样,但是顺序不作要求
- * 也就是：subStr映射出来的map { char: count } 和 s1的map { char: count } 是一样的
- * 
- * 一般这种串的比较 需要2个map:
- * 1. 一个用来查找的 由目标子串生成的map
- * 2. 一个是用来记录窗口中每个字符到其数量的映射的 map
- * 
- * 有几个关键的量：valid：窗口中满足数量和目标串的map中一致的插入，也就是window中有效char的个数
  * @param {string} s1
  * @param {string} s2
  * @return {boolean}
  */
- var checkInclusion = function(s1, s2) {
+var checkInclusion = function(s1, s2) {
   // 防御
   if (typeof s1 !== 'string') return;
   if (typeof s2 !== 'string') return;
@@ -47,23 +37,20 @@
   while (rightIndex < s2Len) {
      // 记录将要移进窗口的值
      const willInChar = s2[rightIndex];
+     windowChar2CountMap.$addCount(willInChar, +1); // +只是为了语义 无实际意义
      // 更新一系列记录的数据结构（window的）
-     if (s1Char2CountMap.has(willInChar)) {
-       windowChar2CountMap.$addCount(willInChar, +1); // +只是为了语义 无实际意义
-       if (windowChar2CountMap.get(willInChar) === s1Char2CountMap.get(willInChar)) valid++;
-     }
+    if (windowChar2CountMap.get(willInChar) === s1Char2CountMap.get(willInChar)) valid++;
      // 缩小窗口: 只要shrink条件满足 就可以一直缩小 所以使用while shrink条件：subStr目前覆盖了s1
     while (valid === s1Char2CountMap.size) {
        // 判断子串是否是s1的全排列 是的话 则找到该子串 return true 程序结束
        // 伪代码：if (subStr.length === s1.length) return true;
-       if (rightIndex - leftIndex === s1Len) return true;
+       if (rightIndex - leftIndex + 1 === s1Len) return true;
        // 记录将要移出窗口的值
        const willOutChar = s2[leftIndex];
-       // 收缩后更新一系列值 - 首先判断willOutChar是有效字符
-       if (s1Char2CountMap.has(willOutChar)) {
-        // 1. 如果收缩前 窗口该字符串数量刚好满足s1 则移出后 该平衡被打破 valid需要减一，也就是停止缩小窗口
-        if (windowChar2CountMap.get(willOutChar) === s1Char2CountMap.get(willOutChar)) valid--;
-       }
+       // 收缩后更新一系列值 - 首先判断willOutChar是有效字符 
+       // 1. 如果收缩前 窗口该字符串数量刚好满足s1 则移出后 该平衡被打破 valid需要减一，也就是停止缩小窗口
+       if (windowChar2CountMap.get(willOutChar) === s1Char2CountMap.get(willOutChar)) valid--;
+       
        windowChar2CountMap.$addCount(willOutChar, -1); // 注意 这里是-1 就是数量减1
       // 窗口收缩
       leftIndex++;

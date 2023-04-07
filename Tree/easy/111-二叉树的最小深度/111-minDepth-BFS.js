@@ -42,13 +42,13 @@
       for (let i = 0; i < curSize; i++) {
           // 拿到当前node节点 + shift当前node节点
           const curNode = queue.shift();
+          // 首次到达叶子节点 就是找到了最小深度 可以退出了
+          if (curNode.left === null && curNode.right === null) {
+            return depth;
+          }
           // 将当前节点的子节点push进队列（这样一个for循环后 整个下一层节点全部进入队列了）
           if (curNode.left !== null) queue.push(curNode.left);
           if (curNode.right !== null) queue.push(curNode.right);
-          // 首次到达叶子节点 就是找到了最小深度 可以退出了
-          if (curNode.left === null && curNode.right === null) {
-              return depth;
-          }
       }    
   }
 
