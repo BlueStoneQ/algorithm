@@ -3,6 +3,9 @@
  * leet: https://leetcode.cn/problems/kth-largest-element-in-an-array/
  * 大名鼎鼎的TopK的问题哈哈
  * 维持一个size为k的minHeap 来解决这个问题，很好的题目
+ * 核心操作:
+ * - push：-> 队尾 -> floatUp(while(getParent -> compare -> swap))
+   - pop：-> return 队头 -> 队尾元素拉到队头位置 -> floatDown(while(getChildren -> compare -> swap))
  */
 
 /**
