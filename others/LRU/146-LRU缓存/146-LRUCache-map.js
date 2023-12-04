@@ -3,6 +3,18 @@
  * Date: 2022-2-24 
  * dong: https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247486428&idx=1&sn=3611a14535669ba3372c73e24121247c&scene=21#wechat_redirect
  * 方法1： 使用Map
+ * 利用Map的有序性：旧 -> 新, set每次都是在队尾添加元素
+ * 
+    算法骨架:
+    - Map<>: 队头是旧的，队尾是新的
+    - get: addRecently(k) -> return map.get(k)
+    - set: 
+        - 是否已存在：
+            - 存在: addRecently(k)
+            - 不存在 -> 判满: 
+                - 已满：则del.队头k（del map.keys().next().value） -> set(k, v)
+                - 未满：直接map.set(key, value)
+    - addRecently: map.del(k), set(k, v)
  */
 
  const addRecently = Symbol('addRecently');
