@@ -18,12 +18,10 @@
  * @return {number}
  */
  var minCostClimbingStairs = function(cost) {
-  // defend
-  if (cost.length === 0) return 0;
-  if (cost.length === 1) return cost[0];
   // init data
   const n = cost.length;
   const dp = [];
+  // 题目中说 “你可以选择从下标为 0 或下标为 1 的台阶开始爬楼梯” 也就是相当于 跳到 下标 0 或者 下标 1 是不花费体力的， 从 下标 0 下标1 开始跳就要花费体力了。
   // 你可以选择从下标为 0 或下标为 1 的台阶开始爬楼梯。（花费是0） - 因为我们要求最小的 所以 选择从1开始爬
   dp[0] = 0; 
   dp[1] = 0;

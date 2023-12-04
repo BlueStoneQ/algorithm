@@ -26,6 +26,7 @@
 
   // algo 
   while (p !== null && p.next !== null) {
+      // 第一个p.next其实就是head
       if (val === p.next.val) {
           // 这里删除的是 p.next
           p.next = p.next.next;

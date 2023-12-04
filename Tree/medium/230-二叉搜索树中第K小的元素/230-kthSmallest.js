@@ -22,22 +22,22 @@
  var kthSmallest = function(root, k) {
   // 结果
   let res;
-  // 记录访问到了第几个最小次序
-  let rank = 0;
+
   const _traverse = function(curRoot) {
       // base case
       if (curRoot === null) return;
       // 递归函数
       _traverse(curRoot.left);
       // 满足条件 到达第k个最小值 则记入结果 同时返回 从这一层开始逐层结束递归 减少无谓递归
-      rank++;
-      if (rank === k) {
+      if (k-- === 1) {
           res = curRoot.val;
           return;
       }
       _traverse(curRoot.right);
   }
-  _traverse(root, k);
+
+  _traverse(root);
+  
   return res;
 };
 

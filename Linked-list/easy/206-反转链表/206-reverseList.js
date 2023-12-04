@@ -1,5 +1,5 @@
 /**
- * leet: https://leet-code-cn.com/problems/reverse-linked-list/
+ * leet: https://leetcode.cn/problems/reverse-linked-list/
  * Date: 2022-2-3
  * 方法：
  * 1. 迭代法

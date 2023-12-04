@@ -47,7 +47,7 @@ var removeNthFromEnd = function(head, n) {
   // 初始化数据
   const dummyHead = new ListNode();
   dummyHead.next = head;
-  // 要删除倒数第n个节点 必须找到其前驱节点 也就是倒数第n+1个节点
+  // ⭕️要删除倒数第n个节点 必须找到其前驱节点 也就是倒数第n+1个节点
   const preNode = findFromEnd(dummyHead, n + 1);
   // 使用倒数第n+1个节点删除倒数第n个节点
   preNode.next = preNode.next.next;

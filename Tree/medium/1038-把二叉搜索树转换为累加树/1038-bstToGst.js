@@ -19,7 +19,7 @@
  * @return {TreeNode}
  */
  var bstToGst = function(root) {
-  // !!!标记量：按照降序访问 记录累加的当前节点之前的所有值的累加和（降序 前面访问的所有值都比当前节点值大）
+  // ⭕️!!!标记量：按照降序访问 记录累加的当前节点之前的所有值的累加和（降序 前面访问的所有值都比当前节点值大）
   let sum = 0;
   // 辅助递归函数: 中序-降序访问节点
   const _traverse = function(curRoot) {

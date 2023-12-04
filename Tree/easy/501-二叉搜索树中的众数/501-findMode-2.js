@@ -16,7 +16,7 @@
  */
 /**
  * 方法2：利用BST性质 不使用额外空间
- *  - BST可是有序的 有序意味着重复值相邻
+ *  - BST可是有序的 有序意味着重复值相邻, BST中序遍历相当于从小到大的遍历一个有序数组
  * @param {TreeNode} root
  * @return {number[]}
  */
@@ -25,8 +25,8 @@
     if (root === null) return [];
     // 初始化变量 - me:零散的变量最好用一个结构体管理
     let res = [];
-    let maxCount = 1;
-    let preNode = root; // !!!关键：记录上一个被遍历的节点，以做到相邻节点的比较-BST常用的方法
+    let maxCount = 0;
+    let preNode = null; // ⭕️!!!关键：记录上一个被遍历的节点，以做到相邻节点的比较-BST常用的方法
     let count = 0;
     // 定义：辅助定义函数，该函数递归遍历整棵树，在遍历过程中不断更新res和maxCount
     const _findMode = function(curRoot) {
@@ -35,7 +35,7 @@
         // 递归左右子树
         _findMode(curRoot.left);
         // 当前层逻辑: 在中序遍历中 - 保证有序 在有序数组中 重复元素刚好相邻
-        if (curRoot.val === preNode.val) {
+        if (preNode && curRoot.val === preNode.val) {
             // 当前节点和上一个节点相同
             count++;
         } else {

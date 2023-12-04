@@ -1,5 +1,5 @@
 /**
- * leet: https://leetcode-cn.com/problems/unique-paths/
+ * leet: https://leetcode-cn.com/pr oblems/unique-paths/
  * 2022-3-10
  * kaer: https://programmercarl.com/0062.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84.html
  */
@@ -24,14 +24,16 @@
   // init data
   const dp = new Array(m).fill([]);
   // ！！！二维dp的初始化这里注意：需要循环初始化：如何初始化呢，首先dp[i][0]一定都是1，因为从(0, 0)的位置到(i, 0)的路径只有一条，那么dp[0][j]也同理。
+  // 初始化：第一列
   for (let row = 0; row < m; row++) {
       dp[row][0] = 1;
   }
+  // 初始化：第一行
   for (let col = 0; col < n; col++) {
       dp[0][col] = 1;
   }
 
-  // algo
+  // algo: 注意这里从1开始起步
   for (let row = 1; row < m; row++) {
       for (let col = 1; col < n; col++) {
           // 到达位置[row, col]可以从上 左 2个相邻的位置过来：每种过来的方法只有一种：

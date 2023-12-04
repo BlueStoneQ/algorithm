@@ -60,7 +60,7 @@
  };
  
  /**
-  * 将key提升至最近访问（map最新插入的位置（末尾）, 并赋值val）
+  * ⭕️[关键]将key提升至最近访问（map最新插入的位置（末尾）, 并赋值val）
   */
  LRUCache.prototype[addRecently] = function(key, val) {
      // 次序提升：该条提升至Map的尾部 = 具体操作：删除该条 并重新set

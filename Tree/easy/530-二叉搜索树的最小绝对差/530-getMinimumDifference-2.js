@@ -31,7 +31,7 @@
 
         // 递归左右子树
         _getMinimumDifference(curRoot.left);
-        // 当前层逻辑
+        // 当前层逻辑: 因为有序性，最小差值一定存在于变成数组后相邻的2个元素间
         if (preNode !== null) {
             minAbs = Math.min(minAbs, Math.abs(curRoot.val - preNode.val));
         }

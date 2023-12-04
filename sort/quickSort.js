@@ -67,7 +67,7 @@
     }
 
     console.log('leftIndex: ', leftIndex)
-    return leftIndex;
+    return leftIndex; // leftIndex === rightIndex 等于真正的分界点index
   }
 
   // 对区间进行-快速排序 [left, right]

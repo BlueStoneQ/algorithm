@@ -27,7 +27,9 @@
   // 移除堆顶
   pop () {
       const result = this.queue[0];
-      // 调整相对顺序
+      // 将堆底的元素移动到堆顶 然后从堆顶进行下沉
+      this.queue[0] = this.queue.pop();
+      // 堆顶下沉
       this._floatDown();
       // 下沉 - 直到新堆顶找到合适的位置
       return result;
@@ -50,10 +52,8 @@
       }
   }
 
-  // 下沉 - 直到新堆顶找到合适的位置 
+  // 堆顶下沉 - 直到新堆顶找到合适的位置 
   _floatDown () {
-      // 将堆底的元素移动到堆顶 然后从堆顶进行下沉
-      this.queue[0] = this.queue.pop();
       let parentIndex = 0;
       let childIndex = this._getSelectedChildIndex(parentIndex);
       // 调整相对顺序 - 直到父小于当前元素

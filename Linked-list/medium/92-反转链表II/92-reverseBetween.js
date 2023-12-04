@@ -93,6 +93,7 @@ var reverseBetween = function(head, left, right) {
 /**
  * 迭代法2：头插法 - 一次遍历
  * 1. 注意：多个指针可以指向同一个节点 理解：指针 指针 指针！！
+ * 2. 所谓头插法，就是把一个一个节点插到head部分
  * @param {ListNode} head
  * @param {number} left
  * @param {number} right
@@ -107,19 +108,20 @@ var reverseBetween = function(head, left, right) {
    // 定义反转需要的三个指针 pre指针的起点设置为dummy 这样left就和可以理解为数组下标了 和下标对齐了（从0起步了，节点0就是dummy这个虚拟的节点）
    // cur 和  pre的指向始终不变： pre始终指向要反转的子链表的前一个节点 cur始终指向反转的子链表的第一个节点 
    let pre = dummy, cur = dummy, next = null;
-   // 初始化pre到left的前一个位置
+   // 初始化pre到left的前一个位置:pre向右移动left - 1个位置[0, left - 1 - 1]
    for (let i = 0; i < left - 1; i++) {
        pre = pre.next;
    }
    cur = pre.next;
-   // 核心算法
+   // 核心算法：https://leetcode.cn/problems/reverse-linked-list-ii/solutions/663921/yi-ge-neng-ying-yong-suo-you-lian-biao-t-vjx6/
    for (let i = 0; i < right - left; i++) {
        // 头插式反转 (核心其实是交换cur 和 next)
-       next = cur.next;
+       next = cur.next; // 步进：指向接下来要被头插的节点
+       // 开始头插：将next插入到pre和cur之间
        cur.next = next.next;
        next.next = pre.next;
        pre.next = next;
-       // 不用步进 pre 和 cur 始终指向一个各自的节点 节点不变
+       // 不用步进 pre 和 cur 始终指向一个各自的节点 节点不变, pre始终指向整个子链表的前驱节点：就是哨兵节点
    }
    // 返回结果
    return dummy.next;
