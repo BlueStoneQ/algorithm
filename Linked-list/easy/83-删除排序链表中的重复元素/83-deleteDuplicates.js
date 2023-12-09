@@ -23,6 +23,8 @@
  */
 var deleteDuplicates = function(head) {
   if (head === null) return head;
+
+  // 这里其实可以不用dummy虚拟头结点 可以直接用head 不影响
   const dummy = new ListNode();
   dummy.next = head;
   // init data

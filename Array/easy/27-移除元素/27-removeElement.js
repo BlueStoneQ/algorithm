@@ -20,6 +20,7 @@ var removeElement = function(nums, val) {
   // 核心算法
   while (fastIndex < nums.length) {
     if (nums[fastIndex] !== val) {
+      // slowIndex遇到了val 就会在原地等待值!== val的fastIndex进行覆盖 覆盖后会往前走
       nums[slowIndex] = nums[fastIndex];
       slowIndex++;
     }
