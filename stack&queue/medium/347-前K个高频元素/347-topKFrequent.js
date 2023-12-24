@@ -50,6 +50,7 @@ var topKFrequent = function(nums, k) {
       num2FreqMap.$addCount(num, 1);
   }
   // algo
+  // ⭕️关键数据结构：数字到频率的map映射
   const num2FreqEntries = num2FreqMap.entries();
   for (let entry of num2FreqEntries) {
       minPriorityQueue.push(entry); // entry: [num, freq]
@@ -146,9 +147,9 @@ class PriorityQueue {
    */
   _getSelectedChildIndex (parentIndex) {
       const leftIndex = parentIndex * 2 + 1, rightIndex = parentIndex * 2 + 2;
-      const selectedChildIndex = this._compare(leftIndex, rightIndex) > 0 ? rightIndex : leftIndex; // 找出左右子节点的最小值（这里具体是小顶堆） 作为和父节点比较的子节点
-
-      return selectedChildIndex;
+      return this._compare(leftIndex, rightIndex) > 0 ?
+        rightIndex 
+        : leftIndex; // 找出左右子节点的最小值（这里具体是小顶堆） 作为和父节点比较的子节点
   }
 
   _getParentIndex (index) {
