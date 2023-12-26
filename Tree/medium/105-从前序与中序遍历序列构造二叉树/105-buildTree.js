@@ -24,9 +24,7 @@
   // 确定初始值
   // 构造map [val => inorderIndex]
   const v2InorderIndexMap = new Map();
-  for (let i = 0; i < inorder.length; i++) {
-      v2InorderIndexMap.set(inorder[i], i);
-  }
+  inorder.forEach((v, i) => v2InorderIndexMap.set(v, i))
   /**
   * 定义辅助递归函数：根据前后序遍历序列 + 左右序列边界下标 生成一棵二叉树 并返回该二叉树根节点
   * 1. 这里借助闭包 省去一些数据通过入参传递 影响程序的可读性
@@ -34,6 +32,7 @@
   * 其实核心原理画个图就理解：
   * 前序遍历结果： root - leftTree - rightTree
   * 中序遍历结果: leftTree - root - rightTree
+  * 核心就是不断计算出每个子树对应的数组的startIndex和endIndex
   * 所以 这个题有解 必须node的val都是唯一的 不同的，这样才能用前序的第一个元素root在中序中分割出左子树和右子树，然后利用左右子树的长度在前序中找出左右子树的边界下标，再将左右子树分别递归处理，不断找到当前的root
   * @param {Number} preorderStart 当前子树的前序遍历序列中的起点
   * @param {Number} preorderEnd 当前子树的前序遍历序列中的终点
@@ -69,7 +68,7 @@
       return curNode;
   }
   // 调用递归 传入初始边界值
-  return _buildTree(0, preorder.length - 1, 0, preorder.length - 1);
+  return _buildTree(0, preorder.length - 1, 0, inorder.length - 1);
 };
 
 module.exports = buildTree;

@@ -45,13 +45,9 @@ var mergeTwoLists = function(list1, list2) {
 
   // 程序走到这里 p1 或者 p2 一定有一个已经遍历到末尾了 值为null 所以下面的2个case 只会走进一个，把未遍历结束的剩下的链表贴在当前新链表的末尾
   // 未遍历完的链表的部分 可以直接整段拼接在p的后面（此时p正指向新链表的末尾节点, 只要把剩余链表的头p1拼在p的后面即可）
-  if (p1 !== null) {
-      p.next = p1;
-  }
+  if (p1 !== null) p.next = p1;
 
-  if (p2 !== null) {
-      p.next = p2;
-  }
+  if (p2 !== null) p.next = p2;
 
   // 返回结果 （虚拟头结点本身是不存任何有效数据的，所以真的链表都是从dummy的next开始的 dummy.next才是真正的head）
   return dummyHead.next; 

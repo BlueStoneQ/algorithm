@@ -51,7 +51,7 @@ function _lowestCommonAncestor(curRoot, p , q) {
   // base case：到了空节点 或者 遇到了p q其中一个 则返回该curRoot
   if (curRoot === null || curRoot === p || curRoot === q) return curRoot;
   
-  // 调用递归 获取左右子树情况
+  // 调用递归 获取左右子树情况，这里的left和right其实作用本质上应该是flag或者signal, 但是其实也会是node节点
   const left = _lowestCommonAncestor(curRoot.left, p, q);
   const right = _lowestCommonAncestor(curRoot.right, p, q);
 
