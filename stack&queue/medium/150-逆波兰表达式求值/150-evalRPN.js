@@ -60,7 +60,7 @@ var evalRPN = function(tokens) {
         ['*', (a, b) => +a * +b],
         ['/', (a, b) => {
             const res = +a / +b; 
-            return res > 0 ? Math.floor(res) : Math.ceil(res);
+            return res > 0 ? Math.floor(res) : Math.ceil(res); // 向0截断 其实就是数轴上向0靠近
         }]
     ]);
     // algo

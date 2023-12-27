@@ -10,8 +10,8 @@ const inStack2OutStack = Symbol('inStack2OutStack');
  * 用2个互逆的栈实现队列
  */
  var MyQueue = function() {
-  this.sTackIn = [];
-  this.sTackOut = [];
+  this.inStack = [];
+  this.outStack = [];
 };
 
 /** 
@@ -19,27 +19,27 @@ const inStack2OutStack = Symbol('inStack2OutStack');
 * @return {void}
 */
 MyQueue.prototype.push = function(x) {
-  this.sTackIn.push(x);
+  this.inStack.push(x);
 };
 
 /**
 * @return {number}
 */
 MyQueue.prototype.pop = function() {
-  // [关键]如果stackOut为空 需要把stackIn全部逆序放入到stackIn中
-  this[onStack2OutStack]();
+  // [关键]如果outStack为空 需要把inStack全部逆序放入到inStack中
+  this[inStack2OutStack]();
 
-  return this.sTackOut.pop();
+  return this.outStack.pop();
 };
 
 /**
 * @return {number}
 */
 MyQueue.prototype.peek = function() {
-  // [关键]如果stackOut为空 需要把stackIn全部逆序放入到stackIn中
-  this[onStack2OutStack]();
-  // 读取stackOut的栈顶
-  return this.sTackOut[this.sTackOut.length - 1];
+  // [关键]如果outStack为空 需要把inStack全部逆序放入到inStack中
+  this[inStack2OutStack]();
+  // 读取outStack的栈顶
+  return this.outStack[this.outStack.length - 1];
 };
 
 /**
@@ -47,11 +47,11 @@ MyQueue.prototype.peek = function() {
 */
 MyQueue.prototype.empty = function() {
   // 2个栈为空 则整个队列就空了 因为该队列是2个栈元素之和
-  return this.sTackOut.length === 0 && this.sTackIn.length === 0;
+  return this.outStack.length === 0 && this.inStack.length === 0;
 };
 
 // 将instack注入到outStack
-MyQueue.prototype[onStack2OutStack] = function() {
+MyQueue.prototype[inStack2OutStack] = function() {
   // 在outStack为空的时候，将inStack 导入到 outStack
   if (this.outStack.length === 0) {
       while (this.inStack.length > 0) {
