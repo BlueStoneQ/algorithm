@@ -1,5 +1,5 @@
 /**
- * leet: https://leetcode-cn.com/pr oblems/unique-paths/
+ * leet: https://leetcode-cn.com/problems/unique-paths/
  * 2022-3-10
  * kaer: https://programmercarl.com/0062.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84.html
  */

@@ -20,7 +20,7 @@
     var climbStairs = function(n) {
       // defend
       if (n <= 2) return n;
-      // init data dp[0] 其实是毫无意义的 
+      // init data dp[0] 其实是毫无意义的。 因为没有0层台阶
       const dp = [];
       dp[1] = 1;
       dp[2] = 2;

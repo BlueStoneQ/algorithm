@@ -15,6 +15,8 @@
   * dp的初始化值：dp[i][0] = 1; dp[0][j] = 1; // 画个图就清楚了 单维情况下只有一条路径 
   * 举例dp: m = 2, n = 3 => 
   * 有障碍的话，其实就是标记对应的dp table（dp数组）保持初始值(0)就可以了。
+  * 
+  * m * n矩阵：这里其实要有个常识：m一般是总坐标, dp[m][n]
   * @param {number[][]} obstacleGrid
   * @return {number}
   */
@@ -24,10 +26,12 @@
      const rowSize = obstacleGrid.length;
      const colSize = obstacleGrid[0].length;
  
-     const dp = new Array(rowSize).fill([]);
-     for (let row = 0; row < rowSize; row++) {
-         dp[row] = new Array(colSize).fill(0); // 初始化为0 占位 也方便后面遇到障碍的时候 不用做处理就是0
-     }
+    //  const dp = new Array(rowSize).fill([]);
+    //  for (let row = 0; row < rowSize; row++) {
+    //      dp[row] = new Array(colSize).fill(0); // 初始化为0 占位 也方便后面遇到障碍的时候 不用做处理就是0, 就是默认只有0条路径通过
+    //  }
+    // 初始化一个rowSize * colSize 的矩阵
+    const dp = Array.from({length: rowSize}, () => new Array(colSize).fill(0))
  
      // 初始化dp数组
      // 注意代码里for循环的终止条件，一旦遇到obstacleGrid[i][0] == 1的情况就停止dp[i][0]的赋值1的操作，dp[0][j]同理
