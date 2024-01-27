@@ -35,7 +35,7 @@ var reverseLeftWords = function(s, n) {
       }
   }
   // algo
-  // 1. 翻转整个字符串 abcde => edcba,剩下2步的顺序不影响结果
+  // 1. 翻转整个字符串 abcde => edcba,剩下2步的顺序不影响结果 me: 其实也可以局部翻转 再整体翻转 其实是一样的
   _reverse(0, len - 1);
   // 2. 翻转 之前的前半部分字符串[0,n - 1] 下标映射翻转后的[len - n, len - 1], 也就是 edcab
   _reverse(len - n, len - 1);

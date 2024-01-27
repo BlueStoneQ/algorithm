@@ -76,6 +76,7 @@
      // 辅助函数
      function _flatten(nestedList) {
          // 如果当前值为nestedList(不是数字的话 就必须是nestedList了) 则需要循环每个值 并递归调用_flatten 直到它是基础结构
+         // 其实 二叉树可以看做selectList中只有left+right 2个元素的多叉树（用DFS遍历）
          for (let i = 0; i < nestedList.length; i++) {
              if (nestedList[i].isInteger()) {
                  // 如果当前值为单值（基础结构） 则直接push到res中

@@ -26,7 +26,7 @@ var deleteDuplicates = function(head) {
 
   // 这里其实可以不用dummy虚拟头结点 可以直接用head 不影响
   const dummy = new ListNode();
-  dummy.next = head;
+  dummy.next = head; // 其实 dummy.next也像一个快照一样 （始终指向）记录下来了最终为head的节点
   // init data
   let slowP = head, fastP = head;
   // algo

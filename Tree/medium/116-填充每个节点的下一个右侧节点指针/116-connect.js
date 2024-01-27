@@ -39,7 +39,7 @@
 
           // [!!!!]链接左右节点 边界：该层的末尾 是不连接的
           if (i < layerLength - 1) {
-              cur.next = queue[0]; // ⭕️queue[0] 刚好就是cur的右边的那个节点
+              cur.next = queue[0]; // ⭕️因为cur刚刚shift出来了, 所以当前的queue[0]（之前的queue[1]） 刚好就是cur的右边的相邻节点
           }
 
           // 不断将下面一层的子节点加入队列

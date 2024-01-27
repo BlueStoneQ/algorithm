@@ -21,6 +21,7 @@
   for (const n1 of nums1) {
       for (const n2 of nums2) {
           const curSum = n1 + n2;
+          // 这里可以用自定义的Map.prototype.$addCount来代替
           const preCount = twoSumMap.get(curSum) || 0;
           twoSumMap.set(curSum, preCount + 1);
       }

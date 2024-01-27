@@ -17,6 +17,11 @@
 
 /**
  * 找到链表head中的第index个节点，index从1开始
+ * 比较工整 和 比较好理解的方法：分解法（分治法：分解成几个小问题，分别解决）
+ * 1. 根据left 和 right 找到对应的node的指针p（重要的是：找到left的前驱节点，right的后驱节点）
+ * 2. 上面找到切割点，将要翻转的链表切割出来
+ * 2. 翻转切割出来链表
+ * 3. 将翻转后的链表接进去（注意这个时候左右已经颠倒了）
  */
  const findPByIndex = (head, index) => {
   if (index < 1) return null;

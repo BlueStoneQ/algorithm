@@ -29,5 +29,28 @@
 };
 
 /**
- * 被memo缓存高阶函数优化的：递归法
+ * 方法2: 被memo缓存高阶函数优化的：递归法
  */
+const memoize = (fn) => {
+  // 这里可以采用对象字面量 也可以直接使用Map
+  const memo = new Map(); // 或者也可以挂载到函数句柄上 memoize.memo = new Map()
+
+  return (...args) => {
+    // 生成key ： 这里的算法 采用将所有args进行序列化, 排序后保证序列化的字符串排列顺序始终一致
+    const key = JSON.stringify(args.sort());
+    // 缓存中有 就返回缓存值
+    if (memo.has(key)) return memo.get(key);
+    // 缓存中没有 调用函数逻辑 
+    const result = fn(...args);
+    // 返回值进入缓存
+    memo.set(key, result);
+    // 返回调用后的结果
+    return result;
+  }
+}
+
+let fabonaci = memoize((n) => {
+  if (n < 2) return n;
+  // 已经不推荐使用arguments.callee 因为arguments是个很大的参数 比较耗能，我们可以在内部给一个函数名 - 用一个高阶函数处理
+  return fabonaci(n - 1) + fabonaci(n - 2);
+})

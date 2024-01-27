@@ -33,11 +33,11 @@
   }
 
   // algo
-  for (let i = 0; i < len; i += 2 * k) {
-      let left = i;
+  for (let left = 0; left < len; left += 2 * k) {
       // [!!!]两两反转 下标和边界是最考验的地方
       // 下面判断式：剩余的字符数量len-i小于k时，right边界就是len-1,大于k时,就是大部分常规情况，i + k - 1
-      let right = len - i < k ? len -1 : i + k - 1;
+      // 其实下面判断条件就是判断当前下标向前再走k步会不会超出边界: left + k - 1 > len - 1
+      let right = len - left < k ? len - 1 : left + k - 1;
       reverseSubArr(left, right)
   }
   

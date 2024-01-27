@@ -19,18 +19,16 @@
  * @return {TreeNode}
  */
  var searchBST = function(root, val) {
-  return searchNode(root, val);
+  function _searchBST(curRoot) {
+    // base case
+    if (curRoot === null) return null;
+    // curRoot.val == val 返回当前节点
+    if (curRoot.val === val) return curRoot;
+    // curRoot.val < val 则要去rigth子树查找val
+    if (curRoot.val < val) return searchNode(curRoot.right);
+    // curRoot.val > val 则要去left子树查找val
+    if (curRoot.val > val) return searchNode(curRoot.left);
+  }
+
+  return _searchBST(root);
 };
-
-function searchNode(curRoot, val) {
-  // base case
-  if (curRoot === null) return null;
-  // curRoot.val == val 返回当前节点
-  if (curRoot.val === val) return curRoot;
-  // curRoot.val < val 则要去rigth子树查找val
-  if (curRoot.val < val) return searchNode(curRoot.right, val);
-  // curRoot.val > val 则要去left子树查找val
-  if (curRoot.val > val) return searchNode(curRoot.left, val);
-}
-
-module.exports = searchBST;

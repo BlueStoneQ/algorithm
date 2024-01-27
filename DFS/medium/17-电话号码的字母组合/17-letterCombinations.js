@@ -37,7 +37,7 @@
           return;
       }
 
-      const curStr = digist2StrArray[digits[index]]; // 当前层（按键）上的字符串(当前数字对应的那一组字符串)
+      const curStr = digist2StrArray[+digits[index]]; // 当前层（按键）上的字符串(当前数字对应的那一组字符串)
       // 遍历该层
       for (let i = 0; i < curStr.length; i++) {
           // 作出选择

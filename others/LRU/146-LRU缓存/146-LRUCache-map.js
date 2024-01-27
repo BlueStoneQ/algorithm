@@ -64,6 +64,7 @@
      }
      // key不存在 先判满 然后delete第一条记录(最久未访问的) 重新set进新的k:v => 存满后淘汰一次缓存
      if (this.cache.size >= this.capacity) {
+         // 这里获得map的第一个key也可以用Array.from(this.cache.keys())[0]
          const oldestKey = this.cache.keys().next().value;
          this.cache.delete(oldestKey);
      }

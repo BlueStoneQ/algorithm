@@ -12,6 +12,10 @@
  * }
  */
 /**
+ * 删除链表节点的核心就是找到删除节点的前驱节点
+ * - 一定要学会考虑链表开头和结尾这样的边界问题
+ * - 开头边界：就是设置好访问指针p的初始值
+ * - 结尾边界：就是while循环退出条件的设计
  * @param {ListNode} head
  * @param {number} val
  * @return {ListNode}
@@ -19,7 +23,7 @@
  var removeElements = function(head, val) {
   // defend
   // init data
-  // 重要 定义虚拟头结点 就不用对第一个节点的边界进行特殊处理了
+  // 重要 定义虚拟头结点 就不用对删除第一个节点的边界case进行特殊处理了
   const dummy = new ListNode(0, null); 
   dummy.next = head;
   let p = dummy;
@@ -30,7 +34,7 @@
       if (val === p.next.val) {
           // 这里删除的是 p.next
           p.next = p.next.next;
-          continue; // 注意删除后跳过当前节点
+          continue; // 注意删除后跳过当前节点, 删除所有，所以不一定只有一个节点.val === val需要删除
       }
       p = p.next;
   }

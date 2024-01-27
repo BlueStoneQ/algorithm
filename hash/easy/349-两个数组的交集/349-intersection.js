@@ -14,7 +14,7 @@
   // defend
   // init data
   const resSet = new Set();
-  // 交换 得到长度最小的数组 有助于后面的性能
+  // [优化]交换 得到长度最小的数组 有助于后面的性能
   if (nums1.length > nums2.length) {
       let temp = nums1;
       nums1 = nums2;

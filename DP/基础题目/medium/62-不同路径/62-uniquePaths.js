@@ -22,7 +22,7 @@
   if (m === 1 || n === 1) return 1;
 
   // init data
-  const dp = new Array(m).fill([]);
+  const dp = Array.from({ length: m }, () => new Array(n).fill(0));
   // ！！！二维dp的初始化这里注意：需要循环初始化：如何初始化呢，首先dp[i][0]一定都是1，因为从(0, 0)的位置到(i, 0)的路径只有一条，那么dp[0][j]也同理。
   // 初始化：第一列
   for (let row = 0; row < m; row++) {

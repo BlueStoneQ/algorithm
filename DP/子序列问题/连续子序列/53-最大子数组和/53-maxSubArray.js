@@ -25,6 +25,8 @@ nums[i]，即：从当前nums[i]开始一段新的序列（主要存在于之前
 
  复杂度：
 
+ 这里根据dp的定义 不是求dp[nums.length - 1]最后一项 而是求dp中的最大值，这个最大值并不一定是最后一项
+
  * @param {number[]} nums
  * @return {number}
  */

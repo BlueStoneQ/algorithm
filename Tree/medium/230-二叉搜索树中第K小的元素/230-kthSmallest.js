@@ -29,7 +29,7 @@
       // 递归函数
       _traverse(curRoot.left);
       // 满足条件 到达第k个最小值 则记入结果 同时返回 从这一层开始逐层结束递归 减少无谓递归
-      if (k-- === 1) {
+      if (--k === 0) {
           res = curRoot.val;
           return;
       }

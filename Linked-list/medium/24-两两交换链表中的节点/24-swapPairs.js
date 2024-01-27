@@ -13,25 +13,25 @@
  */
 /**
  * 单指针 驱动 双指针步进
+ * 这个交换最好画图哈，然后用代码模拟一个交换的最小单元操作，然后遍历即可
  * @param {ListNode} head
  * @return {ListNode}
  */
  var swapPairs = function(head) {
-  // defend
-  // init data
-  const dummy = new ListNode(0, head);
-  let temp = dummy; // temp是在被交换的2个节点之前的一个前驱节点
-  
-  // algo
-  while(temp.next !== null && temp.next.next !== null) {
-      // 交换 pre 和 cur
-      const pre = temp.next, cur = temp.next.next;
-      temp.next = cur; // 因为这一步 所以 头节点在这里完成了替换 dummy.next = 交换后的头节点
-      pre.next = cur.next;
-      cur.next = pre;
+  const dummy = new ListNode()
+  dummy.next = head
+
+  let pre = dummy // pre是在被交换的2个节点之前的一个前驱节点
+
+  while (pre.next !== null && pre.next.next !== null) {
+      // 交换 cur 和 next
+      const cur = pre.next, next = pre.next.next
+      pre.next = next // 因为这一步 所以 头节点在这里完成了替换 dummy.next = 交换后的头节点
+      cur.next = next.next
+      next.next = cur
       // 步进
-      temp = pre; // 这里为什么要指向pre呢 其实 因为pre和cur已经换了位置，pre现在是之前的位置（也就是之前temp.next.next了）画个图就知道了哈哈
+      pre = cur
   }
-  // return 
-  return dummy.next;
+
+  return dummy.next
 };

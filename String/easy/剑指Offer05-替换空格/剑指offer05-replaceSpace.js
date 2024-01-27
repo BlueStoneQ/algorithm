@@ -52,6 +52,7 @@ var replaceSpace = function(s) {
         // left从原来字符串的末尾向前遍历 right从新的字符串的末尾向前遍历 填充
         // case1 遇到了空格
         if (arr[leftIndex] === BlANK) {
+            // 其实 不扩容也可以 这里直接arr[leftIndex] = '20%'
             arr[rightIndex--] = '0';
             arr[rightIndex--] = '2';
             arr[rightIndex--] = '%';

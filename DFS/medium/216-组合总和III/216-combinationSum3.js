@@ -19,7 +19,7 @@
   // 1. 定义回溯函数
   const backTrack = (path, preSum, startIndex) => {
       
-      // base case1 当前序列的和已经大于n了 后面的逻辑就是不必要的了 剪枝：可以提前结束接下来不必要的计算
+      // base case1 [剪枝：剪掉后续所有sum > n的path]当前序列的和已经大于n了 后面的逻辑就是不必要的了 剪枝：可以提前结束接下来不必要的计算
       if (preSum > n) return;
 
       // base case2 + 记录结果

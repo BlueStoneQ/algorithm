@@ -23,11 +23,11 @@
   // algo
   // 定义：递归回溯函数
   const backtrack = function(path, startIndex) {
-      // 同样：子集问题 求的每个节点 每个节点都需要push
-      result.push(path.slice());
-
       // base case + 记录结果
       if (startIndex >= numsLen) return;
+
+      // 同样：子集问题 求的每个节点 每个节点都需要push
+      result.push(path.slice());
 
       // 单层遍历
       for (let i = startIndex; i < numsLen; i++) {

@@ -23,7 +23,7 @@
  var groupAnagrams = function(strs) {
   // defend
   // init data
-  const res = [];
+  // const res = [];
   const resMap = new Map(); // 字符串编码: 符合该字符串编码的字符串
   // algo
   for (const str of strs) {
@@ -32,12 +32,12 @@
   }
 
   // 遍历map 生成 Array
-  for (const val of resMap.values()) {
-      res.push(val);
-  }
+  // for (const val of resMap.values()) {
+  //     res.push(val);
+  // }
 
-  // return 
-  return res;
+  // return 这里最主要resMap.values()返回是一个迭代器对象，不是数组，所以需要转一下
+  return Array.from(resMap.values());
 };
 
 /**
